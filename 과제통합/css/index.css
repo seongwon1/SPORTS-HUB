@@ -36,12 +36,117 @@ body{
     width: 85%;
     height: 50%;
     float: left;
+    background-color: mediumslateblue;
+
+   
+}
+.section1>.section1-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+   
+}
+.section1>.section1-top>.section1-top-imgbox{
+    border: 1px solid black;
+    width: 400px;
+    height: 470px;
+    display: flex;
+   flex-direction: column;  
+}
+.section1>.section1-top>.section1-top-imgbox>img{
+    width: 400px;
+    height: 300px;
+
+}
+.section1-top-imgbox_font{
+    display: flex;
+    flex-direction: column;
+   line-height: 30px;
+
+}
+
+.section1-top-imgbox_font>span:nth-child(1){
+    color: orange;
+}
+.section1-top-imgbox_font_money{
+    float: right;
+    color: white;
+    padding-right: 10px;
+
+}
+.section1-top-imgbox_font>span:nth-child(2){
+    font-size: 1.5rem;
+}
+.section1-top-imgbox_font>span:nth-child(3),.section1-top-imgbox_font>span:nth-child(4){
+    color: #464343;
+}
+
+.section1-top-imgbox-hover{
+    display: flex;
+    flex-direction: row;
+   
+}
+.section1-top-imgbox-hover_select>img{
+    width: 40px;
+    height: 40px;
+    padding-left: 5px;
+}
+.section1-top-imgbox-hover_select>img:nth-child(1):hover{
+    background-image: ;
+}
+
+.section1>.section1-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+   
+}
+.section1>.section1-bottom>.section1-bottom-imgbox{
+    border: 1px solid black;
+    width: 400px;
+    height: 450px;
+    
+
 }
 .section2{
     width: 85%;
     height: 50%;
     float: left;
+    background-color: maroon;
 }
+.section2>.section2-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+   
+}
+.section2>.section2-top>.section2-top-imgbox{
+    border: 1px solid black;
+    width: 400px;
+    height: 470px;
+    
+}
+
+
+
+.section2>.section2-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+   
+}
+.section2>.section2-bottom>.section2-bottom-imgbox{
+    border: 1px solid black;
+    width: 400px;
+    height: 450px;
+    
+
+}
+
 
 /* footer 0719 19:57 수정자:김형준 */
 .footer{
