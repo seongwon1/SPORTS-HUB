@@ -92,9 +92,6 @@ body{
     height: 40px;
     padding-left: 5px;
 }
-.section1-top-imgbox-hover_select>img:nth-child(1):hover{
-    background-image: ;
-}
 
 .section1>.section1-bottom{
     display: flex;
