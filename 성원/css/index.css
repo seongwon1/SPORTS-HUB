@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body{
@@ -16,10 +17,109 @@ body{
     background-color: #333333;
 }
 
+/* header 작업 */
+/* 07.20 header 구성 및 디자인 수정자 박효근 */
 .header{
     width: 100%;
     height: 600px;
 }
+
+.navbar {
+    width: 100%;
+    height: 10%;
+    background-color: #333333;
+}
+
+.navbar_logo {
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+
+.navbar_logo>img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar_menu {
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+.menu1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    line-height: 60px;
+}
+.menu1 > li:hover {
+    color: #B388FF;
+}
+.navbar_menu .menu1>li {
+    display: inline-block;
+    width: 15%;
+    height: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: text-top;
+    list-style-type: none;
+    transition: 0.3s;
+}
+.navbar_Icons {
+    width: 15%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    display: flex;
+}
+.navbar_Icons_box{
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.navbar_Icons_box:hover > i,
+.navbar_Icons_box:hover > a{
+    color: #B388FF;
+}
+.navbar_Icons_box > a{
+    color: #FFF;
+    font-size: 0.7rem;
+    transition: 0.3s;
+}
+.navbar_Icons_box >.uil {
+    font-size: 1.7rem;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.header_img {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+}
+
+.header_img_box {
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    background-color: #333333;
+}
+
+.img1 {
+    width: 1000px;
+    height: 100%;
+}
+/* header 작업 */
 
 .main{
     width: 100%;
@@ -30,15 +130,23 @@ body{
     width: 15%;
     height: 100%;
     float: left;
+    /* background-color: white; */
 }
 
 .section1{
     width: 85%;
     height: 50%;
     float: left;
-    background-color: mediumslateblue;
+    background-color: white;
+   
 
    
+}
+.section1>h1{
+    padding-left: 100px;
+    padding-top: 50px;
+    color: black;
+    font-size: 2.5rem;
 }
 .section1>.section1-top{
     display: flex;
@@ -48,70 +156,254 @@ body{
    
 }
 .section1>.section1-top>.section1-top-imgbox{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 400px;
-    height: 470px;
+    height: 450px;
     display: flex;
    flex-direction: column;  
+   
 }
-.section1>.section1-top>.section1-top-imgbox>img{
-    width: 400px;
-    height: 300px;
+.section1-top-imgbox-img{
+    width: 395px;
+    height: 410px;
+    border-radius: 10px;
+
 
 }
 .section1-top-imgbox_font{
     display: flex;
     flex-direction: column;
    line-height: 30px;
+   font-size: 1.0rem;
+   margin-top: 5px;
+   position: relative;
+  
+}
+.section1-top-imgbox_font>.section1-top-imgbox_font_box{
+    position: absolute;
+    top: -140px;
 
 }
 
-.section1-top-imgbox_font>span:nth-child(1){
-    color: orange;
+.section1-top-imgbox_font>.section1-top-imgbox_font_box>span:nth-child(1){
+    font-size: 1.3rem;
+    color: black;
+
 }
-.section1-top-imgbox_font_money{
-    float: right;
-    color: white;
+/* 머니의 플로트를 삭제 7/20 */
+.section1-top-imgbox_font_money{  
+    color: black;
     padding-right: 10px;
+    font-size: 1.2rem;
+    
 
 }
-.section1-top-imgbox_font>span:nth-child(2){
-    font-size: 1.5rem;
-}
-.section1-top-imgbox_font>span:nth-child(3),.section1-top-imgbox_font>span:nth-child(4){
-    color: #464343;
-}
-
-.section1-top-imgbox-hover{
-    display: flex;
-    flex-direction: row;
+.section1-top-imgbox_font_icon:nth-child(n){
+color: yellow;
    
 }
-.section1-top-imgbox-hover_select>img{
-    width: 40px;
-    height: 40px;
-    padding-left: 5px;
+
+.section1-top-imgbox_font_hashtag{
+  display: flex;
+  flex-direction: row;
 }
+.section1-top-imgbox_font_hashtag>.section1-top-imgbox_font_hashtag_menu:nth-child(n){
+  
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color:rgb(248, 237, 237);
+    color: black;
+    font-size: 0.8rem;
+  
+}
+
+.section1-top-imgbox_font_icon_count{
+    color: black;
+}
+.section1-top-imgbox-hover_select{
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 2px; */
+   
+}
+.section1-top-imgbox-hover_select>.section1-top-imgbox-hover_select_color:nth-child(n){
+    width: 30px;
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-top: 3px; */
+
+}
+.section1-top-imgbox-hover_select>.section1-top-imgbox-hover_select_color:nth-child(1){
+   
+    background-color: black;
+    box-shadow: 0px 0px 3px 2px rgb(185, 184, 184);
+   
+    /* box-shadow: 0px 0px 3px 2px rgb(199, 196, 196); */
+  
+    
+}
+.section1-top-imgbox-hover_select>.section1-top-imgbox-hover_select_color:nth-child(2){
+   
+    background-color:mediumpurple ;
+    box-shadow: 0px 0px 3px 2px rgb(185, 184, 184);
+  
+   
+    
+}
+.section1-top-imgbox-hover_select>.section1-top-imgbox-hover_select_color:nth-child(3){
+    
+    background-color: pink;
+    box-shadow: 0px 0px 3px 2px rgb(185, 184, 184);
+   
+  
+    
+}
+.section1-top-imgbox-hover_select>.section1-top-imgbox-hover_select_color:nth-child(4){
+  
+    background-color: white;
+    box-shadow: 0px 0px 3px 2px rgb(185, 184, 184);
+  
+    
+}
+/* section1 아래부분 시작 */
 
 .section1>.section1-bottom{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 30px;
    
 }
 .section1>.section1-bottom>.section1-bottom-imgbox{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 400px;
     height: 450px;
+    display: flex;
+   flex-direction: column;  
+   
+}
+.section1-bottom-imgbox-img{
+    width: 395px;
+    height: 410px;
+    border-radius: 10px;
+
+
+}
+.section1-bottom-imgbox_font{
+    display: flex;
+    flex-direction: column;
+   line-height: 30px;
+   font-size: 1.0rem;
+   margin-top: 5px;
+   position: relative;
+  
+}
+.section1-bottom-imgbox_font>.section1-bottom-imgbox_font_box{
+    position: absolute;
+    top: -140px;
+
+}
+
+.section1-bottom-imgbox_font>.section1-bottom-imgbox_font_box>span:nth-child(1){
+    font-size: 1.3rem;
+    color: black;
+
+}
+/* 머니의 플로트를 삭제 7/20 */
+.section1-bottom-imgbox_font_money{  
+    color: black;
+    padding-right: 10px;
+    font-size: 1.2rem;
     
 
+}
+.section1-bottom-imgbox_font_icon:nth-child(n){
+color: yellow;
+   
+}
+
+.section1-bottom-imgbox_font_hashtag{
+  display: flex;
+  flex-direction: row;
+}
+.section1-bottom-imgbox_font_hashtag>.section1-bottom-imgbox_font_hashtag_menu:nth-child(n){
+  
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color:rgb(248, 237, 237);
+    color: black;
+    font-size: 0.8rem;
+  
+}
+
+.section1-bottom-imgbox_font_icon_count{
+    color: black;
+}
+.section1-bottom-imgbox-hover_select{
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 2px; */
+   
+}
+.section1-bottom-imgbox-hover_select>.section1-bottom-imgbox-hover_select_color:nth-child(n){
+    width: 30px;
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-top: 3px; */
+
+}
+.section1-bottom-imgbox-hover_select>.section1-bottom-imgbox-hover_select_color:nth-child(1){
+   
+    background-color: black;
+    box-shadow: 0px 0px 3px 2px rgb(185, 184, 184);
+   
+    /* box-shadow: 0px 0px 3px 2px rgb(199, 196, 196); */
+  
+    
+}
+.section1-bottom-imgbox-hover_select>.section1-bottom-imgbox-hover_select_color:nth-child(2){
+   
+    background-color:mediumpurple ;
+    box-shadow: 0px 0px 3px 2px rgb(185, 184, 184);
+  
+   
+    
+}
+.section1-bottom-imgbox-hover_select>.section1-bottom-imgbox-hover_select_color:nth-child(3){
+    
+    background-color: pink;
+    box-shadow: 0px 0px 3px 2px rgb(185, 184, 184);
+   
+  
+    
+}
+.section1-bottom-imgbox-hover_select>.section1-bottom-imgbox-hover_select_color:nth-child(4){
+  
+    background-color: white;
+    box-shadow: 0px 0px 3px 2px rgb(185, 184, 184);
+  
+    
 }
 .section2{
     width: 85%;
     height: 50%;
     float: left;
-    background-color: maroon;
+    background-color: white;
+   
+}
+.section2>h1{
+    padding-left: 100px;
+    padding-top: 50px;
+    color: black;
+    font-size: 2.5rem;
 }
 .section2>.section2-top{
     display: flex;
@@ -121,27 +413,240 @@ body{
    
 }
 .section2>.section2-top>.section2-top-imgbox{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 400px;
-    height: 470px;
-    
+    height: 450px;
+    display: flex;
+   flex-direction: column;  
+   
+}
+.section2-top-imgbox-img{
+    width: 395px;
+    height: 410px;
+    border-radius: 10px;
+
+
+}
+.section2-top-imgbox_font{
+    display: flex;
+    flex-direction: column;
+   line-height: 30px;
+   font-size: 1.0rem;
+   margin-top: 5px;
+   position: relative;
+  
+}
+.section2-top-imgbox_font>.section2-top-imgbox_font_box{
+    position: absolute;
+    top: -140px;
+
 }
 
+.section2-top-imgbox_font>.section2-top-imgbox_font_box>span:nth-child(1){
+    font-size: 1.3rem;
+    color: black;
 
+}
+/* 머니의 플로트를 삭제 7/20 */
+.section2-top-imgbox_font_money{  
+    color: black;
+    padding-right: 10px;
+    font-size: 1.2rem;
+    
+
+}
+.section2-top-imgbox_font_icon:nth-child(n){
+color: yellow;
+   
+}
+
+.section2-top-imgbox_font_hashtag{
+  display: flex;
+  flex-direction: row;
+}
+.section2-top-imgbox_font_hashtag>.section2-top-imgbox_font_hashtag_menu:nth-child(n){
+  
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color:rgb(248, 237, 237);
+    color: black;
+    font-size: 0.8rem;
+  
+}
+
+.section2-top-imgbox_font_icon_count{
+    color: black;
+}
+.section2-top-imgbox-hover_select{
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 2px; */
+   
+}
+.section2-top-imgbox-hover_select>.section2-top-imgbox-hover_select_color:nth-child(n){
+    width: 30px;
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-top: 3px; */
+
+}
+.section2-top-imgbox-hover_select>.section2-top-imgbox-hover_select_color:nth-child(1){
+   
+    background-color: black;
+   
+    box-shadow: 0px 0px 3px 2px rgb(185, 184, 184);
+  
+    
+}
+.section2-top-imgbox-hover_select>.section2-top-imgbox-hover_select_color:nth-child(2){
+   
+    background-color:mediumpurple ;
+    box-shadow: 0px 0px 3px 2px rgb(185, 184, 184);
+  
+   
+    
+}
+.section2-top-imgbox-hover_select>.section2-top-imgbox-hover_select_color:nth-child(3){
+    
+    background-color: pink;
+    box-shadow: 0px 0px 3px 2px  rgb(185, 184, 184);
+   
+  
+    
+}
+.section2-top-imgbox-hover_select>.section2-top-imgbox-hover_select_color:nth-child(4){
+  
+    background-color: white;
+    box-shadow: 0px 0px 3px 2px rgb(185, 184, 184);
+  
+    
+}
+/* section1 아래부분 시작 */
 
 .section2>.section2-bottom{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 30px;
    
 }
 .section2>.section2-bottom>.section2-bottom-imgbox{
-    border: 1px solid black;
     width: 400px;
     height: 450px;
+    display: flex;
+   flex-direction: column;  
+   
+}
+.section2-bottom-imgbox-img{
+    width: 395px;
+    height: 410px;
+    border-radius: 10px;
+
+
+}
+.section2-bottom-imgbox_font{
+    display: flex;
+    flex-direction: column;
+   line-height: 30px;
+   font-size: 1.0rem;
+   margin-top: 5px;
+   position: relative;
+    
+  
+}
+.section2-bottom-imgbox_font>.section2-bottom-imgbox_font_box{
+    position: absolute;
+    top: -140px;
+
+}
+
+.section2-bottom-imgbox_font>.section2-bottom-imgbox_font_box>span:nth-child(1){
+    font-size: 1.3rem;
+    color: black;
+
+}
+/* 머니의 플로트를 삭제 7/20 */
+.section2-bottom-imgbox_font_money{  
+    color: black;
+    padding-right: 10px;
+    font-size: 1.2rem;
     
 
+}
+.section2-bottom-imgbox_font_icon:nth-child(n){
+color: yellow;
+   
+}
+
+.section2-bottom-imgbox_font_hashtag{
+  display: flex;
+  flex-direction: row;
+}
+.section2-bottom-imgbox_font_hashtag>.section2-bottom-imgbox_font_hashtag_menu:nth-child(n){
+  
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color:rgb(248, 237, 237);
+    color: black;
+    font-size: 0.8rem;
+  
+}
+
+.section2-bottom-imgbox_font_icon_count{
+    color: black;
+}
+.section2-bottom-imgbox-hover_select{
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 2px; */
+   
+}
+.section2-bottom-imgbox-hover_select>.section2-bottom-imgbox-hover_select_color:nth-child(n){
+    width: 30px;
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-top: 3px; */
+
+}
+.section2-bottom-imgbox-hover_select>.section2-bottom-imgbox-hover_select_color:nth-child(1){
+   
+    background-color: black;
+    box-shadow: 0px 0px 3px 2px rgb(185, 184, 184);
+   
+    /* box-shadow: 0px 0px 3px 2px rgb(199, 196, 196); */
+  
+    
+}
+.section2-bottom-imgbox-hover_select>.section2-bottom-imgbox-hover_select_color:nth-child(2){
+   
+    background-color:mediumpurple ;
+    box-shadow: 0px 0px 3px 2px rgb(185, 184, 184);
+  
+   
+    
+}
+.section2-bottom-imgbox-hover_select>.section2-bottom-imgbox-hover_select_color:nth-child(3){
+    
+    background-color: pink;
+    box-shadow: 0px 0px 3px 2px rgb(185, 184, 184);
+   
+  
+    
+}
+.section2-bottom-imgbox-hover_select>.section2-bottom-imgbox-hover_select_color:nth-child(4){
+  
+    background-color: white;
+    box-shadow: 0px 0px 3px 2px rgb(185, 184, 184);
+  
+    
 }
 
 /* /content-area */
@@ -199,13 +704,19 @@ body{
     opacity: 0.5;
 }
 
+/* 7월 20일 20:00 김현구*/
+/* 클래스명 변경, 삭제 */
 .content_area2{
     width: 100%;
-    height: auto;
+    height: 750px;
     border-top: #E0E0E0 2px solid;
 }
-
-.content_area2_header{
+.content_area3{
+    width: 100%;
+    height: 750px;
+    border-top: #E0E0E0 2px solid;
+}
+.content_area3_header{
     width: 100%;
     height: 150px;
     display: flex;
@@ -214,7 +725,7 @@ body{
     font-size: 1.7rem;
 }
 
-.content_area2_imgBox{
+.content_area3_imgBox{
     width: 100%;
     height: auto;
     display: flex;
@@ -223,7 +734,7 @@ body{
     justify-content: center;
 }
 
-.content_area2_img{
+.content_area3_img{
     width: 550px;
     height: 550px;
     margin: 0 10px;
@@ -233,28 +744,22 @@ body{
     justify-content: center;
 }
 
-.content_area2_img>img{
+.content_area3_img>img{
     width: 500px;
     height: 500px;
     transition: all 0.3s;
 }
 
-.content_area2_img>img:hover{
+.content_area3_img>img:hover{
     opacity: 0.5;
 }
 
-.content_area2_img>p{
+.content_area3_img>p{
     font-size: 1.2rem;
     font-weight: bold;
     margin :35px 0;
 }
 
-.content_area3{
-    width: 100%;
-    height: 750px;
-    border-top: #E0E0E0 2px solid;
-}
-/*  */
 
 /* footer 0719 19:57 수정자:김형준 */
 .footer{
