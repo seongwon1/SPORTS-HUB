@@ -43,6 +43,8 @@ body{
     float: left;
 }
 
+/* /content-area */
+/* 0720 content_area 영역 생성 및 설정 수정자 : 김형준*/
 .content_area1{
     clear: both;
     width: 100%;
@@ -151,6 +153,7 @@ body{
     height: 750px;
     border-top: #E0E0E0 2px solid;
 }
+/*  */
 
 /* footer 0719 19:57 수정자:김형준 */
 .footer{
