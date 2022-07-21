@@ -7,12 +7,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Signup.css">
     <link href="//cdn.jsdelivr.net/xeicon/2/xeicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Document</title>
 </head>
 
 <body>
     <form class="container">
-        <div class="header"></div>
+        <!-- header로고 ,navbar dropdown  구성 및 디자인 수정자 박효근 -->
+<div class="header">
+    <div class="navbar">
+        <div class="navbar_logo">
+            <h1>SPORTS <span>HUB</span></h1>
+        </div>
+        <div class="navbar_menu">
+            <ul class="menu1">
+                <li class="menu_li">
+                    HOME
+                </li>
+                <li class="menu_li">
+                    NEW
+                </li>
+                <li class="menu_li">
+                    MEN
+                </li>
+                <li class="menu_li">
+                    WOMAN 
+                </li>
+                <li class="menu_li">
+                    SUPPLIES
+                </li>
+                <div class="navbar_menu_drop">
+                    <ul class="drop_menu">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class="drop_menu">
+                        <li>의류</li>
+                        <li>신발</li>
+                        <li>용품</li>
+                        <li>전체보기</li>
+                    </ul>
+                    <ul class="drop_menu">
+                        <li>아우터</li>
+                        <li>티셔츠</li>
+                        <li>후드</li>
+                        <li>바지</li>
+                        <li>반바지</li>
+                        <li>타이즈</li>
+                        <li>신발</li>
+                        <li>양말</li>
+                    </ul>
+                    <ul class="drop_menu">
+                        <li>아우터</li>
+                        <li>티셔츠</li>
+                        <li>후드</li>
+                        <li>바지</li>
+                        <li>반바지</li>
+                        <li>타이즈</li>
+                        <li>신발</li>
+                        <li>양말</li>
+                    </ul>
+                    <ul class="drop_menu">
+                        <li>축구</li>
+                        <li>러닝</li>
+                        <li>농구</li>
+                        <li>테니스</li>
+                        <li>트레이닝&짐</li>
+                        <li>가방</li>
+                        <li>모자</li>
+                    </ul>
+                
+                    <ul class="drop_menu">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <div class="navbar_Icons">
+            <a href="login.html" class="navbar_Icons_a">
+                <i class="uil uil-user-check"></i>
+                <p>LOGIN</p>
+            </a>
+            
+            <a href="Signup.html" class="navbar_Icons_a">
+                <i class="uil uil-user-plus"></i>
+                <p>SIGN UP</p>
+            </a>
+            
+            <a href="#" class="navbar_Icons_a">
+                <i class="uil uil-shopping-bag"></i>
+                <p>SHOPPING BASKET</p>
+            </a>
+            
+        </div>
+    </div>
+    <div class="header_img">
+        <div class="header_img_box">
+                <img src="img/headerImg/6.jpg" class="img1">
+                <img src="img/headerImg/1.jpg" class="img1">
+                <img src="img/headerImg/2.jpg" class="img1">
+                <img src="img/headerImg/3.jpg" class="img1">
+                <img src="img/headerImg/4.jpg" class="img1">
+                <img src="img/headerImg/5.jpg" class="img1">  
+        </div>
+    </div>
+</div>
+<!-- header 영역 종료 -->
         <div class="main">
             <div class="signIn_form">
                 <h3>Sport hub 멤버 가입</h3>
@@ -21,18 +128,18 @@
                 <br>
                 <br>
                 <!-- 회원가입 정보 입력란  -->
-                <input type="text" placeholder="사용하실 ID를 입력해주세요.">
-                <span></span> <!-- span태그는 유효성검사 오류 표시 위해 작성-->
-                <input type="text" placeholder="패스워드는 영문 대 소문+숫자+특수문자 8~16자리">
-                <span></span>
-                <input type="text" placeholder="패스워드를 다시 입력해 주세요.">
-                <span></span>
-                <input type="text" placeholder="이름을 입력해 주세요.">
-                <span></span>
-                <input type="text" placeholder="휴대폰 번호 '-'표와 함께 입력해 주세요.">
-                <span></span>
-                <input type="text" placeholder="생년월일 예)1995.12.18">
-                <span></span>
+                <input type="text" id="id" placeholder="사용하실 ID를 입력해주세요.">
+                <span id="id_alert"></span> <!-- span태그는 유효성검사 오류 표시 위해 작성-->
+                <input type="text" id="pw1" placeholder="영문의 대문자, 소문자 그리고 특수문자, 숫자를 필수적으로 1개 이상 포함">
+                <span id="pw1_alert"></span>
+                <input type="text" id="pw2" placeholder="패스워드를 다시 입력해 주세요.">
+                <span id="pw2_alert"></span>
+                <input type="text" id="name" placeholder="이름을 입력해 주세요.">
+                <span id="name_alert"></span>
+                <input type="text" id="phone" placeholder="휴대폰 번호 '-'표와 함께 입력해 주세요.">
+                <span id="phone_alert"></span>
+                <input type="text" id="birth" placeholder="생년월일 예)1995-12-18">
+                <span id="birth_alert"></span>
                 <div class="singIn_Gender">
                     <!--radio 타입으로 작성한 이유는 클릭시 클릭한곳에 V표시만 나오게끔
                         최대한 깔끔한 이벤트를 위해 작성함
@@ -376,7 +483,7 @@
                 <p class="check"><input type="checkbox">[필수] 개인정보 수집,이용동의</p>
                 <br>
                 <br>
-                <button class="SignIn_Btn">Sport hub 멤버 가입하기</button>
+                <button class="SignIn_Btn" type="button">Sport hub 멤버 가입하기</button>
             </div>
         </div>
         </div>
@@ -417,6 +524,7 @@
             </div>
         </div>
     </form>
+    <script src="js/signup.js"></script>
 </body>
 
 </html>

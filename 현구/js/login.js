@@ -1,10 +1,10 @@
 let id = document.getElementById('id');
 let pw = document.getElementById('pw');
-let btn = document.getElementById('btn');
+let login_btn = document.getElementById('login_btn');
 let id_alert= document.getElementById('id_alert');
 let pw_alert= document.getElementById('pw_alert');
 
-btn.addEventListener('click',function(){
+login_btn.addEventListener('click',function(){
     if(id.value.length==0){
         id_alert.innerText="필수 입력 항목입니다.";   
         id.style.borderColor="red";

@@ -166,6 +166,8 @@ body{
 
 /* header 작업 */
 
+/* 7월 20일 23:38 정인경 */
+
 .main{
     width: 100%;
     height: 2160px;
@@ -175,21 +177,24 @@ body{
     width: 15%;
     height: 100%;
     float: left;
-    /* background-color: white; */
+    background-color: white;
+    border-right: #E0E0E0 2px solid;
 }
 
+/* 정인경 : sectin1 -top */
 .section1{
     width: 85%;
     height: 50%;
     float: left;
     background-color: white;
+    border-top: #E0E0E0 2px solid;
    
 
    
 }
 .section1>h1{
     padding-left: 100px;
-    padding-top: 50px;
+    padding-top: 30px;
     color: black;
     font-size: 2.5rem;
 }
@@ -201,70 +206,88 @@ body{
    
 }
 .section1>.section1-top>.section1-top-imgbox{
-    /* border: 1px solid black; */
+   
     width: 400px;
     height: 450px;
     display: flex;
    flex-direction: column;  
+   box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
+  border-radius: 10px;
+   justify-content: center;
+   position: relative;
+   /* background-color:whitesmoke; */
    
 }
 .section1-top-imgbox-img{
-    width: 395px;
+    width: 400px;
     height: 410px;
     border-radius: 10px;
+    box-shadow: 0px 0px 3px 1px rgb(185, 184, 184);
 
 
 }
+.section1-top-imgbox_icon{
+    
+    color: rgb(230, 75, 75);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2.0rem;
+}
+
 .section1-top-imgbox_font{
     display: flex;
     flex-direction: column;
-   line-height: 30px;
+  
    font-size: 1.0rem;
    margin-top: 5px;
    position: relative;
+ 
   
 }
+
+
+
 .section1-top-imgbox_font>.section1-top-imgbox_font_box{
     position: absolute;
-    top: -140px;
-
+    bottom: 38px;
+    left: 5px;
+    background-color: rgba(255, 255, 255, 0.497);
+    width: 395px;
+    height: 0px;
+    transition: 0.5s;
+    overflow: hidden;
+    visibility: hidden;
+    color: black;
+    
+  
 }
 
-.section1-top-imgbox_font>.section1-top-imgbox_font_box>span:nth-child(1){
+
+.section1-top-imgbox:hover .section1-top-imgbox_font_box{
+    visibility: visible;
+    height: 60px;
+    
+}
+
+
+
+.section1-top-imgbox_font_box>span:nth-child(1){
     font-size: 1.3rem;
     color: black;
+    text-shadow:1px 1px 3px  rgb(132, 131, 131) ;
+    /* background-color: #f0ebeb; */
 
 }
+
 /* 머니의 플로트를 삭제 7/20 */
 .section1-top-imgbox_font_money{  
     color: black;
     padding-right: 10px;
     font-size: 1.2rem;
-    
-
-}
-.section1-top-imgbox_font_icon:nth-child(n){
-color: yellow;
-   
+    text-shadow:1px 1px 3px  rgb(132, 131, 131) ;
 }
 
-.section1-top-imgbox_font_hashtag{
-  display: flex;
-  flex-direction: row;
-}
-.section1-top-imgbox_font_hashtag>.section1-top-imgbox_font_hashtag_menu:nth-child(n){
-  
-    margin-left: 5px;
-    margin-right: 5px;
-    background-color:rgb(248, 237, 237);
-    color: black;
-    font-size: 0.8rem;
-  
-}
-
-.section1-top-imgbox_font_icon_count{
-    color: black;
-}
 .section1-top-imgbox-hover_select{
     display: flex;
     flex-direction: row;
@@ -284,7 +307,7 @@ color: yellow;
 }
 .section1-top-imgbox-hover_select>.section1-top-imgbox-hover_select_color:nth-child(1){
    
-    background-color: black;
+    background-color: mediumpurple;
     box-shadow: 0px 0px 3px 2px rgb(185, 184, 184);
    
     /* box-shadow: 0px 0px 3px 2px rgb(199, 196, 196); */
@@ -293,7 +316,7 @@ color: yellow;
 }
 .section1-top-imgbox-hover_select>.section1-top-imgbox-hover_select_color:nth-child(2){
    
-    background-color:mediumpurple ;
+    background-color:black ;
     box-shadow: 0px 0px 3px 2px rgb(185, 184, 184);
   
    
@@ -314,7 +337,7 @@ color: yellow;
   
     
 }
-/* section1 아래부분 시작 */
+/* 정인경 : section1 bottom 시작 */
 
 .section1>.section1-bottom{
     display: flex;
@@ -324,19 +347,33 @@ color: yellow;
    
 }
 .section1>.section1-bottom>.section1-bottom-imgbox{
-    /* border: 1px solid black; */
+   
     width: 400px;
     height: 450px;
     display: flex;
    flex-direction: column;  
+   box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
+  border-radius: 10px;
+   justify-content: center;
+   background-color:whitesmoke;
+   position: relative;
    
 }
 .section1-bottom-imgbox-img{
-    width: 395px;
+    width: 400px;
     height: 410px;
     border-radius: 10px;
+    box-shadow: 0px 0px 3px 1px rgb(185, 184, 184);
 
 
+}
+.section1-bottom-imgbox_icon{
+    
+    color: rgb(230, 75, 75);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2.0rem;
 }
 .section1-bottom-imgbox_font{
     display: flex;
@@ -347,27 +384,51 @@ color: yellow;
    position: relative;
   
 }
+
 .section1-bottom-imgbox_font>.section1-bottom-imgbox_font_box{
     position: absolute;
-    top: -140px;
-
+    bottom: 38px;
+    left: 5px;
+    background-color: rgba(255, 255, 255, 0.497);
+    width: 395px;
+    height: 0px;
+    transition: 0.5s;
+    overflow: hidden;
+    visibility: hidden;
+    
+  
 }
 
-.section1-bottom-imgbox_font>.section1-bottom-imgbox_font_box>span:nth-child(1){
+
+.section1-bottom-imgbox:hover .section1-bottom-imgbox_font_box{
+    visibility: visible;
+    height: 60px;
+    
+}
+
+
+
+.section1-bottom-imgbox_font_box>span:nth-child(1){
     font-size: 1.3rem;
     color: black;
+    text-shadow:1px 1px 3px  rgb(132, 131, 131) ;
+    /* background-color: #f0ebeb; */
 
 }
+
 /* 머니의 플로트를 삭제 7/20 */
 .section1-bottom-imgbox_font_money{  
     color: black;
     padding-right: 10px;
     font-size: 1.2rem;
+    text-shadow:1px 1px 3px  rgb(132, 131, 131) ;
+
     
 
 }
 .section1-bottom-imgbox_font_icon:nth-child(n){
 color: yellow;
+text-shadow:1px 1px 3px  rgb(204, 213, 103) ;
    
 }
 
@@ -437,16 +498,20 @@ color: yellow;
   
     
 }
+/* 정인경 : section2 시작 */
 .section2{
     width: 85%;
     height: 50%;
     float: left;
     background-color: white;
+    border-top: #E0E0E0 2px solid;
+   
+
    
 }
 .section2>h1{
     padding-left: 100px;
-    padding-top: 50px;
+    padding-top: 30px;
     color: black;
     font-size: 2.5rem;
 }
@@ -458,50 +523,91 @@ color: yellow;
    
 }
 .section2>.section2-top>.section2-top-imgbox{
-    /* border: 1px solid black; */
+   
     width: 400px;
     height: 450px;
     display: flex;
    flex-direction: column;  
+   box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
+  border-radius: 10px;
+   justify-content: center;
+   background-color:whitesmoke;
+   position: relative;
    
 }
+.section2-top-imgbox_icon{
+    
+    color: rgb(230, 75, 75);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2.0rem;
+}
 .section2-top-imgbox-img{
-    width: 395px;
+    width: 400px;
     height: 410px;
     border-radius: 10px;
+    box-shadow: 0px 0px 3px 1px rgb(185, 184, 184);
 
 
 }
 .section2-top-imgbox_font{
     display: flex;
     flex-direction: column;
-   line-height: 30px;
+  
    font-size: 1.0rem;
    margin-top: 5px;
    position: relative;
+ 
   
 }
+
+
+
 .section2-top-imgbox_font>.section2-top-imgbox_font_box{
     position: absolute;
-    top: -140px;
-
+    bottom: 38px;
+    left: 5px;
+    background-color: rgba(255, 255, 255, 0.497);
+    width: 395px;
+    height: 0px;
+    transition: 0.5s;
+    overflow: hidden;
+    visibility: hidden;
+    
+  
 }
 
-.section2-top-imgbox_font>.section2-top-imgbox_font_box>span:nth-child(1){
+
+.section2-top-imgbox:hover .section2-top-imgbox_font_box{
+    visibility: visible;
+    height: 60px;
+    
+}
+
+
+
+.section2-top-imgbox_font_box>span:nth-child(1){
     font-size: 1.3rem;
     color: black;
+    text-shadow:1px 1px 3px  rgb(132, 131, 131) ;
+    /* background-color: #f0ebeb; */
 
 }
+
 /* 머니의 플로트를 삭제 7/20 */
 .section2-top-imgbox_font_money{  
     color: black;
     padding-right: 10px;
     font-size: 1.2rem;
+    text-shadow:1px 1px 3px  rgb(132, 131, 131) ;
+
     
 
 }
 .section2-top-imgbox_font_icon:nth-child(n){
 color: yellow;
+text-shadow:1px 1px 3px  rgb(204, 213, 103) ;
    
 }
 
@@ -513,14 +619,16 @@ color: yellow;
   
     margin-left: 5px;
     margin-right: 5px;
-    background-color:rgb(248, 237, 237);
+    background-color:rgb(241, 232, 232);
     color: black;
     font-size: 0.8rem;
+    font-weight: bold;
   
 }
 
 .section2-top-imgbox_font_icon_count{
     color: black;
+    text-shadow:1px 1px 3px  rgb(132, 131, 131) ;
 }
 .section2-top-imgbox-hover_select{
     display: flex;
@@ -542,8 +650,9 @@ color: yellow;
 .section2-top-imgbox-hover_select>.section2-top-imgbox-hover_select_color:nth-child(1){
    
     background-color: black;
-   
     box-shadow: 0px 0px 3px 2px rgb(185, 184, 184);
+   
+    /* box-shadow: 0px 0px 3px 2px rgb(199, 196, 196); */
   
     
 }
@@ -558,7 +667,7 @@ color: yellow;
 .section2-top-imgbox-hover_select>.section2-top-imgbox-hover_select_color:nth-child(3){
     
     background-color: pink;
-    box-shadow: 0px 0px 3px 2px  rgb(185, 184, 184);
+    box-shadow: 0px 0px 3px 2px rgb(185, 184, 184);
    
   
     
@@ -570,7 +679,8 @@ color: yellow;
   
     
 }
-/* section1 아래부분 시작 */
+/*  정인경: sectin2-bottom 시작 */
+
 
 .section2>.section2-bottom{
     display: flex;
@@ -580,18 +690,33 @@ color: yellow;
    
 }
 .section2>.section2-bottom>.section2-bottom-imgbox{
+   
     width: 400px;
     height: 450px;
     display: flex;
    flex-direction: column;  
+   box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
+  border-radius: 10px;
+   justify-content: center;
+   background-color:whitesmoke;
+   position: relative;
    
 }
 .section2-bottom-imgbox-img{
-    width: 395px;
+    width: 400px;
     height: 410px;
     border-radius: 10px;
+    box-shadow: 0px 0px 3px 1px rgb(185, 184, 184);
 
 
+}
+.section2-bottom-imgbox_icon{
+    
+    color: rgb(230, 75, 75);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2.0rem;
 }
 .section2-bottom-imgbox_font{
     display: flex;
@@ -600,30 +725,53 @@ color: yellow;
    font-size: 1.0rem;
    margin-top: 5px;
    position: relative;
+  
+}
+
+.section2-bottom-imgbox_font>.section2-bottom-imgbox_font_box{
+    position: absolute;
+    bottom: 38px;
+    left: 5px;
+    background-color: rgba(255, 255, 255, 0.497);
+    width: 395px;
+    height: 0px;
+    transition: 0.5s;
+    overflow: hidden;
+    visibility: hidden;
     
   
 }
-.section2-bottom-imgbox_font>.section2-bottom-imgbox_font_box{
-    position: absolute;
-    top: -140px;
 
+
+.section2-bottom-imgbox:hover .section2-bottom-imgbox_font_box{
+    visibility: visible;
+    height: 60px;
+    
 }
 
-.section2-bottom-imgbox_font>.section2-bottom-imgbox_font_box>span:nth-child(1){
+
+
+.section2-bottom-imgbox_font_box>span:nth-child(1){
     font-size: 1.3rem;
     color: black;
+    text-shadow:1px 1px 3px  rgb(132, 131, 131) ;
+    /* background-color: #f0ebeb; */
 
 }
+
 /* 머니의 플로트를 삭제 7/20 */
 .section2-bottom-imgbox_font_money{  
     color: black;
     padding-right: 10px;
     font-size: 1.2rem;
+    text-shadow:1px 1px 3px  rgb(132, 131, 131) ;
+
     
 
 }
 .section2-bottom-imgbox_font_icon:nth-child(n){
 color: yellow;
+text-shadow:1px 1px 3px  rgb(204, 213, 103) ;
    
 }
 
@@ -695,12 +843,13 @@ color: yellow;
 }
 
 /* /content-area */
-/* 0720 content_area 영역 생성 및 설정 수정자 : 김형준*/
+/* 0721 content_area img 추가 및 효과 추가 수정자 : 김형준*/
 .content_area1{
     clear: both;
     width: 100%;
     height: auto;
     border-top: #E0E0E0 2px solid;
+    background-color: #FFF;
 }
 
 .content_area1_header{
@@ -710,6 +859,7 @@ color: yellow;
     align-items: center;
     justify-content: center;
     font-size: 1.7rem;
+    color: #333333;
 }
 
 .content_area1_hashtag{
@@ -738,29 +888,76 @@ color: yellow;
     padding: 100px 0;
 }
 
-.content_area1_imgBox>img{
+.content_area1_imgBox_img{
     width: 400px;
     height: 400px;
     margin: 5px;
     transition: all 0.3s;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    box-shadow: #E0E0E0 0 0 5px 2px;
+    border-radius: 2px;
+}
+
+.content_area1_imgBox_img>img{
+    width: 400px;
+    height: 400px;
+    transition: all 0.3s;
+}
+
+.content_area1_imgBox_img>h1{
+    position: absolute;
+    right: 10px;
+    bottom : -35px;
+    transition: all 0.3s;
+}
+
+.content_area1_imgBox_img:hover > img{
+    transform: scale(1.1);
+}
+.content_area1_imgBox_img:hover > h1{
+    bottom : 10px;
 }
 
 .content_area1_imgBox>img:hover{
     opacity: 0.5;
 }
 
+
 /* 7월 20일 20:00 김현구*/
 /* 클래스명 변경, 삭제 */
+/* 콘텐츠 에어리어 백그라운드 컬러 변경 #FFF*/
 .content_area2{
     width: 100%;
     height: 750px;
     border-top: #E0E0E0 2px solid;
+    background-color: #FFF;
+}
+.content_area2_video{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content_area2_video > video{
+    width: 90%;
+    height: 500px;
+    object-fit: fill;
 }
 .content_area3{
     width: 100%;
-    height: 750px;
-    border-top: #E0E0E0 2px solid;
+    height: auto;
+    /* border-top: #E0E0E0 2px solid; */
+    background-color: #FFF;
 }
+/* 7월 21일 보더 탑 삭제 폰트 컬러 변경 폰트 웨이트 변경 김현구*/
+/* content_area3 img hover 효과 부여 김현구*/
+/* content_area3 height:auto 변경*/
+/* img hover 시 opacity 삭제*/
 .content_area3_header{
     width: 100%;
     height: 150px;
@@ -768,6 +965,11 @@ color: yellow;
     align-items: center;
     justify-content: center;
     font-size: 1.7rem;
+    color: #E0E0E0;
+    font-weight: bolder;
+}
+.content_area3_header>h1{
+    text-shadow: #E0E0E0 0px 0px 6px;
 }
 
 .content_area3_imgBox{
@@ -787,16 +989,30 @@ color: yellow;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    cursor: pointer;
 }
+.content_area3_caption{
+    color: #E0E0E0;
+    display: inline-block;
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: space-around;
+}
+.content_area3_caption > div{
+    width: 33.3%;
+    text-align: center;
+}
+    
 
 .content_area3_img>img{
     width: 500px;
     height: 500px;
     transition: all 0.3s;
+    position: absolute;
 }
-
-.content_area3_img>img:hover{
-    opacity: 0.5;
+.content_area3_img:hover .content_area3_imgHover{
+    display: none;
 }
 
 .content_area3_img>p{
