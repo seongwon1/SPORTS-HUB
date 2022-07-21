@@ -48,6 +48,7 @@ body {
     width: 400px;
     height: 40px;
     margin: 10px;
+    outline: none;
 }
 
 .singIn_Gender>input[type=radio] {
