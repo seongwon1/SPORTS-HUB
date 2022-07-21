@@ -651,11 +651,13 @@ color: yellow;
 
 /* /content-area */
 /* 0720 content_area 영역 생성 및 설정 수정자 : 김형준*/
+/* 0721 content_area img 추가 및 효과 추가 수정자 : 김형준*/
 .content_area1{
     clear: both;
     width: 100%;
     height: auto;
     border-top: #E0E0E0 2px solid;
+    background-color: #FFF;
 }
 
 .content_area1_header{
@@ -665,6 +667,7 @@ color: yellow;
     align-items: center;
     justify-content: center;
     font-size: 1.7rem;
+    color: #333333;
 }
 
 .content_area1_hashtag{
@@ -693,16 +696,40 @@ color: yellow;
     padding: 100px 0;
 }
 
-.content_area1_imgBox>img{
+.content_area1_imgBox_img{
     width: 400px;
     height: 400px;
     margin: 5px;
     transition: all 0.3s;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    box-shadow: #E0E0E0 0 0 5px 2px;
+    border-radius: 2px;
 }
 
-.content_area1_imgBox>img:hover{
-    opacity: 0.5;
+.content_area1_imgBox_img>img{
+    width: 400px;
+    height: 400px;
+    transition: all 0.3s;
 }
+
+.content_area1_imgBox_img>h1{
+    position: absolute;
+    right: 10px;
+    bottom : -35px;
+    transition: all 0.3s;
+}
+
+.content_area1_imgBox_img:hover > img{
+    transform: scale(1.1);
+}
+.content_area1_imgBox_img:hover > h1{
+    bottom : 10px;
+}
+
 
 /* 7월 20일 20:00 김현구*/
 /* 클래스명 변경, 삭제 */
