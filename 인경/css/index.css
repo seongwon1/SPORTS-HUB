@@ -23,7 +23,7 @@ body{
 /* 07.22 header HOME 링크연결 , header 이미지 크기 및 이미지 수정  수정자 박효근 */
 .header{
     width: 100%;
-    height: 600px;
+    height: auto;
 }
 .navbar {
     width: 100%;
@@ -31,7 +31,7 @@ body{
     background-color: #333333;
 }
 .navbar_logo {
-    width: 15%;
+    width: 25%;
     height: 100%;
     float: left;
 }
@@ -40,13 +40,14 @@ body{
 }
 .navbar_logo>h1>span{
     display: inline-block;
-    width: 34%;
+    width: 73px;
     height: 50%;
     background-color: orange;
     color: black;
 }
+
 .navbar_menu {
-    width: 70%;
+    width: 60%;
     height: 100%;
     float: left;
 }
@@ -54,7 +55,7 @@ body{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     line-height: 60px;
@@ -68,13 +69,13 @@ body{
     text-decoration: none;
     color: #FFF;
 }
-.menu1 > li:not(.menu1>li:nth-child(1)):hover ~ .navbar_menu_drop,
+.menu1 > li:hover ~ .navbar_menu_drop,
 .navbar_menu_drop:hover{
     height: 500px;
 }
 .navbar_menu .menu1>li {
     display: inline-block;
-    width: 15%;
+    width: 25%;
     height: 100%;
     font-size: 1rem;
     cursor: pointer;
@@ -85,31 +86,26 @@ body{
 }
 .navbar_menu_drop{
     background-color: #E0E0E0;
-    width: 121.5%;
-    height: 00px;
+    width: 100%;
+    height: 0;
     position: absolute;
-    top: 60px;
+    top: 63px;
     transition: 0.5s;
     overflow: hidden;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    flex-direction: row;
 }
 .drop_menu{
     color: #333333;
-    width: 20%;
-    margin-left: 6%;
     cursor: pointer;
     list-style-type: none;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.navbar_menu_drop ul:nth-child(3){
-    margin-left: 9%;
-}
-.navbar_menu_drop ul:nth-child(4){
-    margin-left: 8%;
-}
-.navbar_menu_drop ul:nth-child(5){
-    margin-left: 8%;
-}
+
 .drop_menu>li{
     transition: 0.5s;
 }
@@ -152,18 +148,20 @@ body{
 }
 .header_img {
     width: 100%;
-    height: 90%;
+    height: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #fff;
 }
 .header_img_box {
-    width: 1300px;
-    height: 100%;
+    width: 90%;
+    height: 700px;
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
     background-color: #333333;
+    margin: 20px 0;
 }
 .header_img>.header_img_box> img {
     width: 100%;
@@ -178,28 +176,34 @@ body{
 
 .main{
     width: 100%;
-    height: 2160px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
 }
 
 .side{
     width: 15%;
-    height: 100%;
-    float: left;
+    height: auto;
     background-color: white;
     border-right: #E0E0E0 2px solid;
 }
 
 /* 정인경 : sectin1 -top */
-.section1{
+
+.section{
     width: 85%;
     height: auto;
-    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.section1{
+    width: 100%;
+    height: auto;
     background-color: white;
     border-top: #E0E0E0 2px solid;
     flex-wrap: wrap;
-   
-
-   
+    padding-bottom: 36.5px;
 }
 .section1>h1{
     padding-left: 100px;
@@ -214,10 +218,8 @@ body{
     margin-top: 30px;
     height: auto;
     flex-wrap: wrap;
-
-    
-   
 }
+
 .section1-top-imgbox{
    
     width: 400px;
@@ -235,13 +237,13 @@ body{
     height: 400px;
     border-radius: 10px;
     box-shadow: 0px 0px 3px 1px rgb(185, 184, 184);
- 
-
-
 }
+
 .section1-top-imgbox-box{
     position: relative;
+    
 }
+
 .section1-top-imgbox-box>img{
     width: 400px;
     height: 400px;
@@ -336,7 +338,7 @@ body{
 .section1-bottom-imgbox{
    
     width: 400px;
-    height: 450px;
+    height: auto;
     display: flex;
    flex-direction: column;  
    box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
@@ -434,8 +436,8 @@ body{
     margin-left: 5px;
     margin-right: 5px;
     /* margin-top: 3px; */
-
 }
+
 .section1-bottom-imgbox-hover_select_color:nth-child(1){
    
     background-color: black;
@@ -470,16 +472,12 @@ body{
 }
 /* 정인경 : section2 시작 */
 .section2{
-    width: 85%;
-    float: left;
+    width: 100%;
     background-color: white;
     border-top: #E0E0E0 2px solid;
     height: auto;
     flex-wrap: wrap;
-    border-bottom: red 2px solid;
-   
-
-   
+    padding-bottom: 36.5px;
 }
 .section2>h1{
     padding-left: 100px;
