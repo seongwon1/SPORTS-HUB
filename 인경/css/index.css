@@ -20,6 +20,7 @@ body{
 /* header 작업 */
 /* 07.20 header 구성 및 디자인 수정자 박효근 */
 /* 07.21 header로고 ,navbar dropdown  구성 및 디자인 수정자 박효근 */
+/* 07.22 header HOME 링크연결 , header 이미지 크기 및 이미지 수정  수정자 박효근 */
 .header{
     width: 100%;
     height: 600px;
@@ -59,8 +60,13 @@ body{
     line-height: 60px;
     position: relative;
 }
-.menu1 > li:hover {
+.menu1 > li:hover,
+#menu_li_a:hover {
     color: #B388FF;
+}
+#menu_li_a{
+    text-decoration: none;
+    color: #FFF;
 }
 .menu1 > li:not(.menu1>li:nth-child(1)):hover ~ .navbar_menu_drop,
 .navbar_menu_drop:hover{
@@ -149,19 +155,21 @@ body{
     height: 90%;
     display: flex;
     justify-content: center;
-    background-color: #FFF;
+    background-color: #fff;
 }
 .header_img_box {
-    width: 1000px;
+    width: 1300px;
     height: 100%;
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
     background-color: #333333;
 }
-.img1 {
-    width: 1000px;
+.header_img>.header_img_box> img {
+    width: 100%;
     height: 100%;
+    /* margin-left: 100px; */
+    
 }
 
 /* header 작업 */
@@ -171,20 +179,14 @@ body{
 .main{
     width: 100%;
     height: 2160px;
-    /* height: auto; */
- 
-    
 }
 
 .side{
-     width: 15%; 
-    height: 100%; 
-    /* height: auto; */
+    width: 15%;
+    height: 100%;
     float: left;
     background-color: white;
     border-right: #E0E0E0 2px solid;
-    /* flex-wrap: wrap; */
- 
 }
 
 /* 정인경 : sectin1 -top */
@@ -858,10 +860,12 @@ body{
 /* 7월 20일 20:00 김현구*/
 /* 클래스명 변경, 삭제 */
 /* 콘텐츠 에어리어 백그라운드 컬러 변경 #FFF*/
+/* 7월22일 */
+/* 최성원 border-top 삭제 요청 김현구*/
 .content_area2{
     width: 100%;
     height: 750px;
-    border-top: #E0E0E0 2px solid;
+    /* border-top: #E0E0E0 2px solid; */
     background-color: #FFF;
 }
 .content_area2_video{
@@ -876,6 +880,8 @@ body{
     height: 500px;
     object-fit: fill;
 }
+/* 7월22일 */
+/* 최성원 border-top 삭제 요청 김현구*/
 .content_area3{
     width: 100%;
     height: auto;
@@ -1040,5 +1046,6 @@ body{
     align-items: center;
     font-size: 0.8rem;
 }
+
 
 
