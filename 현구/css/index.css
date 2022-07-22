@@ -182,12 +182,14 @@ body{
 }
 
 /* 정인경 : sectin1 -top */
+/* 7월22일 */
+/* 최성원 border-top 삭제 요청 김현구*/
 .section1{
     width: 85%;
     height: 50%;
     float: left;
     background-color: white;
-    border-top: #E0E0E0 2px solid;
+    /* border-top: #E0E0E0 2px solid; */
    
 
    
@@ -499,12 +501,14 @@ text-shadow:1px 1px 3px  rgb(204, 213, 103) ;
     
 }
 /* 정인경 : section2 시작 */
+/* 7월22일 */
+/* 최성원 border-top 삭제 요청 김현구*/
 .section2{
     width: 85%;
     height: 50%;
     float: left;
     background-color: white;
-    border-top: #E0E0E0 2px solid;
+    /* border-top: #E0E0E0 2px solid; */
    
 
    
@@ -844,11 +848,13 @@ text-shadow:1px 1px 3px  rgb(204, 213, 103) ;
 
 /* /content-area */
 /* 0721 content_area img 추가 및 효과 추가 수정자 : 김형준*/
+/* 7월22일 */
+/* 최성원 border-top 삭제 요청 김현구*/
 .content_area1{
     clear: both;
     width: 100%;
     height: auto;
-    border-top: #E0E0E0 2px solid;
+    /* border-top: #E0E0E0 2px solid; */
     background-color: #FFF;
 }
 
@@ -930,10 +936,12 @@ text-shadow:1px 1px 3px  rgb(204, 213, 103) ;
 /* 7월 20일 20:00 김현구*/
 /* 클래스명 변경, 삭제 */
 /* 콘텐츠 에어리어 백그라운드 컬러 변경 #FFF*/
+/* 7월22일 */
+/* 최성원 border-top 삭제 요청 김현구*/
 .content_area2{
     width: 100%;
     height: 750px;
-    border-top: #E0E0E0 2px solid;
+    /* border-top: #E0E0E0 2px solid; */
     background-color: #FFF;
 }
 .content_area2_video{
@@ -948,6 +956,8 @@ text-shadow:1px 1px 3px  rgb(204, 213, 103) ;
     height: 500px;
     object-fit: fill;
 }
+/* 7월22일 */
+/* 최성원 border-top 삭제 요청 김현구*/
 .content_area3{
     width: 100%;
     height: auto;
