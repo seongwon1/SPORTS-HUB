@@ -172,9 +172,10 @@ body{
 /* header 작업 */
 
 /* side menu 작업 7월 24일 김현구*/
+/* height auto로 수정*/
 .side_menu{
     width: 90%;
-    height: 700px;
+    height: auto;
     background-color: #fff;
     border: 2px solid #E0E0E0;
     border-radius: 20px;
@@ -226,10 +227,14 @@ body{
 }
 .side_menu_bottom div{
     width: 100%;
-    height: 60px;
-    border-top: 1px solid #E0E0E0;
-    margin-top: 20px;
-    
+    height: auto;
+    margin-top: 40px;
+
+    /* 7월 25일 추가 김현구*/
+    /* dropdown 메뉴 구현 */
+}
+.side_menu_bottom div:not(.side_menu_dropdown){
+border-top: 1px solid #E0E0E0;
 }
 .side_menu_bottom label h2{
     display: inline-block;
@@ -240,6 +245,17 @@ body{
     font-size: 1.5rem;
     cursor: pointer;
     width: 20%;
+}
+.side_menu_Add{
+    list-style-type: none;
+    font-size: 1rem; 
+    display: none;
+    line-height: 30px;
+}
+.side_menu_dropdown input[type=checkbox]{
+    float: right;
+    margin-right: 8.5%;
+    
 }
 
 /* 7월 20일 23:38 정인경 */
@@ -255,7 +271,6 @@ body{
     width: 15%;
     height: auto;
     background-color: white;
-    border-right: #E0E0E0 2px solid;
 }
 
 /* 정인경 : sectin1 -top */
@@ -276,7 +291,6 @@ body{
     width: 100%;
     height: auto;
     background-color: white;
-    border-top: #E0E0E0 2px solid;
     flex-wrap: wrap;
     padding-bottom: 36.5px;
     position: relative;
@@ -696,7 +710,6 @@ body{
 .section2{
     width: 100%;
     background-color: white;
-    border-top: #E0E0E0 2px solid;
     height: auto;
     flex-wrap: wrap;
     padding-bottom: 36.5px;
@@ -967,7 +980,6 @@ body{
     clear: both;
     width: 100%;
     height: auto;
-    border-top: #E0E0E0 2px solid;
     background-color: #FFF;
 }
 
@@ -1054,7 +1066,6 @@ body{
 .content_area2{
     width: 100%;
     height: 750px;
-    /* border-top: #E0E0E0 2px solid; */
     background-color: #FFF;
 }
 .content_area2_video{
@@ -1074,7 +1085,6 @@ body{
 .content_area3{
     width: 100%;
     height: auto;
-    /* border-top: #E0E0E0 2px solid; */
     background-color: #FFF;
 }
 /* 7월 21일 보더 탑 삭제 폰트 컬러 변경 폰트 웨이트 변경 김현구*/
