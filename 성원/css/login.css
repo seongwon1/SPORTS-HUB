@@ -19,9 +19,10 @@ body{
 /* header 작업 */
 /* 07.20 header 구성 및 디자인 수정자 박효근 */
 /* 07.21 header로고 ,navbar dropdown  구성 및 디자인 수정자 박효근 */
+/* 07.22 header HOME 링크연결 , header 이미지 크기 및 이미지 수정  수정자 박효근 */
 .header{
     width: 100%;
-    height: 600px;
+    height: auto;
 }
 .navbar {
     width: 100%;
@@ -29,7 +30,7 @@ body{
     background-color: #333333;
 }
 .navbar_logo {
-    width: 15%;
+    width: 25%;
     height: 100%;
     float: left;
 }
@@ -38,13 +39,14 @@ body{
 }
 .navbar_logo>h1>span{
     display: inline-block;
-    width: 34%;
+    width: 73px;
     height: 50%;
     background-color: orange;
     color: black;
 }
+
 .navbar_menu {
-    width: 70%;
+    width: 60%;
     height: 100%;
     float: left;
 }
@@ -52,22 +54,27 @@ body{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     line-height: 60px;
     position: relative;
 }
-.menu1 > li:hover {
+.menu1 > li:hover,
+#menu_li_a:hover {
     color: #B388FF;
 }
-.menu1 > li:not(.menu1>li:nth-child(1)):hover ~ .navbar_menu_drop,
+#menu_li_a{
+    text-decoration: none;
+    color: #FFF;
+}
+.menu1 > li:hover ~ .navbar_menu_drop,
 .navbar_menu_drop:hover{
     height: 500px;
 }
 .navbar_menu .menu1>li {
     display: inline-block;
-    width: 15%;
+    width: 25%;
     height: 100%;
     font-size: 1rem;
     cursor: pointer;
@@ -78,31 +85,26 @@ body{
 }
 .navbar_menu_drop{
     background-color: #E0E0E0;
-    width: 121.5%;
-    height: 00px;
+    width: 100%;
+    height: 0;
     position: absolute;
-    top: 60px;
+    top: 63px;
     transition: 0.5s;
     overflow: hidden;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    flex-direction: row;
 }
 .drop_menu{
     color: #333333;
-    width: 20%;
-    margin-left: 6%;
     cursor: pointer;
     list-style-type: none;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.navbar_menu_drop ul:nth-child(3){
-    margin-left: 9%;
-}
-.navbar_menu_drop ul:nth-child(4){
-    margin-left: 8%;
-}
-.navbar_menu_drop ul:nth-child(5){
-    margin-left: 8%;
-}
+
 .drop_menu>li{
     transition: 0.5s;
 }
@@ -145,22 +147,26 @@ body{
 }
 .header_img {
     width: 100%;
-    height: 90%;
+    height: auto;
     display: flex;
     justify-content: center;
-    background-color: #FFF;
+    align-items: center;
+    background-color: #fff;
 }
 .header_img_box {
-    width: 1000px;
-    height: 100%;
+    width: 90%;
+    height: 700px;
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
     background-color: #333333;
+    margin: 20px 0;
 }
-.img1 {
-    width: 1000px;
+.header_img>.header_img_box> img {
+    width: 100%;
     height: 100%;
+    /* margin-left: 100px; */
+    
 }
 
 /* header 작업 */
