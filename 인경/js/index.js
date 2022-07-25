@@ -1,16 +1,35 @@
-let btn= document.querySelectorAll(".section1-top-imgbox-hover_select_color");
-let change= document.querySelector(".section1-top-imgbox-img");
+// $(function(){
+//     $("#confirm").click(function(){
+//         modalClose();
+//         //컨펌 이벤트 처리
+//     });
+//     $("#modal-open").click(function(){   
+//              $("#popup").css('display','flex').hide().fadeIn();
+//     });
+//     $("#close").click(function(){
+//         modalClose();
+//     });
+//     function modalClose(){
+//       $("#popup").fadeOut();
+//     }
+//   });
 
-    btn[0].addEventListener('mouseover',function(){
-        change.src= "img/여자/나이키 브라탑/나이키 브라탑  검정.png";
-    })
-    btn[1].addEventListener('mouseover',function(){
-        change.src= "img/여자/나이키 브라탑/나이키 브라탑 보라색.png";
-    })
-    btn[2].addEventListener('mouseover',function(){
-        change.src= "img/여자/나이키 브라탑/나이키 브라탑 분홍.png";
-    })
-    btn[3].addEventListener('mouseover',function(){
-        change.src= "img/여자/나이키 브라탑/나이키 브라탑 화이트.png";
-    })
+const modal = document.querySelector('.modal-wrap');
+const btnOpenPopup = document.querySelector('#shopping')
+
+btnOpenPopup.addEventListener('click', () => {
+  modal.style.display = 'block';
+});
+
+const endmodal = document.querySelector('.modal-wrap');
+const confirm = document.querySelector('#confirm');
+confirm.addEventListener('click',() => {
+    endmodal.style.display = 'none';
+});
+
+const finishmodal = document.querySelector('.modal-wrap');
+const buttom = document.querySelector('#close');
+buttom.addEventListener('click',() => {
+    finishmodal.style.display = 'none';
+});
 
