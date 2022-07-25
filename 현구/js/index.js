@@ -69,3 +69,48 @@ function changeimg(image){
 } 
 
 // <!-- 7월 23일 오후 15:12 content_area3_img 모달 기능 여기까지 최성원-->
+
+
+/* side_menu_dropdown menu 7월 25일 김현구*/
+// let side_menu_add_clothes = document.querySelector('.side_menu_clothes_label')
+// let side_menu_dropdown_clothes = document.querySelector('.side_menu_clothesAdd')
+// let side_menu_Clothsflag = true;
+// side_menu_add_clothes.addEventListener('click',function(){
+//     if(side_menu_Clothsflag == true){
+//         side_menu_dropdown_clothes.style.display="block";
+//         side_menu_Clothsflag = false
+//     }
+//     else{
+//         side_menu_dropdown_clothes.style.display="none";
+//         side_menu_Clothsflag = true
+//     }
+// })
+// let side_menu_add_shoes = document.querySelector('.side_menu_shoes_label');
+// let side_menu_dropdown_shoes = document.querySelector('.side_menu_shoesAdd')
+// let side_menu_shoesflag = true;
+// side_menu_add_shoes.addEventListener('click',function(){
+//     if(side_menu_shoesflag == true){
+//         side_menu_dropdown_shoes.style.display ="block";
+//         side_menu_shoesflag = false
+//     }
+//     else{
+//         side_menu_dropdown_shoes.style.display ="none";
+//         side_menu_shoesflag = true;
+//     }
+// })
+
+let side_menu_add = document.querySelectorAll('.side_menu_label')
+let side_menu_flag = true;
+for(i=0;i<side_menu_add.length;i++){
+    side_menu_add[i].addEventListener('click',function(){
+    if(side_menu_flag == true){
+        this.parentNode.children[1].children[0].style.display="block";
+        side_menu_flag = false;
+    }
+    else{
+        this.parentNode.children[1].children[0].style.display="none";
+        side_menu_flag = true;
+        
+    }
+})
+}
