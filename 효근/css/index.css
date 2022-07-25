@@ -21,6 +21,7 @@ body{
 /* 07.20 header 구성 및 디자인 수정자 박효근 */
 /* 07.21 header로고 ,navbar dropdown  구성 및 디자인 수정자 박효근 */
 /* 07.22 header HOME 링크연결 , header 이미지 크기 및 이미지 수정  수정자 박효근 */
+/* 07.25 menu1 -> navbar_menu_ul 수정 수정자 박효근 */
 .header{
     width: 100%;
     height: auto;
@@ -51,7 +52,7 @@ body{
     height: 100%;
     float: left;
 }
-.menu1 {
+.navbar_menu_ul {
     width: 100%;
     height: 100%;
     display: flex;
@@ -61,7 +62,7 @@ body{
     line-height: 60px;
     position: relative;
 }
-.menu1 > li:hover,
+.navbar_menu_ul > li:hover,
 #menu_li_a:hover {
     color: #B388FF;
 }
@@ -69,11 +70,11 @@ body{
     text-decoration: none;
     color: #FFF;
 }
-.menu1 > li:hover ~ .navbar_menu_drop,
+.navbar_menu_ul > li:hover ~ .navbar_menu_drop,
 .navbar_menu_drop:hover{
     height: 500px;
 }
-.navbar_menu .menu1>li {
+.navbar_menu .navbar_menu_ul>li {
     display: inline-block;
     width: 25%;
     height: 100%;
