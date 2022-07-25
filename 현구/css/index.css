@@ -172,6 +172,76 @@ body{
 
 /* header 작업 */
 
+/* side menu 작업 7월 24일 김현구*/
+.side_menu{
+    width: 90%;
+    height: 700px;
+    background-color: #fff;
+    border: 2px solid #E0E0E0;
+    border-radius: 20px;
+    /* position: fixed; */
+    padding: 20px;
+    margin-left: 20px;
+    color: #333333;
+    font-size: 0.7rem;
+}
+.side_menu_top{
+    border-top: 3px solid #333333;
+    margin: 30px 10px;
+
+}
+.side_menu_top > h1{
+    text-align: center;
+}
+.side_menu_top > h1 > span{
+    display: inline-block;
+    background-color: orange;
+    color: black;
+    height: 30px;
+    width: 50px;
+    margin-top: 20px;
+}
+.side_menu_middle{
+    border-top: 2px solid #E0E0E0;
+    margin: 30px 10px;
+    text-align: center;
+}
+.side_menu_middle > h1:nth-child(1){
+    margin: 20px 0;
+    text-align: center;
+}
+.side_menu_middle > h1:nth-child(3){
+    margin: 20px 0;
+    text-align: center;
+}
+#male , #female{
+    display: none;
+}
+.side_menu_gender{
+    display: inline-block;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    width: 40%;
+    text-align: center;
+    border: 1px solid #E0E0E0;
+}
+.side_menu_bottom div{
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid #E0E0E0;
+    margin-top: 20px;
+    
+}
+.side_menu_bottom label h2{
+    display: inline-block;
+    width: 80%;
+    cursor: pointer;
+}
+.side_menu_bottom label i{
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 20%;
+}
 /* 7월 20일 23:38 정인경 */
 
 .main{
@@ -181,11 +251,14 @@ body{
     flex-direction: row;
 }
 
+/* backgorundcolor #fff로 변경 7월 24일 김현구*/
+/* boreder 구분선 삭제 */
 .side{
     width: 15%;
     height: auto;
-    background-color: white;
-    border-right: #E0E0E0 2px solid;
+    background-color: #fff;
+    
+    
 }
 
 /* 정인경 : sectin1 -top */
@@ -201,7 +274,6 @@ body{
     width: 100%;
     height: auto;
     background-color: white;
-    border-top: #E0E0E0 2px solid;
     flex-wrap: wrap;
     padding-bottom: 36.5px;
 }
@@ -474,7 +546,6 @@ body{
 .section2{
     width: 100%;
     background-color: white;
-    border-top: #E0E0E0 2px solid;
     height: auto;
     flex-wrap: wrap;
     padding-bottom: 36.5px;

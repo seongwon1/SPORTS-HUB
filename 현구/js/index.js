@@ -13,4 +13,3 @@ let change= document.querySelector(".section1-top-imgbox-img");
     btn[3].addEventListener('mouseover',function(){
         change.src= "img/여자/나이키 브라탑/나이키 브라탑 화이트.png";
     })
-
