@@ -1,3 +1,21 @@
+//popup
+let popup1 = document.querySelector('.popup1');
+let popup2 = document.querySelector('.popup2');
+let popup3 = document.querySelector('.popup3');
+let popup4 = document.querySelector('.popup4'); 
+let popup5 = document.querySelector('.popup5');
+let popup6 = document.querySelector('.popup6');
+let popup7 = document.querySelector('.popup7');
+let popup8 = document.querySelector('.popup8'); 
+let hidden1 = document.querySelector('.hidden1');
+let hidden2 = document.querySelector('.hidden2');
+let hidden3 = document.querySelector('.hidden3');
+let hidden4 = document.querySelector('.hidden4');
+let hidden5 = document.querySelector('.hidden5');
+let hidden6 = document.querySelector('.hidden6');
+let hidden7 = document.querySelector('.hidden7');
+let hidden8 = document.querySelector('.hidden8');
+
 //섹션 모달 0725 19:07 김형준
 const section_modal = document.querySelector(".modal-wrap");
 const section_modal_woman = document.querySelector(".modal-woman");//모달 woman
@@ -14,9 +32,20 @@ const minusBtn = document.querySelectorAll('.minus');// 수량 -
 const plusBtn = document.querySelectorAll('.plus');// 수량 +
 const count = document.querySelectorAll('.count'); // 수량이 찍힐 input
 let inboundNum = 0; //입고 수량
+// area3 modal
+let area3_modal = document.getElementById('area3_modal');
+let area3_img1 = document.getElementById('area3_img1'); // area3 요가매트이미지
+let area3_img2 = document.getElementById('area3_img2'); // area3 짐볼이미지
+let area3_img3 = document.getElementById('area3_img3'); // area3 소프트웨이트바이미지
+let modal_main_img = document.getElementById('modal_main_img'); //모달창 띄울시 큰 메인 이미지
+let modal_bottom_preview_img = document.getElementsByClassName('modal-bottom-preview-img'); // 모달창 8가지 이미지를 나타내는 변수
+let span = document.getElementsByClassName("area3_close")[0]; // 모달창 close버튼
+let caption = document.getElementById('caption'); // 모달창 밑에 카테고리 이름 
 
-console.log(shopping_icon_man);
-console.log(shopping_icon_woman);
+// 사이드바
+let side_menu_add = document.querySelectorAll('.side_menu_label')
+let side_menu_flag = true;
+
 
 for(let i=0; i<shopping_icon_woman.length; i++){
     shopping_icon_woman[i].addEventListener('click',function(){
@@ -60,16 +89,7 @@ plusBtn[0].addEventListener('click',function(){
     inboundNum++;
     count[0].value = inboundNum;
 })
-
 // <!-- 7월 23일 오후 15:12 content_area3_img 모달 기능  최성원-->
-let area3_modal = document.getElementById('area3_modal');
-let area3_img1 = document.getElementById('area3_img1');
-let area3_img2 = document.getElementById('area3_img2');
-let area3_img3 = document.getElementById('area3_img3');
-let modal_main_img = document.getElementById('modal_main_img');
-let modal_bottom_preview_img = document.getElementsByClassName('modal-bottom-preview-img');
-let span = document.getElementsByClassName("area3_close")[0];
-let caption = document.getElementById('caption');
 
 area3_img1.addEventListener('click',function(){
     area3_modal.style.display = "block";
@@ -114,9 +134,6 @@ function changeimg(image){
 
 // <!-- 7월 23일 오후 15:12 content_area3_img 모달 기능 여기까지 최성원-->
 
-
-let side_menu_add = document.querySelectorAll('.side_menu_label')
-let side_menu_flag = true;
 for(i=0;i<side_menu_add.length;i++){
     side_menu_add[i].addEventListener('click',function(){
     if(side_menu_flag == true){
@@ -130,3 +147,63 @@ for(i=0;i<side_menu_add.length;i++){
     }
 })
 }
+
+// 0726 popup 기능 추가 수정자 박효근
+
+setTimeout(function(){
+    popup1.style.transform = 'translateX(10%)'
+    popup5.style.transform = 'translateX(10%)'
+}, 2000);
+setTimeout(function(){
+    popup1.style.transform = 'translateX(-200%)'
+    popup5.style.transform = 'translateX(-200%)'
+}, 12000);
+setTimeout(function(){
+    popup2.style.transform = 'translateX(10%)'
+    popup6.style.transform = 'translateX(10%)'
+}, 20000);
+setTimeout(function(){
+    popup2.style.transform = 'translateX(-200%)'
+    popup6.style.transform = 'translateX(-200%)'
+}, 30000);
+setTimeout(function(){
+    popup3.style.transform = 'translateX(10%)'
+    popup7.style.transform = 'translateX(10%)'
+}, 38000);
+setTimeout(function(){
+    popup3.style.transform = 'translateX(-200%)'
+    popup7.style.transform = 'translateX(-200%)'
+}, 48000);
+setTimeout(function(){
+    popup4.style.transform = 'translateX(10%)'
+    popup8.style.transform = 'translateX(10%)'
+}, 56000);
+setTimeout(function(){
+    popup4.style.transform = 'translateX(-200%)'
+    popup8.style.transform = 'translateX(-200%)'
+}, 66000);
+hidden1.addEventListener('click',function(){
+    popup1.style.transform = 'translateX(-200%)'
+});
+hidden2.addEventListener('click',function(){
+    popup2.style.transform = 'translateX(-200%)'
+});
+hidden3.addEventListener('click',function(){
+    popup3.style.transform = 'translateX(-200%)'
+});
+hidden4.addEventListener('click',function(){
+    popup4.style.transform = 'translateX(-200%)'
+});
+hidden5.addEventListener('click',function(){
+    popup5.style.transform = 'translateX(-200%)'
+});
+hidden6.addEventListener('click',function(){
+    popup6.style.transform = 'translateX(-200%)'
+});
+hidden7.addEventListener('click',function(){
+    popup7.style.transform = 'translateX(-200%)'
+});
+hidden8.addEventListener('click',function(){
+    popup8.style.transform = 'translateX(-200%)'
+});
+// popup 끝

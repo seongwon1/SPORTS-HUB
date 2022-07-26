@@ -169,7 +169,7 @@ SignIn_Btn.addEventListener('click',function(){
         gender_alert.style.fontSize= '15px';
         gender_alert.style.display= 'block';
         gender_alert.innerHTML = "필수 입력 항목입니다.";
-        
+        male_check.scrollIntoView();
     }
     else if(!(agree[0].checked && agree[1].checked)){
         alert("약관 및 개인정보 동의해주세요");
