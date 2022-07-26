@@ -178,7 +178,6 @@ body{
     background-color: #fff;
     border: 2px solid #E0E0E0;
     border-radius: 20px;
-    /* position: fixed; */
     padding: 20px;
     margin-left: 20px;
     color: #333333;
@@ -255,7 +254,6 @@ body{
     width: 15%;
     height: auto;
     background-color: white;
-    border-right: #E0E0E0 2px solid;
 }
 
 /* 정인경 : sectin1 -top */
@@ -1050,11 +1048,9 @@ body{
 /* 클래스명 변경, 삭제 */
 /* 콘텐츠 에어리어 백그라운드 컬러 변경 #FFF*/
 /* 7월22일 */
-/* 최성원 border-top 삭제 요청 김현구*/
 .content_area2{
     width: 100%;
     height: 750px;
-    /* border-top: #E0E0E0 2px solid; */
     background-color: #FFF;
 }
 .content_area2_video{
@@ -1070,11 +1066,9 @@ body{
     object-fit: fill;
 }
 /* 7월22일 */
-/* 최성원 border-top 삭제 요청 김현구*/
 .content_area3{
     width: 100%;
     height: auto;
-    /* border-top: #E0E0E0 2px solid; */
     background-color: #FFF;
 }
 /* 7월 21일 보더 탑 삭제 폰트 컬러 변경 폰트 웨이트 변경 김현구*/
