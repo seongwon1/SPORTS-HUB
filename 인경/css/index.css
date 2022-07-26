@@ -272,7 +272,7 @@ border-top: 1px solid #E0E0E0;
     width: 15%;
     height: auto;
     background-color: white;
-    border-right: #E0E0E0 2px solid;
+    /* border-right: #E0E0E0 2px solid; */
 }
 
 /* 정인경 : sectin1 -top */
@@ -288,7 +288,6 @@ border-top: 1px solid #E0E0E0;
     display: flex;
     flex-direction: column;
 }
-
 .section1{
     width: 100%;
     height: auto;
@@ -312,9 +311,7 @@ border-top: 1px solid #E0E0E0;
     height: auto;
     flex-wrap: wrap;
 }
-
 .section1-top-imgbox{
-   
     width: 400px;
     height: 450px;
     display: flex;
@@ -322,19 +319,13 @@ border-top: 1px solid #E0E0E0;
    box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
   border-radius: 10px;
    justify-content: center;
-   margin-top: 20px;
-   /* position: relative; */
-   /* background-color:whitesmoke; */
-   
+   margin-top: 20px; 
 }
 .section1-top-imgbox-box{
     width: 400px;
     height: 400px;
     border-radius: 10px;
     box-shadow: 0px 0px 3px 1px rgb(185, 184, 184);
- 
-
-
 }
 .section1-top-imgbox-box{
     position: relative;
@@ -348,24 +339,17 @@ border-top: 1px solid #E0E0E0;
 .section1-top-imgbox-box:hover .section1-top-imgbox-img{
     display: none;
 }
-
 .section1-top-imgbox_font{
     display: flex;
     flex-direction: column;
-  
    font-size: 1.0rem;
    margin-top: 5px;
    position: relative;
- 
-  
+   /* margin-left: 5px; */
 }
-
-
-
 .section1-top-imgbox_font_box{
     position: absolute;
     bottom: 50px;
-    
     background-color: rgba(255, 255, 255, 0.497);
     width: 395px;
     height: 0px;
@@ -373,54 +357,39 @@ border-top: 1px solid #E0E0E0;
     overflow: hidden;
     visibility: hidden;
     color: black;
-    
-  
 }
-
-
 .section1-top-imgbox:hover .section1-top-imgbox_font_box{
     visibility: visible;
-    height: 60px;
-    
-    
+    height: 60px;  
 }
-
-
-
+/* .section1-top-imgbox_font_box>span:nth-child(n){
+    margin-left: 5px;
+} */
 .section1-top-imgbox_font_box>span:nth-child(1){
     font-size: 1.3rem;
     color: black;
     text-shadow:1px 1px 3px  rgb(132, 131, 131) ;
-    /* background-color: #f0ebeb; */
-
+    margin-left: 10px;
 }
-
 .section1-top-imgbox_font_money{  
     color: black;
     padding-right: 10px;
     font-size: 1.2rem;
     text-shadow:1px 1px 3px  rgb(132, 131, 131) ;
+    margin-left: 10px;
 }
-
 .section1-top-imgbox-hover{
     display: flex;
     flex-direction: column;
-    
-  
 }
 .section1-top-imgbox-hover_icon{
     display: flex;
     justify-content: center;
     align-items: center;
- 
-
-
 }
 .section1-top-imgbox_icon_heart{
-    
    color: black;
     font-size: 2.5rem;
-   
 }
 .shopping-bag{
     margin-bottom: 2px;
@@ -429,7 +398,6 @@ border-top: 1px solid #E0E0E0;
     margin-top: 10px;
 }
 .modal-man, .modal-woman{
-    /* background-color:rgba(0,0,0,.3);  */
     justify-content:center; 
     align-items:center;    
     position:absolute;        
@@ -440,7 +408,6 @@ border-top: 1px solid #E0E0E0;
     z-index: 20;
     width: 100%;
   }
-  
   .modal{
     width: 1000px;
     max-width:1000px;
@@ -455,9 +422,7 @@ border-top: 1px solid #E0E0E0;
     align-items: center;
     flex-direction: column;
     color: #333333;
-
   }
- 
   .modal-body{
     width:100%;
     background-color:#ffffff;
@@ -470,34 +435,21 @@ border-top: 1px solid #E0E0E0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-     
   }
   .modal-body_photo>img:nth-child(1){
     width: 400px;
     height: 400px;
     margin: 20px;
-   
   }
   .modal-body_photo_bottom{
     display: flex;
     flex-direction: row;
-    
   }
   .modal-body_photo_bottom>img:nth-child(1){
     width: 150px;
     height: 100px;
     margin-right: 10px;
     margin-left: 10px;
-  }
-  .modal-body_photo_bottom>img:nth-child(2){
-    width: 150px;
-    height: 100px;
-    margin-right: 10px;
-  }
-  .modal-body_photo_bottom>img:nth-child(3){
-    width: 150px;
-    height: 100px;
-    margin-right: 10px;
   }
   .modal-body_font{
     display: flex;
@@ -506,63 +458,83 @@ border-top: 1px solid #E0E0E0;
     width: 900px;
     /* align-items: center; */
     font-size: 1.3rem;
-  
   }
   .modal-body_font_h1{
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 120px;
     align-items: center;
     font-weight: lighter;
   }
   .modal-body_font_h1>h5{
     color: #B388FF;
   }
-
-
-  .modal-body_font_span{
-   margin-top: 30px;
-   display: flex;
-   flex-direction: column;
-   font-size: 1.2rem;
-   margin-bottom: 30px;
-   margin-left: 10px;
- 
-   
-  }
   .modal-body-font_bottom h1{
-    margin-left: 20px;
-    margin-top: 20px;
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 2.0rem;
   }
   .modal-body-font_size{
     display: flex;
     flex-direction: row;
-    margin-top: 60px;
-   
+    margin-top: 90px;
+    margin-bottom: 40px;
   }
   .modal-body-font_size>span{
     margin-top: 10px;
     margin-left: 20px;
   }
-
   .modal-body-font_size>div:nth-child(n){
     margin-right: 10px;
-    margin-left: 20px;
-    border: 1px solid #333333;
-    width: 50px;
+    margin-left: 15px;
+    border: 1px solid #dad6d6;
+    width: 60px;
     height: 50px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-   
-
   }
- 
+  .modal-body-font_size>div:nth-child(n):hover{
+    border: 1px solid #333333;
+  }
+  .modal-body-font_total{
+    display: flex;
+    flex-direction: row;
+  }
+  .total_span{
+   padding-bottom: 50px;
+    margin-left: 20px;
+  }
+  .total_button{
+    margin-left: 20px;
+    position: relative;
+    
+  }
+  .count{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: absolute;
+  text-align: center;
+    top: 2px;
+    left: 60px;
+  }
+  .minus,.plus{
+    width: 50px;
+    height: 50px;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    margin-right: 70px;
+  }
   .modal-foot{
     width:100%;
     height:40px;
+    border-radius: 10px;
   }
   .pop-btn{
     display:inline-flex;
@@ -578,7 +550,6 @@ border-top: 1px solid #E0E0E0;
     border-right:1px solid #E0E0E0;
   }
 /* 정인경 : section1 bottom 시작 */
-
 .section1-bottom{
     display: flex;
     flex-direction: row;
@@ -586,12 +557,8 @@ border-top: 1px solid #E0E0E0;
     margin-top: 30px;
     height: auto;
     flex-wrap: wrap;
-
-    
-   
 }
 .section1-bottom-imgbox{
-   
     width: 400px;
     height: 450px;
     display: flex;
@@ -601,16 +568,12 @@ border-top: 1px solid #E0E0E0;
    justify-content: center;
    margin-top: 20px;
    /* background-color:whitesmoke; */
-   
 }
 .section1-bottom-imgbox-box{
     width: 400px;
     height: 400px;
     border-radius: 10px;
     box-shadow: 0px 0px 3px 1px rgb(185, 184, 184);
- 
-
-
 }
 .section1-bottom-imgbox-box{
     position: relative;
@@ -624,24 +587,17 @@ border-top: 1px solid #E0E0E0;
 .section1-bottom-imgbox-box:hover .section1-bottom-imgbox-img{
     display: none;
 }
-
 .section1-bottom-imgbox_font{
     display: flex;
     flex-direction: column;
-  
    font-size: 1.0rem;
    margin-top: 5px;
    position: relative;
- 
-  
+   /* margin-left: 5px; */
 }
-
-
-
 .section1-bottom-imgbox_font_box{
     position: absolute;
     bottom: 50px;
-    
     background-color: rgba(255, 255, 255, 0.497);
     width: 395px;
     height: 0px;
@@ -649,55 +605,36 @@ border-top: 1px solid #E0E0E0;
     overflow: hidden;
     visibility: hidden;
     color: black;
-    
-  
 }
-
-
 .section1-bottom-imgbox:hover .section1-bottom-imgbox_font_box{
     visibility: visible;
     height: 60px;
-    
-    
 }
-
-
-
 .section1-bottom-imgbox_font_box>span:nth-child(1){
     font-size: 1.3rem;
     color: black;
     text-shadow:1px 1px 3px  rgb(132, 131, 131) ;
-    /* background-color: #f0ebeb; */
-
+    margin-left: 10px;
 }
-
-/* 머니의 플로트를 삭제 7/20 */
 .section1-bottom-imgbox_font_money{  
     color: black;
     padding-right: 10px;
     font-size: 1.2rem;
     text-shadow:1px 1px 3px  rgb(132, 131, 131) ;
+    margin-left: 10px;
 }
-
 .section1-bottom-imgbox-hover{
     display: flex;
     flex-direction: column;
-    
-  
 }
 .section1-bottom-imgbox-hover_icon{
     display: flex;
     justify-content: center;
     align-items: center;
- 
-
-
 }
 .section1-bottom-imgbox_icon_heart{
-    
    color: black;
     font-size: 2.5rem;
-   
 }
 .shopping-bag{
     margin-bottom: 2px;
@@ -709,7 +646,6 @@ border-top: 1px solid #E0E0E0;
 .section2{
     width: 100%;
     background-color: white;
-    border-top: #E0E0E0 2px solid;
     height: auto;
     flex-wrap: wrap;
     padding-bottom: 36.5px;
@@ -728,10 +664,8 @@ border-top: 1px solid #E0E0E0;
     margin-top: 30px;
     height: auto;
     flex-wrap: wrap;
-   
 }
 .section2-top-imgbox{
-   
     width: 400px;
     height: 450px;
     display: flex;
@@ -739,18 +673,13 @@ border-top: 1px solid #E0E0E0;
    box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
   border-radius: 10px;
    justify-content: center;
-   /* background-color:whitesmoke; */
    margin-top: 20px;
-   
 }
 .section2-top-imgbox-box{
     width: 400px;
     height: 400px;
     border-radius: 10px;
     box-shadow: 0px 0px 3px 1px rgb(185, 184, 184);
- 
-
-
 }
 .section2-top-imgbox-box{
     position: relative;
@@ -764,24 +693,17 @@ border-top: 1px solid #E0E0E0;
 .section2-top-imgbox-box:hover .section2-top-imgbox-img{
     display: none;
 }
-
 .section2-top-imgbox_font{
     display: flex;
     flex-direction: column;
-  
    font-size: 1.0rem;
    margin-top: 5px;
    position: relative;
- 
-  
+   /* margin-left: 5px; */
 }
-
-
-
 .section2-top-imgbox_font_box{
     position: absolute;
     bottom: 50px;
-    
     background-color: rgba(255, 255, 255, 0.497);
     width: 395px;
     height: 0px;
@@ -789,55 +711,37 @@ border-top: 1px solid #E0E0E0;
     overflow: hidden;
     visibility: hidden;
     color: black;
-    
-  
 }
-
-
 .section2-top-imgbox:hover .section2-top-imgbox_font_box{
     visibility: visible;
     height: 60px;
-    
-    
 }
-
-
-
 .section2-top-imgbox_font_box>span:nth-child(1){
     font-size: 1.3rem;
     color: black;
     text-shadow:1px 1px 3px  rgb(132, 131, 131) ;
-    /* background-color: #f0ebeb; */
-
+    margin-left: 10px;
 }
-
 /* 머니의 플로트를 삭제 7/20 */
 .section2-top-imgbox_font_money{  
     color: black;
     padding-right: 10px;
     font-size: 1.2rem;
     text-shadow:1px 1px 3px  rgb(132, 131, 131) ;
+    margin-left: 10px;
 }
-
 .section2-top-imgbox-hover{
     display: flex;
     flex-direction: column;
-    
-  
 }
 .section2-top-imgbox-hover_icon{
     display: flex;
     justify-content: center;
     align-items: center;
- 
-
-
 }
 .section2-top-imgbox_icon_heart{
-    
    color: black;
     font-size: 2.5rem;
-   
 }
 .shopping-bag{
     margin-bottom: 2px;
@@ -846,8 +750,6 @@ border-top: 1px solid #E0E0E0;
     margin-top: 10px;
 }
 /*  정인경: sectin2-bottom 시작 */
-
-
 .section2-bottom{
     display: flex;
     flex-direction: row;
@@ -855,12 +757,8 @@ border-top: 1px solid #E0E0E0;
     margin-top: 30px;
     height: auto;
     flex-wrap: wrap;
-
-    
-   
 }
 .section2-bottom-imgbox{
-   
     width: 400px;
     height: 450px;
     display: flex;
@@ -869,17 +767,12 @@ border-top: 1px solid #E0E0E0;
   border-radius: 10px;
    justify-content: center;
    margin-top: 20px;
-   /* background-color:whitesmoke; */
-   
 }
 .section2-bottom-imgbox-box{
     width: 400px;
     height: 400px;
     border-radius: 10px;
     box-shadow: 0px 0px 3px 1px rgb(185, 184, 184);
- 
-
-
 }
 .section2-bottom-imgbox-box{
     position: relative;
@@ -893,24 +786,17 @@ border-top: 1px solid #E0E0E0;
 .section2-bottom-imgbox-box:hover .section2-bottom-imgbox-img{
     display: none;
 }
-
 .section2-bottom-imgbox_font{
     display: flex;
     flex-direction: column;
-  
    font-size: 1.0rem;
    margin-top: 5px;
    position: relative;
- 
-  
+   /* margin-left: 5px; */
 }
-
-
-
 .section2-bottom-imgbox_font_box{
     position: absolute;
     bottom: 50px;
-    
     background-color: rgba(255, 255, 255, 0.497);
     width: 395px;
     height: 0px;
@@ -918,55 +804,36 @@ border-top: 1px solid #E0E0E0;
     overflow: hidden;
     visibility: hidden;
     color: black;
-    
-  
 }
-
-
 .section2-bottom-imgbox:hover .section2-bottom-imgbox_font_box{
     visibility: visible;
-    height: 60px;
-    
-    
+    height: 60px; 
 }
-
-
-
 .section2-bottom-imgbox_font_box>span:nth-child(1){
     font-size: 1.3rem;
     color: black;
     text-shadow:1px 1px 3px  rgb(132, 131, 131) ;
-    /* background-color: #f0ebeb; */
-
+    margin-left: 10px;
 }
-
-/* 머니의 플로트를 삭제 7/20 */
 .section2-bottom-imgbox_font_money{  
     color: black;
     padding-right: 10px;
     font-size: 1.2rem;
     text-shadow:1px 1px 3px  rgb(132, 131, 131) ;
+    margin-left: 10px;
 }
-
 .section2-bottom-imgbox-hover{
     display: flex;
     flex-direction: column;
-    
-  
 }
 .section2-bottom-imgbox-hover_icon{
     display: flex;
     justify-content: center;
     align-items: center;
- 
-
-
 }
 .section2-bottom-imgbox_icon_heart{
-    
    color: black;
     font-size: 2.5rem;
-   
 }
 .shopping-bag{
     margin-bottom: 2px;
@@ -974,7 +841,6 @@ border-top: 1px solid #E0E0E0;
 .xi-zoom-in{
     margin-top: 10px;
 }
-
 /* /content-area */
 /* 0721 content_area img 추가 및 효과 추가 수정자 : 김형준*/
 .content_area1{

@@ -10,6 +10,10 @@ const modal_confirm = document.querySelectorAll(".confirm");//모달의 확인 �
 const modal_close = document.querySelectorAll(".close");// 모달의 닫기 버튼
 let shopping_icon_woman = document.querySelectorAll(".shopping_icon_woman");//woman상품의 장바구니 아이콘
 let shopping_icon_man = document.querySelectorAll(".shopping_icon_man");//man상품의 장바구니 아이콘
+const minusBtn = document.querySelectorAll('.minus');// 수량 -
+const plusBtn = document.querySelectorAll('.plus');// 수량 +
+const count = document.querySelectorAll('.count'); // 수량이 찍힐 input
+let inboundNum = 0; //입고 수량
 
 console.log(shopping_icon_man);
 console.log(shopping_icon_woman);
@@ -45,6 +49,17 @@ for(let i=0; i<modal_close.length; i++){
         section_modal_woman.style.display = 'none';
     })
 }
+// modal 수량 버튼
+minusBtn[0].addEventListener('click',function(){ //입고
+    if(inboundNum >0){ // 0 밑으로는 안 내려감
+        inboundNum--;
+        count[0].value = inboundNum;
+    }
+})
+plusBtn[0].addEventListener('click',function(){
+    inboundNum++;
+    count[0].value = inboundNum;
+})
 
 // <!-- 7월 23일 오후 15:12 content_area3_img 모달 기능  최성원-->
 let area3_modal = document.getElementById('area3_modal');
