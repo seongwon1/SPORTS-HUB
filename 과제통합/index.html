@@ -16,13 +16,14 @@
 <!-- header로고 ,navbar dropdown  구성 및 디자인 수정자 박효근 -->
 <!-- 07.22 header HOME 링크연결 , header 이미지 크기 및 이미지 수정  수정자 박효근  -->
 <!-- 07.22 header 반응형 관련 크기 조절 수정자:김형준 -->
+<!-- 25 menu1 -> navbar_menu_ul 수정   수정자 박효근  -->
 <div class="header">
     <div class="navbar">
         <div class="navbar_logo">
             <h1>SPORTS <span>HUB</span></h1>
         </div>
         <div class="navbar_menu">
-            <ul class="menu1">
+            <ul class="navbar_menu_ul">
                 <li class="menu_li">
                     NEW
                 </li>
@@ -110,6 +111,7 @@
 <!-- header 영역 종료 -->
 
 <!-- 7월 24일 side menu 작업 김현구-->
+<!-- 7월 25일 label id 수정 김현구-->
 <div class="main">
     <div class="side">
         <div class="side_menu">
@@ -129,32 +131,106 @@
             </div>
             <div class="side_menu_bottom">
             <div class="side_menu_clothes">
-                <label for="clothes">
+                <label for="clothes" class="side_menu_label">
                 <h2 id="clothes">의류</h2>
                 <i class="uil uil-plus"></i>
                 </label>
+                <div class="side_menu_dropdown">
+                    <ul class="side_menu_Add">
+                        <label for="Tshirts">
+                        <li>상의<input type="checkbox" id="Tshirts"></li> 
+                        </label>
+                        <label for="outer">
+                        <li>아우터<input type="checkbox" id="outer"></li>
+                        </label>
+                        <label for="hoode">
+                        <li>후드 <input type="checkbox" id="hoode"></li>
+                        </label>
+                        <label for="pants">
+                        <li>하의 <input type="checkbox" id="pants"></li>
+                        </label>
+                    </ul>
+                </div>
             </div>
             <div class="side_menu_shoes">
-                <label for="shoes">
+                <label for="shoes" class="side_menu_label">
                 <h2 id="shoes">신발</h2>
                 <i class="uil uil-plus"></i>
                 </label>
+                <div class="side_menu_dropdown">
+                    <ul class="side_menu_Add">
+                        <label for="runningShoes">
+                        <li>러닝화<input type="checkbox" id="runningShoes"></li> 
+                        </label>
+                        <label for="lifeStyle">
+                        <li>라이프스타일<input type="checkbox" id="lifeStyle"></li>
+                        </label>
+                        <label for="sandel">
+                        <li>샌들 & 슬리퍼 <input type="checkbox" id="sandel"></li>
+                        </label>
+                    </ul>
+                </div>
             </div>
             <div class="side_menu_brands">
-                <label for="brands">
+                <label for="brands" class="side_menu_label">
                     <h2 id="brands">브랜드</h2>
                     <i class="uil uil-plus"></i>
                     </label>
+                    <div class="side_menu_dropdown">
+                        <ul class="side_menu_Add">
+                            <label for="nike">
+                            <li>나이키<input type="checkbox" id="nike"></li> 
+                            </label>
+                            <label for="adidas">
+                            <li>아디다스<input type="checkbox" id="adidas"></li>
+                            </label>
+                            <label for="newbalance">
+                            <li>뉴발란스 <input type="checkbox" id="newbalance"></li>
+                            </label>
+                            <label for="descente">
+                            <li>데상트 <input type="checkbox" id="descente"></li>
+                            </label>
+                            <label for="puma">
+                            <li>퓨마 <input type="checkbox" id="puma"></li>
+                            </label>
+                            <label for="reebok">
+                            <li>리복 <input type="checkbox" id="reebok"></li>
+                            </label>
+                        </ul>
+                    </div>
             </div>
             <div class="side_menu_sports">
-                <label for="brands">
+                <label for="brands" class="side_menu_label">
                     <h2 id="brands">스포츠</h2>
                     <i class="uil uil-plus"></i>
                     </label>
+                    <div class="side_menu_dropdown">
+                        <ul class="side_menu_Add">
+                            <label for="soccer">
+                            <li>축구<input type="checkbox" id="soccer"></li> 
+                            </label>
+                            <label for="golf">
+                            <li>골프<input type="checkbox" id="golf"></li>
+                            </label>
+                            <label for="tenis">
+                            <li>테니스 <input type="checkbox" id="tenis"></li>
+                            </label>
+                            <label for="basketball">
+                            <li>농구 <input type="checkbox" id="basketball"></li>
+                            </label>
+                            <label for="badminton">
+                            <li>배드민턴 <input type="checkbox" id="badminton"></li>
+                            </label>
+                            <label for="swim">
+                            <li>수영 <input type="checkbox" id="swim"></li>
+                            </label>
+                        </ul>
+                    </div>
             </div>
         </div>
     </div>
     </div>
+    
     <!--section 시작 정인경 7월 24일-->
          <!--수정사항 
         1. 각 사진 첨부 및 아이콘 위치 변경
@@ -166,54 +242,8 @@
             <div class="section1">
                 <h1>Women</h1>
                 <div class="section1-top">
-                    <div class="section1-top-imgbox"> 
-                        <div class="modal-container">
-                            <div class="modal-wrap" id="modal1">
-                                <div class="modal">
-                                    <div class="modal-body">
-                                        <div class="modal-body_photo">
-                                             <img src="img/여자/나이키 브라탑/나이키 브라탑  검정.png" alt="">
-                                             <div class="modal-body_photo_bottom">
-                                                <img src="img/여자/나이키 브라탑/나이키 브라탑 검정 뒷면.png" alt="">
-                                             <img src="img/여자/나이키 브라탑/나이키 브라탑 보라색.png" alt="">
-                                             <img src="img/여자/나이키 브라탑/나이키 보라 브라탑 뒷면.png" alt="">
-                                             </div>
-                                             
-                                        </div>
-                                        <div class="modal-body_font" >
-                                            <div class="modal-body_font_h1">
-                                                <h5>SPORTS <span>Hub</span></h5>
-                                                <h1>스우시 스포츠 브라</h1>
-                                            </div>
-                                           
-                                            <div class="modal-body_font_span">
-                                            <span> - 우수한 가격 메리트의 1+1 기능성 라운드 티셔츠</span>
-                                            <span> - 우수한 가격 메리트의 1+1 기능성 라운드 티셔츠</span>
-                                            <span> - 우수한 가격 메리트의 1+1 기능성 라운드 티셔츠</span>
-                                            <span> - 베이직 컬러로 구성되어 우수한 가성비 제품</span>
-                                            </div>
-                                            
-                                            <div class="modal-body-font_bottom h1"> <h1 > 49,000 원</h1></div>
-                                           <div class="modal-body-font_size">
-                                            <span>사이즈</span>
-                                            <div>XS</div>
-                                            <div>S</div>
-                                            <div>M</div>
-                                            <div>L</div>
-                                            <div>XL</div>
-                                           </div>
+                    <div class="section1-top-imgbox">
 
-                                        </div>
-
-                                    </div>
-                                    <div class="modal-foot">
-                                        <span class="pop-btn confirm" id="confirm">확인</span>
-                                        <span class="pop-btn close" id="close">창 닫기</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                      
                         <div class="section1-top-imgbox-box">
                             <img src="img/여자/나이키 브라탑/나이키 브라탑  검정.png" alt="">
                             <img src="img/여자/나이키 브라탑/나이키 브라탑 보라색.png" alt="" class="section1-top-imgbox-img">
@@ -230,12 +260,12 @@
                             </div>
                             <!--section1-top-imgbox_font_box-->
 
-
+_
                             <div class="section1-top-imgbox-hover">
                                 <div class="section1-top-imgbox-hover_icon">
                                     <div class="section1-top-imgbox_icon_heart">
                                         <i class="xi-heart-o"></i>
-                                        <i class="uil uil-shopping-bag" id="shopping"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_woman"></i>
                                         <i class="xi-zoom-in"></i>
                                     </div>
                                 </div>
@@ -250,6 +280,48 @@
 
                     </div>
                     <!--section1-bottom-imgbox -->
+                    
+                            <!-- 모달 섹션 -->
+                            <div class="modal-wrap modal-woman">
+                                <div class="modal">
+                                    <div class="modal-body">
+
+                                        <div class="modal-body_photo photo_woman">
+                                            <img src="img/여자/나이키 브라탑/나이키 브라탑  검정.png" alt="">
+                                            <div class="modal-body_photo_bottom">
+                                                <img src="img/여자/나이키 브라탑/나이키 보라 브라탑 뒷면.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-body_font font_woman">
+                                            <div class="modal-body_font_h1">
+                                                <h5>SPORTS HUB</h5>
+                                                <h1>스우시 스포츠 브라</h1>
+                                            </div>
+                                        
+                                            <div class="modal-body-font_bottom h1">
+                                                <h1> 49,000 원</h1>
+                                            </div>
+                                            <div class="modal-body-font_size">
+                                                <span>사이즈</span>
+                                                <div>XS</div>
+                                                <div>S</div>
+                                                <div>M</div>
+                                                <div>L</div>
+                                                <div>XL</div>
+                                            </div>
+                                        </div>
+                                        </div>
+
+                                    <div class="modal-foot">
+                                        <span class="pop-btn confirm" id="confirm">확인</span>
+                                        <span class="pop-btn close" id="close">창 닫기</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- 모달 -->
+
                     <div class="section1-top-imgbox">
                         
                         
@@ -272,7 +344,7 @@
                                 <div class="section1-top-imgbox-hover_icon">
                                     <div class="section1-top-imgbox_icon_heart">
                                         <i class="xi-heart-o"></i>
-                                        <i class="uil uil-shopping-bag" id="shopping"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_woman"></i>
                                         <i class="xi-zoom-in"></i>
                                     </div>
                                     <div class="section1-top-imgbox_icon_bascket">
@@ -312,7 +384,7 @@
                                 <div class="section1-top-imgbox-hover_icon">
                                     <div class="section1-top-imgbox_icon_heart">
                                         <i class="xi-heart-o"></i>
-                                        <i class="uil uil-shopping-bag" id="shopping"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_woman"></i>
                                         <i class="xi-zoom-in"></i>
                                     </div>
                                     <div class="section1-top-imgbox_icon_bascket">
@@ -357,7 +429,7 @@
                                 <div class="section1-bottom-imgbox-hover_icon">
                                     <div class="section1-bottom-imgbox_icon_heart">
                                         <i class="xi-heart-o"></i>
-                                        <i class="uil uil-shopping-bag" id="shopping"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_woman"></i>
                                         <i class="xi-zoom-in"></i>
                                     </div>
 
@@ -397,7 +469,7 @@
                                 <div class="section1-bottom-imgbox-hover_icon">
                                     <div class="section1-bottom-imgbox_icon_heart">
                                         <i class="xi-heart-o"></i>
-                                        <i class="uil uil-shopping-bag" id="shopping"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_woman"></i>
                                         <i class="xi-zoom-in"></i>
                                     </div>
 
@@ -436,7 +508,7 @@
                                 <div class="section1-bottom-imgbox-hover_icon">
                                     <div class="section1-bottom-imgbox_icon_heart">
                                         <i class="xi-heart-o"></i>
-                                        <i class="uil uil-shopping-bag" id="shopping"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_woman"></i>
                                         <i class="xi-zoom-in"></i>
                                     </div>
 
@@ -485,7 +557,7 @@
                                 <div class="section2-top-imgbox-hover_icon">
                                     <div class="section2-top-imgbox_icon_heart">
                                         <i class="xi-heart-o"></i>
-                                        <i class="uil uil-shopping-bag"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_man"></i>
                                         <i class="xi-zoom-in"></i>
                                     </div>
                                     <div class="section2-top-imgbox_icon_bascket">
@@ -525,7 +597,7 @@
                                 <div class="section2-top-imgbox-hover_icon">
                                     <div class="section2-top-imgbox_icon_heart">
                                         <i class="xi-heart-o"></i>
-                                        <i class="uil uil-shopping-bag"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_man"></i>
                                         <i class="xi-zoom-in"></i>
                                     </div>
                                 </div>
@@ -563,7 +635,7 @@
                                 <div class="section2-top-imgbox-hover_icon">
                                     <div class="section2-top-imgbox_icon_heart">
                                         <i class="xi-heart-o"></i>
-                                        <i class="uil uil-shopping-bag"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_man"></i>
                                         <i class="xi-zoom-in"></i>
                                     </div>
                                     <div class="section2-top-imgbox_icon_bascket">
@@ -577,7 +649,47 @@
 
                         </div>
                         <!--section2-top-imgbox_font -->
+                         
+                        <!-- 모달 섹션 -->
+                         <div class="modal-wrap modal-man">
+                            <div class="modal">
+                                <div class="modal-body">
 
+                                    <div class="modal-body_photo photo_man">
+                                        <img src="img/여자/나이키 브라탑/나이키 브라탑  검정.png" alt="">
+                                        <div class="modal-body_photo_bottom">
+                                            <img src="img/여자/나이키 브라탑/나이키 보라 브라탑 뒷면.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-body_font font_man">
+                                        <div class="modal-body_font_h1">
+                                            <h5>SPORTS HUB</h5>
+                                            <h1>스우시 스포츠 브라</h1>
+                                        </div>
+                                    
+                                        <div class="modal-body-font_bottom h1">
+                                            <h1> 49,000 원</h1>
+                                        </div>
+                                        <div class="modal-body-font_size">
+                                            <span>사이즈</span>
+                                            <div>XS</div>
+                                            <div>S</div>
+                                            <div>M</div>
+                                            <div>L</div>
+                                            <div>XL</div>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                <div class="modal-foot">
+                                    <span class="pop-btn confirm" id="confirm">확인</span>
+                                    <span class="pop-btn close" id="close">창 닫기</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- 모달 -->
 
                     </div>
                     <!--section2-bottom-imgbox -->
@@ -608,7 +720,7 @@
                                 <div class="section2-bottom-imgbox-hover_icon">
                                     <div class="section2-bottom-imgbox_icon_heart">
                                         <i class="xi-heart-o"></i>
-                                        <i class="uil uil-shopping-bag"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_man"></i>
                                         <i class="xi-zoom-in"></i>
                                     </div>
                                     <div class="section2-bottom-imgbox_icon_bascket">
@@ -651,7 +763,7 @@
                                 <div class="section2-bottom-imgbox-hover_icon">
                                     <div class="section2-bottom-imgbox_icon_heart">
                                         <i class="xi-heart-o"></i>
-                                        <i class="uil uil-shopping-bag"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_man"></i>
                                         <i class="xi-zoom-in"></i>
                                     </div>
                                     <div class="section2-bottom-imgbox_icon_bascket">
@@ -693,7 +805,7 @@
                                 <div class="section2-bottom-imgbox-hover_icon">
                                     <div class="section2-bottom-imgbox_icon_heart">
                                         <i class="xi-heart-o"></i>
-                                        <i class="uil uil-shopping-bag"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_man"></i>
                                         <i class="xi-zoom-in"></i>
                                     </div>
                                     <div class="section2-bottom-imgbox_icon_bascket">

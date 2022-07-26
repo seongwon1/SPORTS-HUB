@@ -1,21 +1,50 @@
-const modal = document.querySelector('.modal-wrap');
-const btnOpenPopup = document.querySelector('#shopping')
+//섹션 모달 0725 19:07 김형준
+const section_modal = document.querySelector(".modal-wrap");
+const section_modal_woman = document.querySelector(".modal-woman");//모달 woman
+const section_modal_man = document.querySelector(".modal-man");//모달 man
+const section_modal_img_man = document.querySelector('.photo_man');//모달 이미지를 바꿀 때 쓸 변수
+const section_modal_img_woman = document.querySelector('.photo_woman');//모달 이미지를 바꿀 때 쓸 변수
+const section_modal_font_woman = document.querySelector('.font_woman');//모달 텍스트를 바꿀 때 쓸 변수
+const section_modal_font_man = document.querySelector('.font_man');//모달 텍스트를 바꿀 때 쓸 변수
+const modal_confirm = document.querySelectorAll(".confirm");//모달의 확인 버튼
+const modal_close = document.querySelectorAll(".close");// 모달의 닫기 버튼
+let shopping_icon_woman = document.querySelectorAll(".shopping_icon_woman");//woman상품의 장바구니 아이콘
+let shopping_icon_man = document.querySelectorAll(".shopping_icon_man");//man상품의 장바구니 아이콘
 
-btnOpenPopup.addEventListener('click', () => {
-  modal.style.display = 'block';
-});
+console.log(shopping_icon_man);
+console.log(shopping_icon_woman);
 
-const endmodal = document.querySelector('.modal-wrap');
-const confirm = document.querySelector('#confirm');
-confirm.addEventListener('click',() => {
-    endmodal.style.display = 'none';
-});
+for(let i=0; i<shopping_icon_woman.length; i++){
+    shopping_icon_woman[i].addEventListener('click',function(){
+        section_modal_woman.style.display = 'block';
+        section_modal_img_woman.children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[1].src;
+        section_modal_img_woman.children[1].children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].src;
+        section_modal_font_woman.children[0].children[1].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[0].childNodes[0].textContent;
+        section_modal_font_woman.children[2].children[0].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[1].childNodes[0].textContent;
+    })
+}
 
-const finishmodal = document.querySelector('.modal-wrap');
-const buttom = document.querySelector('#close');
-buttom.addEventListener('click',() => {
-    finishmodal.style.display = 'none';
-});
+for(let i=0; i<shopping_icon_man.length; i++){
+    shopping_icon_man[i].addEventListener('click',function(){
+        section_modal_man.style.display = 'block';
+        section_modal_img_man.children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[1].src;
+        section_modal_img_man.children[1].children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].src;
+        section_modal_font_man.children[0].children[1].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[0].childNodes[0].textContent;
+        section_modal_font_man.children[2].children[0].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[1].childNodes[0].textContent;
+    })
+}
+for(let i=0; i<modal_confirm.length; i++){
+    modal_confirm[i].addEventListener('click',function(){
+        section_modal_woman.style.display = 'none';
+        section_modal_man.style.display = 'none';
+    })
+}
+for(let i=0; i<modal_close.length; i++){
+    modal_close[i].addEventListener('click',function(){
+        section_modal_man.style.display = 'none';
+        section_modal_woman.style.display = 'none';
+    })
+}
 
 // <!-- 7월 23일 오후 15:12 content_area3_img 모달 기능  최성원-->
 let area3_modal = document.getElementById('area3_modal');
@@ -69,3 +98,20 @@ function changeimg(image){
 } 
 
 // <!-- 7월 23일 오후 15:12 content_area3_img 모달 기능 여기까지 최성원-->
+
+
+let side_menu_add = document.querySelectorAll('.side_menu_label')
+let side_menu_flag = true;
+for(i=0;i<side_menu_add.length;i++){
+    side_menu_add[i].addEventListener('click',function(){
+    if(side_menu_flag == true){
+        this.parentNode.children[1].children[0].style.display="block";
+        side_menu_flag = false;
+    }
+    else{
+        this.parentNode.children[1].children[0].style.display="none";
+        side_menu_flag = true;
+        
+    }
+})
+}

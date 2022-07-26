@@ -21,6 +21,7 @@ body{
 /* 07.20 header 구성 및 디자인 수정자 박효근 */
 /* 07.21 header로고 ,navbar dropdown  구성 및 디자인 수정자 박효근 */
 /* 07.22 header HOME 링크연결 , header 이미지 크기 및 이미지 수정  수정자 박효근 */
+/* 07.25 menu1 -> navbar_menu_ul 수정 수정자 박효근 */
 .header{
     width: 100%;
     height: auto;
@@ -51,7 +52,7 @@ body{
     height: 100%;
     float: left;
 }
-.menu1 {
+.navbar_menu_ul {
     width: 100%;
     height: 100%;
     display: flex;
@@ -61,7 +62,7 @@ body{
     line-height: 60px;
     position: relative;
 }
-.menu1 > li:hover,
+.navbar_menu_ul > li:hover,
 #menu_li_a:hover {
     color: #B388FF;
 }
@@ -69,11 +70,11 @@ body{
     text-decoration: none;
     color: #FFF;
 }
-.menu1 > li:hover ~ .navbar_menu_drop,
+.navbar_menu_ul > li:hover ~ .navbar_menu_drop,
 .navbar_menu_drop:hover{
     height: 500px;
 }
-.navbar_menu .menu1>li {
+.navbar_menu .navbar_menu_ul>li {
     display: inline-block;
     width: 25%;
     height: 100%;
@@ -172,9 +173,10 @@ body{
 /* header 작업 */
 
 /* side menu 작업 7월 24일 김현구*/
+/* height auto로 수정*/
 .side_menu{
     width: 90%;
-    height: 700px;
+    height: auto;
     background-color: #fff;
     border: 2px solid #E0E0E0;
     border-radius: 20px;
@@ -225,10 +227,14 @@ body{
 }
 .side_menu_bottom div{
     width: 100%;
-    height: 60px;
-    border-top: 1px solid #E0E0E0;
-    margin-top: 20px;
-    
+    height: auto;
+    margin-top: 40px;
+
+    /* 7월 25일 추가 김현구*/
+    /* dropdown 메뉴 구현 */
+}
+.side_menu_bottom div:not(.side_menu_dropdown){
+border-top: 1px solid #E0E0E0;
 }
 .side_menu_bottom label h2{
     display: inline-block;
@@ -239,6 +245,17 @@ body{
     font-size: 1.5rem;
     cursor: pointer;
     width: 20%;
+}
+.side_menu_Add{
+    list-style-type: none;
+    font-size: 1rem; 
+    display: none;
+    line-height: 30px;
+}
+.side_menu_dropdown input[type=checkbox]{
+    float: right;
+    margin-right: 8.5%;
+    
 }
 
 /* 7월 20일 23:38 정인경 */
@@ -409,7 +426,7 @@ body{
 .xi-zoom-in{
     margin-top: 10px;
 }
-.modal-wrap{
+.modal-man, .modal-woman{
     /* background-color:rgba(0,0,0,.3);  */
     justify-content:center; 
     align-items:center;    
@@ -419,11 +436,7 @@ body{
     display:none; 
     padding:15px; 
     z-index: 20;
-  
-  }
-
-  .modal-container{
-    width:100%;
+    width: 100%;
   }
   
   .modal{
@@ -441,13 +454,12 @@ body{
     flex-direction: column;
     color: #333333;
 
-
   }
  
   .modal-body{
     width:100%;
     background-color:#ffffff;
-    height: 550px;
+    height: 560px;
     display: flex;
     flex-direction: row;
   }
@@ -473,6 +485,7 @@ body{
     width: 150px;
     height: 100px;
     margin-right: 10px;
+    margin-left: 10px;
   }
   .modal-body_photo_bottom>img:nth-child(2){
     width: 150px;
@@ -698,6 +711,7 @@ body{
     height: auto;
     flex-wrap: wrap;
     padding-bottom: 36.5px;
+    position: relative;
 }
 .section2>h1{
     padding-left: 100px;
