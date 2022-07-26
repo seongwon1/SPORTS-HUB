@@ -4,6 +4,12 @@ const pw2 = document.querySelector('#pw2');
 const names = document.querySelector('#name');
 const phone = document.querySelector('#phone');
 const birth = document.querySelector('#birth');
+const male = document.querySelector('#male');
+const female = document.querySelector('#female');
+const male_check = document.querySelector('.male_check');
+const female_check = document.querySelector('.female_check');
+const gender_check_icon = document.getElementsByClassName('xi-check');
+const agree = document.getElementsByClassName('agree');
 
 const id_alert = document.querySelector('#id_alert');
 const pw1_alert = document.querySelector('#pw1_alert');
@@ -11,33 +17,33 @@ const pw2_alert = document.querySelector('#pw2_alert');
 const name_alert = document.querySelector('#name_alert');
 const phone_alert = document.querySelector('#phone_alert');
 const birth_alert = document.querySelector('#birth_alert');
+const gender_alert = document.querySelector('#gender_alert');
 
 const SignIn_Btn = document.querySelector('.SignIn_Btn');
 // input 의 id값들
-
 
 // 정규표현식을 리터럴 방식으로 사용
 let emp = /\s/g; // 모든 공백
 // const NUM_CHECK = /^[0-9]*$/;
 //숫자만 체크
 
-const ID_CHECK =  /^(?=.*[a-zA-Z])[-a-zA-Z0-9_.]{2,10}$/;  // 특수문자 / 문자 / 숫자 포함 형태의 2~10자리 이내의 아이디 정규식
+const ID_CHECK =  /^[A-za-z0-9]{5,15}$/g; // 영문 대문자 또는 소문자 또는 숫자로 시작, 길이 5~15자
 //숫자와 영문의 대소문자만 체크
 
-const PW1_CHECK = /(?=.*\d)+(?=.*[~`!@#$%\^&*()-+=])+(?=.*[a-z])(?=.*[A-Z])+.{0,}$/
-const PW2_CHECK = /(?=.*\d)+(?=.*[~`!@#$%\^&*()-+=])+(?=.*[a-z])(?=.*[A-Z])+.{0,}$/
-//영문의 대문자, 소문자 그리고 특수문자, 숫자를 필수적으로 1개 이상 포함
+const PW1_CHECK = /^(?=.*[a-zA-z])(?=.*[0-9])(?=.*[$`~!@$!%*#^?&\\(\\)\-_=+]).{8,16}$/;
+const PW2_CHECK = /^(?=.*[a-zA-z])(?=.*[0-9])(?=.*[$`~!@$!%*#^?&\\(\\)\-_=+]).{8,16}$/;
+// 8 ~ 16자 영문, 숫자, 특수문자를 최소 한가지씩 조합
 
 const NAME_CHECK = /^[가-힣]{2,5}$/;
 //이름은 한글만 가능 (2~5글자 사이 자음, 모음을 하나만 사용하면 체크 안됨)
 
-const IDENTITY_CHECK = /\d{6}\-[1-4]\d{6}/;
-//6자리의 숫자 이후 하이픈(-)이 나오고 그 뒤에 한 자리는 1~4사이 숫자만 
-//그 뒤엔 아무 숫자 6자리
+// const IDENTITY_CHECK = /\d{6}\-[1-4]\d{6}/;
+// //6자리의 숫자 이후 하이픈(-)이 나오고 그 뒤에 한 자리는 1~4사이 숫자만 
+// //그 뒤엔 아무 숫자 6자리
 
-const MAIL_CHECK = /\w+@\w+\.\w+(\.\w+)?/;
-//아무 단어 뒤에 @가 나오고 아무 단어가 나온후
-//마침표(.)가 나온 뒤 아무 단어
+// const MAIL_CHECK = /\w+@\w+\.\w+(\.\w+)?/;
+// //아무 단어 뒤에 @가 나오고 아무 단어가 나온후
+// //마침표(.)가 나온 뒤 아무 단어
 
 const PHONENUMBER_CHECK = /^\d{2,3}-\d{3,4}-\d{4}$/;
 //첫자리는 2~3자리 숫자 뒤 하이픈
@@ -48,6 +54,7 @@ const BIRTH_CHECK = /^(19[0-9][0-9]|20\d{2})-(0[0-9]|1[0-2])-(0[1-9]|[1-2][0-9]|
 
 
 SignIn_Btn.addEventListener('click',function(){
+    // 아이디 검사
     if(!id.value.match(ID_CHECK)){
         id_alert.style.fontSize= '15px';
         id_alert.style.display= 'display';
@@ -67,6 +74,7 @@ SignIn_Btn.addEventListener('click',function(){
 
     } 
     else if(!pw1.value.match(PW1_CHECK)){
+        // 패스워드 검사
         pw1_alert.style.fontSize= '15px';
         pw1_alert.style.display= 'display';
         pw1_alert.style.color = 'red';
@@ -85,6 +93,7 @@ SignIn_Btn.addEventListener('click',function(){
     }
 
     else if(!pw2.value.match(PW2_CHECK)){
+        // 비밀번호 재입력 검사
         pw2_alert.style.fontSize= '15px';
         pw2_alert.style.display= 'display';
         pw2_alert.style.color = 'red';
@@ -119,6 +128,7 @@ SignIn_Btn.addEventListener('click',function(){
         })
     } 
     else if(!phone.value.match(PHONENUMBER_CHECK)){
+        // 전화번호 검사
         phone_alert.style.fontSize= '15px';
         phone_alert.style.display= 'display';
         phone_alert.style.color = 'red';
@@ -152,16 +162,42 @@ SignIn_Btn.addEventListener('click',function(){
             }
         })
     } 
+    else if(!(male.checked || female.checked)){
+        male_check.style.borderColor = 'red';
+        gender_alert.style.color = 'red';
+        female_check.style.borderColor = 'red';
+        gender_alert.style.fontSize= '15px';
+        gender_alert.style.display= 'block';
+        gender_alert.innerHTML = "필수 입력 항목입니다.";
+        
+    }
+    else if(!(agree[0].checked && agree[1].checked)){
+        alert("약관 및 개인정보 동의해주세요");
+    }
     else{
-        alert("입력성공.");
+        alert("회원가입 완료.");
     } 
-
 })
 
-
-
-
-
+// 성별 라디오 버튼 미체크 시 코드는 정상적이지만
+// 체크 시 코드는 미작동하여 따로 함수를 지정하고 onclick으로 함수를 불러와 적용했음. 
+function gender_check(){
+    if(male.checked){
+        male_check.style.borderColor = 'gray';
+        female_check.style.borderColor = '';
+        gender_check_icon[0].style.display = 'block';
+        gender_check_icon[1].style.display = '';
+        gender_alert.style.display= '';
+        gender_alert.innerHTML = "";
+    } else if(female.checked){
+        male_check.style.borderColor = '';
+        female_check.style.borderColor = 'gray';
+        gender_check_icon[1].style.display = 'block';
+        gender_check_icon[0].style.display = '';
+        gender_alert.style.display= '';
+        gender_alert.innerHTML = "";
+    }
+}
 
 
 
