@@ -115,3 +115,78 @@ for(i=0;i<side_menu_add.length;i++){
     }
 })
 }
+
+// 0726 popup 기능 추가 수정자 박효근
+let popup1 = document.querySelector('.popup1');
+let popup2 = document.querySelector('.popup2');
+let popup3 = document.querySelector('.popup3');
+let popup4 = document.querySelector('.popup4'); 
+let popup5 = document.querySelector('.popup5');
+let popup6 = document.querySelector('.popup6');
+let popup7 = document.querySelector('.popup7');
+let popup8 = document.querySelector('.popup8'); 
+let hidden1 = document.querySelector('.hidden1');
+let hidden2 = document.querySelector('.hidden2');
+let hidden3 = document.querySelector('.hidden3');
+let hidden4 = document.querySelector('.hidden4');
+let hidden5 = document.querySelector('.hidden5');
+let hidden6 = document.querySelector('.hidden6');
+let hidden7 = document.querySelector('.hidden7');
+let hidden8 = document.querySelector('.hidden8');
+setTimeout(function(){
+    popup1.style.transform = 'translateX(10%)'
+    popup5.style.transform = 'translateX(10%)'
+}, 2000);
+setTimeout(function(){
+    popup1.style.transform = 'translateX(-200%)'
+    popup5.style.transform = 'translateX(-200%)'
+}, 12000);
+setTimeout(function(){
+    popup2.style.transform = 'translateX(10%)'
+    popup6.style.transform = 'translateX(10%)'
+}, 20000);
+setTimeout(function(){
+    popup2.style.transform = 'translateX(-200%)'
+    popup6.style.transform = 'translateX(-200%)'
+}, 30000);
+setTimeout(function(){
+    popup3.style.transform = 'translateX(10%)'
+    popup7.style.transform = 'translateX(10%)'
+}, 38000);
+setTimeout(function(){
+    popup3.style.transform = 'translateX(-200%)'
+    popup7.style.transform = 'translateX(-200%)'
+}, 48000);
+setTimeout(function(){
+    popup4.style.transform = 'translateX(10%)'
+    popup8.style.transform = 'translateX(10%)'
+}, 56000);
+setTimeout(function(){
+    popup4.style.transform = 'translateX(-200%)'
+    popup8.style.transform = 'translateX(-200%)'
+}, 66000);
+hidden1.addEventListener('click',function(){
+    popup1.style.transform = 'translateX(-200%)'
+});
+hidden2.addEventListener('click',function(){
+    popup2.style.transform = 'translateX(-200%)'
+});
+hidden3.addEventListener('click',function(){
+    popup3.style.transform = 'translateX(-200%)'
+});
+hidden4.addEventListener('click',function(){
+    popup4.style.transform = 'translateX(-200%)'
+});
+hidden5.addEventListener('click',function(){
+    popup5.style.transform = 'translateX(-200%)'
+});
+hidden6.addEventListener('click',function(){
+    popup6.style.transform = 'translateX(-200%)'
+});
+hidden7.addEventListener('click',function(){
+    popup7.style.transform = 'translateX(-200%)'
+});
+hidden8.addEventListener('click',function(){
+    popup8.style.transform = 'translateX(-200%)'
+});
+// popup 끝

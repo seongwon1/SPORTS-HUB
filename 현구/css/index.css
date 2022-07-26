@@ -174,11 +174,12 @@ body{
 
 /* side menu 작업 7월 24일 김현구*/
 /* height auto로 수정*/
+/* 7월 26일 border blur */
 .side_menu{
     width: 90%;
     height: auto;
     background-color: #fff;
-    border: 2px solid #E0E0E0;
+    box-shadow: 0 0 5px;
     border-radius: 20px;
     /* position: fixed; */
     padding: 20px;
@@ -272,7 +273,6 @@ border-top: 1px solid #E0E0E0;
     width: 15%;
     height: auto;
     background-color: white;
-    border-right: #E0E0E0 2px solid;
 }
 
 /* 정인경 : sectin1 -top */
@@ -293,7 +293,6 @@ border-top: 1px solid #E0E0E0;
     width: 100%;
     height: auto;
     background-color: white;
-    border-top: #E0E0E0 2px solid;
     flex-wrap: wrap;
     padding-bottom: 36.5px;
     position: relative;
@@ -709,7 +708,6 @@ border-top: 1px solid #E0E0E0;
 .section2{
     width: 100%;
     background-color: white;
-    border-top: #E0E0E0 2px solid;
     height: auto;
     flex-wrap: wrap;
     padding-bottom: 36.5px;
@@ -981,7 +979,6 @@ border-top: 1px solid #E0E0E0;
     clear: both;
     width: 100%;
     height: auto;
-    border-top: #E0E0E0 2px solid;
     background-color: #FFF;
 }
 
