@@ -46,7 +46,6 @@ for(let i=0; i<modal_close.length; i++){
     })
 }
 
-
 // <!-- 7월 23일 오후 15:12 content_area3_img 모달 기능  최성원-->
 let area3_modal = document.getElementById('area3_modal');
 let area3_img1 = document.getElementById('area3_img1');
@@ -99,3 +98,20 @@ function changeimg(image){
 } 
 
 // <!-- 7월 23일 오후 15:12 content_area3_img 모달 기능 여기까지 최성원-->
+
+
+let side_menu_add = document.querySelectorAll('.side_menu_label')
+let side_menu_flag = true;
+for(i=0;i<side_menu_add.length;i++){
+    side_menu_add[i].addEventListener('click',function(){
+    if(side_menu_flag == true){
+        this.parentNode.children[1].children[0].style.display="block";
+        side_menu_flag = false;
+    }
+    else{
+        this.parentNode.children[1].children[0].style.display="none";
+        side_menu_flag = true;
+        
+    }
+})
+}

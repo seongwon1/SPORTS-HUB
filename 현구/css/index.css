@@ -21,6 +21,7 @@ body{
 /* 07.20 header 구성 및 디자인 수정자 박효근 */
 /* 07.21 header로고 ,navbar dropdown  구성 및 디자인 수정자 박효근 */
 /* 07.22 header HOME 링크연결 , header 이미지 크기 및 이미지 수정  수정자 박효근 */
+/* 07.25 menu1 -> navbar_menu_ul 수정 수정자 박효근 */
 .header{
     width: 100%;
     height: auto;
@@ -51,7 +52,7 @@ body{
     height: 100%;
     float: left;
 }
-.menu1 {
+.navbar_menu_ul {
     width: 100%;
     height: 100%;
     display: flex;
@@ -61,7 +62,7 @@ body{
     line-height: 60px;
     position: relative;
 }
-.menu1 > li:hover,
+.navbar_menu_ul > li:hover,
 #menu_li_a:hover {
     color: #B388FF;
 }
@@ -69,11 +70,11 @@ body{
     text-decoration: none;
     color: #FFF;
 }
-.menu1 > li:hover ~ .navbar_menu_drop,
+.navbar_menu_ul > li:hover ~ .navbar_menu_drop,
 .navbar_menu_drop:hover{
     height: 500px;
 }
-.navbar_menu .menu1>li {
+.navbar_menu .navbar_menu_ul>li {
     display: inline-block;
     width: 25%;
     height: 100%;
@@ -271,6 +272,7 @@ border-top: 1px solid #E0E0E0;
     width: 15%;
     height: auto;
     background-color: white;
+    border-right: #E0E0E0 2px solid;
 }
 
 /* 정인경 : sectin1 -top */
@@ -291,6 +293,7 @@ border-top: 1px solid #E0E0E0;
     width: 100%;
     height: auto;
     background-color: white;
+    border-top: #E0E0E0 2px solid;
     flex-wrap: wrap;
     padding-bottom: 36.5px;
     position: relative;
@@ -425,7 +428,7 @@ border-top: 1px solid #E0E0E0;
 .xi-zoom-in{
     margin-top: 10px;
 }
-.modal-wrap{
+.modal-man, .modal-woman{
     /* background-color:rgba(0,0,0,.3);  */
     justify-content:center; 
     align-items:center;    
@@ -435,11 +438,7 @@ border-top: 1px solid #E0E0E0;
     display:none; 
     padding:15px; 
     z-index: 20;
-  
-  }
-
-  .modal-container{
-    width:100%;
+    width: 100%;
   }
   
   .modal{
@@ -457,13 +456,12 @@ border-top: 1px solid #E0E0E0;
     flex-direction: column;
     color: #333333;
 
-
   }
  
   .modal-body{
     width:100%;
     background-color:#ffffff;
-    height: 550px;
+    height: 560px;
     display: flex;
     flex-direction: row;
   }
@@ -489,6 +487,7 @@ border-top: 1px solid #E0E0E0;
     width: 150px;
     height: 100px;
     margin-right: 10px;
+    margin-left: 10px;
   }
   .modal-body_photo_bottom>img:nth-child(2){
     width: 150px;
@@ -710,9 +709,11 @@ border-top: 1px solid #E0E0E0;
 .section2{
     width: 100%;
     background-color: white;
+    border-top: #E0E0E0 2px solid;
     height: auto;
     flex-wrap: wrap;
     padding-bottom: 36.5px;
+    position: relative;
 }
 .section2>h1{
     padding-left: 100px;
@@ -980,6 +981,7 @@ border-top: 1px solid #E0E0E0;
     clear: both;
     width: 100%;
     height: auto;
+    border-top: #E0E0E0 2px solid;
     background-color: #FFF;
 }
 
@@ -1062,7 +1064,6 @@ border-top: 1px solid #E0E0E0;
 /* 클래스명 변경, 삭제 */
 /* 콘텐츠 에어리어 백그라운드 컬러 변경 #FFF*/
 /* 7월22일 */
-/* 최성원 border-top 삭제 요청 김현구*/
 .content_area2{
     width: 100%;
     height: 750px;
@@ -1081,7 +1082,6 @@ border-top: 1px solid #E0E0E0;
     object-fit: fill;
 }
 /* 7월22일 */
-/* 최성원 border-top 삭제 요청 김현구*/
 .content_area3{
     width: 100%;
     height: auto;
