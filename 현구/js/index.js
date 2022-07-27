@@ -32,6 +32,14 @@ const minusBtn = document.querySelectorAll('.minus');// 수량 -
 const plusBtn = document.querySelectorAll('.plus');// 수량 +
 const count = document.querySelectorAll('.count'); // 수량이 찍힐 input
 let inboundNum = 0; //입고 수량
+
+const s1_btn1 = document.querySelector(".section1_pageBtn_1");
+const s1_btn2 = document.querySelector(".section1_pageBtn_2");
+const s2_btn1 = document.querySelector(".section2_pageBtn_1");
+const s2_btn2 = document.querySelector(".section2_pageBtn_2");
+let section_imgBox_w = document.querySelectorAll(".section_imgBox_w");
+let section_imgBox_m = document.querySelectorAll(".section_imgBox_m");
+
 // area3 modal
 let area3_modal = document.getElementById('area3_modal');
 let area3_img1 = document.getElementById('area3_img1'); // area3 요가매트이미지
@@ -44,16 +52,14 @@ let caption = document.getElementById('caption'); // 모달창 밑에 카테고�
 
 // 사이드바
 let side_menu_add = document.querySelectorAll('.side_menu_label')
-let side_menu_flag = true;
-
 
 for(let i=0; i<shopping_icon_woman.length; i++){
     shopping_icon_woman[i].addEventListener('click',function(){
         section_modal_woman.style.display = 'block';
         section_modal_img_woman.children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[1].src;
         section_modal_img_woman.children[1].children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].src;
-        section_modal_font_woman.children[0].children[1].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[0].childNodes[0].textContent;
-        section_modal_font_woman.children[2].children[0].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[1].childNodes[0].textContent;
+        section_modal_font_woman.children[0].children[1].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[0].childNodes[0].textContent;//0727 경로 수정 수정자 김형준
+        section_modal_font_woman.children[1].children[0].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[2].textContent;//0727 경로 수정 수정자 김형준
     })
 }
 
@@ -62,20 +68,24 @@ for(let i=0; i<shopping_icon_man.length; i++){
         section_modal_man.style.display = 'block';
         section_modal_img_man.children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[1].src;
         section_modal_img_man.children[1].children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].src;
-        section_modal_font_man.children[0].children[1].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[0].childNodes[0].textContent;
-        section_modal_font_man.children[2].children[0].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[1].childNodes[0].textContent;
+        section_modal_font_man.children[0].children[1].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[0].childNodes[0].textContent;//0727 경로 수정 수정자 김형준
+        section_modal_font_woman.children[1].children[0].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[2].textContent;//0727 경로 수정 수정자 김형준
     })
 }
 for(let i=0; i<modal_confirm.length; i++){
     modal_confirm[i].addEventListener('click',function(){
         section_modal_woman.style.display = 'none';
         section_modal_man.style.display = 'none';
+        inboundNum = 0;              //
+        count[0].value = inboundNum; // 0726 19:09 모달이 닫히면 수량 리셋되게 수정자 : 김형준
     })
 }
 for(let i=0; i<modal_close.length; i++){
     modal_close[i].addEventListener('click',function(){
         section_modal_man.style.display = 'none';
         section_modal_woman.style.display = 'none';
+        inboundNum = 0;              //
+        count[0].value = inboundNum; // 0726 19:09 모달이 닫히면 수량 리셋되게 수정자 : 김형준
     })
 }
 // modal 수량 버튼
@@ -207,3 +217,59 @@ hidden8.addEventListener('click',function(){
     popup8.style.transform = 'translateX(-200%)'
 });
 // popup 끝
+
+//0726 19:33 섹션 페이지 전환 작업 수정자:김형준
+
+s1_btn1.addEventListener('click',function(){
+    let w_page1_info = JSON.parse(JSON.stringify(Page1_w));
+    for(let i=0; i<section_imgBox_w.length; i++){
+        section_imgBox_w[i].children[0].children[0].src = w_page1_info[i].img;
+        section_imgBox_w[i].children[0].children[1].src = w_page1_info[i].img_hover;
+        section_imgBox_w[i].children[1].children[0].children[0].textContent = w_page1_info[i].name;
+        section_imgBox_w[i].children[1].children[0].children[1].textContent = w_page1_info[i].price;
+    }
+})
+s1_btn2.addEventListener('click',function(){
+    let w_page1_info = JSON.parse(JSON.stringify(Page2_w));
+    for(let i=0; i<section_imgBox_w.length; i++){
+        section_imgBox_w[i].children[0].children[0].src = w_page1_info[i].img;
+        section_imgBox_w[i].children[0].children[1].src = w_page1_info[i].img_hover;
+        section_imgBox_w[i].children[1].children[0].children[0].textContent = w_page1_info[i].name;
+        section_imgBox_w[i].children[1].children[0].children[1].textContent = w_page1_info[i].price;
+    }
+})
+s2_btn1.addEventListener('click',function(){
+    let w_page1_info = JSON.parse(JSON.stringify(Page1_m));
+    for(let i=0; i<section_imgBox_m.length; i++){
+        section_imgBox_m[i].children[0].children[0].src = w_page1_info[i].img;
+        section_imgBox_m[i].children[0].children[1].src = w_page1_info[i].img_hover;
+        section_imgBox_m[i].children[1].children[0].children[0].textContent = w_page1_info[i].name;
+        section_imgBox_m[i].children[1].children[0].children[1].textContent = w_page1_info[i].price;
+    }
+})
+s2_btn2.addEventListener('click',function(){
+    let w_page1_info = JSON.parse(JSON.stringify(Page2_m));
+    for(let i=0; i<section_imgBox_m.length; i++){
+        section_imgBox_m[i].children[0].children[0].src = w_page1_info[i].img;
+        section_imgBox_m[i].children[0].children[1].src = w_page1_info[i].img_hover;
+        section_imgBox_m[i].children[1].children[0].children[0].textContent = w_page1_info[i].name;
+        section_imgBox_m[i].children[1].children[0].children[1].textContent = w_page1_info[i].price;
+    }
+})
+// 섹션 페이지 전환
+
+// 7월 27일 02:30 김현구 dropdown 코드 수정
+
+for(i=0;i<side_menu_add.length;i++){
+    side_menu_add[i].addEventListener('click',function(){
+    if(this.parentNode.children[1].children[0].getAttribute('class')=='side_menu_Add'){
+        this.parentNode.children[1].children[0].classList.add("side_menu_dropdown_classList") 
+       
+    }
+    else if(this.parentNode.children[1].children[0].getAttribute('class')=='side_menu_Add side_menu_dropdown_classList')
+    {
+        this.parentNode.children[1].children[0].classList.remove("side_menu_dropdown_classList")
+      
+    }
+})
+}

@@ -32,6 +32,14 @@ const minusBtn = document.querySelectorAll('.minus');// 수량 -
 const plusBtn = document.querySelectorAll('.plus');// 수량 +
 const count = document.querySelectorAll('.count'); // 수량이 찍힐 input
 let inboundNum = 0; //입고 수량
+
+const s1_btn1 = document.querySelector(".section1_pageBtn_1");
+const s1_btn2 = document.querySelector(".section1_pageBtn_2");
+const s2_btn1 = document.querySelector(".section2_pageBtn_1");
+const s2_btn2 = document.querySelector(".section2_pageBtn_2");
+let section_imgBox_w = document.querySelectorAll(".section_imgBox_w");
+let section_imgBox_m = document.querySelectorAll(".section_imgBox_m");
+
 // area3 modal
 let area3_modal = document.getElementById('area3_modal');
 let area3_img1 = document.getElementById('area3_img1'); // area3 요가매트이미지
@@ -44,7 +52,6 @@ let caption = document.getElementById('caption'); // 모달창 밑에 카테고�
 
 // 사이드바
 let side_menu_add = document.querySelectorAll('.side_menu_label')
-let side_menu_flag = true;
 
 for(let i=0; i<shopping_icon_woman.length; i++){
     shopping_icon_woman[i].addEventListener('click',function(){
@@ -212,13 +219,6 @@ hidden8.addEventListener('click',function(){
 // popup 끝
 
 //0726 19:33 섹션 페이지 전환 작업 수정자:김형준
-const s1_btn1 = document.querySelector(".section1_pageBtn_1");
-const s1_btn2 = document.querySelector(".section1_pageBtn_2");
-const s2_btn1 = document.querySelector(".section2_pageBtn_1");
-const s2_btn2 = document.querySelector(".section2_pageBtn_2");
-let section_imgBox_w = document.querySelectorAll(".section_imgBox_w");
-let section_imgBox_m = document.querySelectorAll(".section_imgBox_m");
-
 
 s1_btn1.addEventListener('click',function(){
     let w_page1_info = JSON.parse(JSON.stringify(Page1_w));
@@ -257,3 +257,19 @@ s2_btn2.addEventListener('click',function(){
     }
 })
 // 섹션 페이지 전환
+
+// 7월 27일 02:30 김현구 dropdown 코드 수정
+
+for(i=0;i<side_menu_add.length;i++){
+    side_menu_add[i].addEventListener('click',function(){
+    if(this.parentNode.children[1].children[0].getAttribute('class')=='side_menu_Add'){
+        this.parentNode.children[1].children[0].classList.add("side_menu_dropdown_classList") 
+       
+    }
+    else if(this.parentNode.children[1].children[0].getAttribute('class')=='side_menu_Add side_menu_dropdown_classList')
+    {
+        this.parentNode.children[1].children[0].classList.remove("side_menu_dropdown_classList")
+      
+    }
+})
+}

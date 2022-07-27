@@ -37,11 +37,11 @@ body{
     height: 100%;
     float: left;
 }
-.navbar_logo>a>h1{
+.navbar_logo>h1{
     margin: 10px;
     color: #FFF;
 }
-.navbar_logo>a>h1>span{
+.navbar_logo>h1>span{
     display: inline-block;
     width: 73px;
     height: 50%;
@@ -237,12 +237,16 @@ body{
 
 /* side menu 작업 7월 24일 김현구*/
 /* height auto로 수정*/
+/* 7월 26일 border blur */
+/* 7월 27일 2:40 김현구 side_menu에 position, top 속성 추가 */
 .side_menu{
     width: 90%;
     height: auto;
     background-color: #fff;
     box-shadow: 0 0 5px;
     border-radius: 20px;
+    position: sticky;
+    top: 10%;
     padding: 20px;
     margin-left: 20px;
     color: #333333;
@@ -318,7 +322,9 @@ border-top: 1px solid #E0E0E0;
 .side_menu_dropdown input[type=checkbox]{
     float: right;
     margin-right: 8.5%;
-    
+}
+.side_menu_dropdown_classList{
+    display: block;
 }
 
 /* 7월 20일 23:38 정인경 */
@@ -343,7 +349,8 @@ border-top: 1px solid #E0E0E0;
 1. 모달을 새로 추가함
 2. 사진간의 간격 및 아이콘 위치를 변경함 
 */
-
+/* 0726 19:15 section1에 border-top 삭제 수정자:김형준 */
+/* 0726 19:26 section1,2 각각 section_pageBtn 추가 수정자 : 김형준 */
 .section{
     width: 85%;
     height: auto;
@@ -354,7 +361,6 @@ border-top: 1px solid #E0E0E0;
     width: 100%;
     height: auto;
     background-color: white;
-    border-top: #E0E0E0 2px solid;
     flex-wrap: wrap;
     padding-bottom: 36.5px;
     position: relative;
@@ -698,6 +704,21 @@ border-top: 1px solid #E0E0E0;
    color: black;
     font-size: 2.5rem;
 }
+
+.section1_pageBtn{
+    color: #333333;
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.section1_pageBtn>h1{
+    cursor: pointer;
+    margin: 0 30px;
+}
+
 .shopping-bag{
     margin-bottom: 2px;
 }
@@ -897,6 +918,21 @@ border-top: 1px solid #E0E0E0;
    color: black;
     font-size: 2.5rem;
 }
+
+.section2_pageBtn{
+    color: #333333;
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.section2_pageBtn>h1{
+    cursor: pointer;
+    margin: 0 30px;
+}
+
 .shopping-bag{
     margin-bottom: 2px;
 }
