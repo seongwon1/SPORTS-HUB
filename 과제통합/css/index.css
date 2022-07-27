@@ -23,6 +23,7 @@ body{
 /* 07.22 header HOME 링크연결 , header 이미지 크기 및 이미지 수정  수정자 박효근 */
 /* 07.25 menu1 -> navbar_menu_ul 수정 수정자 박효근 */
 /* 07.26 popup 추가 수정자 박효근 */
+/* 07.27 popup 경로 변경 및 그림자 효과 추가 글자색상 변경 로고 링크연결  수정자 박효근 */
 .header{
     width: 100%;
     height: auto;
@@ -37,11 +38,11 @@ body{
     height: 100%;
     float: left;
 }
-.navbar_logo>h1{
+.navbar_logo>a>h1{
     margin: 10px;
     color: #FFF;
 }
-.navbar_logo>h1>span{
+.navbar_logo>a>h1>span{
     display: inline-block;
     width: 73px;
     height: 50%;
@@ -65,10 +66,10 @@ body{
     position: relative;
 }
 .navbar_menu_ul > li:hover,
-#menu_li_a:hover {
+#menu_li:hover {
     color: #B388FF;
 }
-#menu_li_a{
+#menu_li{
     text-decoration: none;
     color: #FFF;
 }
@@ -178,11 +179,12 @@ body{
     width: 300px; 
     height: 150px;   
     border-radius: 10px;    
-    background-color: #e0e0e0;
+    background-color: #fff;
     z-index: 100;
-    color: #fff;   
+    color: #333333;   
     transform: translateX(-200%);
     transition-duration: 2s;
+    box-shadow: 0px 0px 3px 1px rgb(185, 184, 184);
 }
 .popup5,.popup6,.popup7,.popup8 {
     position: fixed;       
@@ -190,11 +192,12 @@ body{
     width: 300px; 
     height: 150px;   
     border-radius: 10px;    
-    background-color: #e0e0e0;
+    background-color: #fff;
     z-index: 100;
-    color: #fff; 
+    color: #333333;
     transform: translateX(-200%);
     transition-duration: 2s;  
+    box-shadow: 0px 0px 3px 1px rgb(185, 184, 184);
 }
 .popup_header{
     width: 300px;
@@ -284,7 +287,7 @@ body{
 #male , #female{
     display: none;
 }
-.side_menu_gender{
+.side_menu_gender_male , .side_menu_gender_female{
     display: inline-block;
     font-size: 1.3rem;
     margin-top: 20px;
@@ -599,6 +602,39 @@ border-top: 1px solid #E0E0E0;
     border: none;
     margin-right: 70px;
   }
+  /* 7월 27일 수량 남자 추가 -정인경*/
+/* 카운트 남자 */
+.modal-body-font_total_m{
+    display: flex;
+    flex-direction: row;
+  }
+  .total_span_m{
+   padding-bottom: 50px;
+    margin-left: 20px;
+  }
+  .total_button_m{
+    margin-left: 20px;
+    position: relative;
+  }
+.count_m{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: absolute;
+  text-align: center;
+    top: 2px;
+    left: 60px;
+  }
+  .minus_m,.plus_m{
+    width: 50px;
+    height: 50px;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    margin-right: 70px;
+  }
+  /* 수정 끝 - 정인경*/
   .modal-foot{
     width:100%;
     height:40px;

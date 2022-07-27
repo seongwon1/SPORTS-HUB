@@ -38,8 +38,6 @@ const man_plus = document.querySelectorAll('.plus_m');// 수량 + 남자
 const man_count = document.querySelectorAll('.count_m'); // 수량이 찍힐 input 남자
 let inptNum = 0; //입고 수량 남자
 
-
-
 const s1_btn1 = document.querySelector(".section1_pageBtn_1");
 const s1_btn2 = document.querySelector(".section1_pageBtn_2");
 const s2_btn1 = document.querySelector(".section2_pageBtn_1");
@@ -83,10 +81,8 @@ for(let i=0; i<modal_confirm.length; i++){
     modal_confirm[i].addEventListener('click',function(){
         section_modal_woman.style.display = 'none';
         section_modal_man.style.display = 'none';
-        inboundNum = 0; 
-        inptNum = 0;             //
+        inboundNum = 0;              //
         count[0].value = inboundNum; // 0726 19:09 모달이 닫히면 수량 리셋되게 수정자 : 김형준
-        man_count[0].value = inptNum;
     })
 }
 for(let i=0; i<modal_close.length; i++){
@@ -99,7 +95,7 @@ for(let i=0; i<modal_close.length; i++){
         man_count[0].value = inptNum;
     })
 }
-// modal 수량 버튼 여자
+// modal 수량 버튼
 minusBtn[0].addEventListener('click',function(){ //입고
     if(inboundNum >0){ // 0 밑으로는 안 내려감
         inboundNum--;
@@ -122,6 +118,7 @@ man_plus[0].addEventListener('click',function(){
     inptNum++;
     man_count[0].value =inptNum;
 })
+
 // <!-- 7월 23일 오후 15:12 content_area3_img 모달 기능  최성원-->
 
 area3_img1.addEventListener('click',function(){
@@ -296,3 +293,33 @@ for(i=0;i<side_menu_add.length;i++){
     }
 })
 }
+
+/* 7월 27일 17:30 김현구 side_menu gender 클릭시 효과*/
+let side_menu_male = document.querySelector('.side_menu_male');
+let side_menu_female = document.querySelector('.side_menu_female');
+let side_menu_gender_male = document.querySelector('.side_menu_gender_male')
+let side_menu_gender_female = document.querySelector('.side_menu_gender_female')
+let side_menu_gender_flag = 0;
+let side_menu_gender_flag2 = 0;
+
+
+side_menu_male.addEventListener("click",function(){
+    if(side_menu_gender_flag == 0){
+    side_menu_gender_male.style.backgroundColor = '#E0E0E0';
+    side_menu_gender_flag = 1;
+    }
+    else if(side_menu_gender_flag == 1){
+    side_menu_gender_male.style.backgroundColor = '#FFF';
+    side_menu_gender_flag = 0;
+    }
+})  
+side_menu_female.addEventListener("click",function(){
+    if(side_menu_gender_flag2 == 0){
+        side_menu_gender_female.style.backgroundColor = '#E0E0E0'
+        side_menu_gender_flag2 = 1;
+    }
+    else if(side_menu_gender_flag2 == 0){
+        side_menu_gender_female.style.backgroundColor = '#FFF';
+        side_menu_gender_flag2 = 1;
+    }
+})

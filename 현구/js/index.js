@@ -28,10 +28,15 @@ const modal_confirm = document.querySelectorAll(".confirm");//모달의 확인 �
 const modal_close = document.querySelectorAll(".close");// 모달의 닫기 버튼
 let shopping_icon_woman = document.querySelectorAll(".shopping_icon_woman");//woman상품의 장바구니 아이콘
 let shopping_icon_man = document.querySelectorAll(".shopping_icon_man");//man상품의 장바구니 아이콘
-const minusBtn = document.querySelectorAll('.minus');// 수량 -
-const plusBtn = document.querySelectorAll('.plus');// 수량 +
-const count = document.querySelectorAll('.count'); // 수량이 찍힐 input
-let inboundNum = 0; //입고 수량
+const minusBtn = document.querySelectorAll('.minus');// 수량 - 여자
+const plusBtn = document.querySelectorAll('.plus');// 수량 + 남자
+const count = document.querySelectorAll('.count'); // 수량이 찍힐 input 여자
+let inboundNum = 0; //입고 수량 여자
+// 7월 27일 정인경 남자 수량 추가
+const man_minus = document.querySelectorAll('.minus_m');// 수량 - 남자
+const man_plus = document.querySelectorAll('.plus_m');// 수량 + 남자
+const man_count = document.querySelectorAll('.count_m'); // 수량이 찍힐 input 남자
+let inptNum = 0; //입고 수량 남자
 
 const s1_btn1 = document.querySelector(".section1_pageBtn_1");
 const s1_btn2 = document.querySelector(".section1_pageBtn_2");
@@ -84,8 +89,10 @@ for(let i=0; i<modal_close.length; i++){
     modal_close[i].addEventListener('click',function(){
         section_modal_man.style.display = 'none';
         section_modal_woman.style.display = 'none';
-        inboundNum = 0;              //
+        inboundNum = 0; 
+        inptNum = 0;              //
         count[0].value = inboundNum; // 0726 19:09 모달이 닫히면 수량 리셋되게 수정자 : 김형준
+        man_count[0].value = inptNum;
     })
 }
 // modal 수량 버튼
@@ -99,6 +106,19 @@ plusBtn[0].addEventListener('click',function(){
     inboundNum++;
     count[0].value = inboundNum;
 })
+//7월 27일 남자 수량버튼 추가
+// modal 수량 버튼 남자
+man_minus[0].addEventListener('click',function(){ //입고
+    if(inptNum >0){ // 0 밑으로는 안 내려감
+        inptNum--;
+        man_count[0].value =inptNum;
+    }
+})
+man_plus[0].addEventListener('click',function(){
+    inptNum++;
+    man_count[0].value =inptNum;
+})
+
 // <!-- 7월 23일 오후 15:12 content_area3_img 모달 기능  최성원-->
 
 area3_img1.addEventListener('click',function(){

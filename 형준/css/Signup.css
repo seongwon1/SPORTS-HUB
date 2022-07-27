@@ -34,10 +34,11 @@ body {
     height: 100%;
     float: left;
 }
-.navbar_logo>h1{
+.navbar_logo>a>h1{
     margin: 10px;
+    color: #FFF;
 }
-.navbar_logo>h1>span{
+.navbar_logo>a>h1>span{
     display: inline-block;
     width: 73px;
     height: 50%;
