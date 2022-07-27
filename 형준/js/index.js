@@ -74,7 +74,7 @@ for(let i=0; i<shopping_icon_man.length; i++){
         section_modal_img_man.children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[1].src;
         section_modal_img_man.children[1].children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].src;
         section_modal_font_man.children[0].children[1].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[0].childNodes[0].textContent;//0727 경로 수정 수정자 김형준
-        section_modal_font_woman.children[1].children[0].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[2].textContent;//0727 경로 수정 수정자 김형준
+        section_modal_font_man.children[1].children[0].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[2].textContent;//0727 경로 수정 수정자 김형준
     })
 }
 for(let i=0; i<modal_confirm.length; i++){
@@ -294,32 +294,53 @@ for(i=0;i<side_menu_add.length;i++){
 })
 }
 
-/* 7월 27일 17:30 김현구 side_menu gender 클릭시 효과*/
-let side_menu_male = document.querySelector('.side_menu_male');
-let side_menu_female = document.querySelector('.side_menu_female');
-let side_menu_gender_male = document.querySelector('.side_menu_gender_male')
-let side_menu_gender_female = document.querySelector('.side_menu_gender_female')
-let side_menu_gender_flag = 0;
-let side_menu_gender_flag2 = 0;
+// /* 7월 27일 17:30 김현구 side_menu gender 클릭시 효과*/
+// let side_menu_male = document.querySelector('.side_menu_male');
+// let side_menu_female = document.querySelector('.side_menu_female');
+// let side_menu_gender_male = document.querySelector('.side_menu_gender_male')
+// let side_menu_gender_female = document.querySelector('.side_menu_gender_female')
+// let side_menu_gender_flag = 0;
+// let side_menu_gender_flag2 = 0;
 
 
-side_menu_male.addEventListener("click",function(){
-    if(side_menu_gender_flag == 0){
-    side_menu_gender_male.style.backgroundColor = '#E0E0E0';
-    side_menu_gender_flag = 1;
-    }
-    else if(side_menu_gender_flag == 1){
-    side_menu_gender_male.style.backgroundColor = '#FFF';
-    side_menu_gender_flag = 0;
-    }
-})  
-side_menu_female.addEventListener("click",function(){
-    if(side_menu_gender_flag2 == 0){
-        side_menu_gender_female.style.backgroundColor = '#E0E0E0'
-        side_menu_gender_flag2 = 1;
-    }
-    else if(side_menu_gender_flag2 == 0){
-        side_menu_gender_female.style.backgroundColor = '#FFF';
-        side_menu_gender_flag2 = 1;
-    }
-})
+// side_menu_male.addEventListener("click",function(){
+//     if(side_menu_gender_flag == 0){
+//     side_menu_gender_male.style.backgroundColor = '#E0E0E0';
+//     side_menu_gender_flag = 1;
+//     }
+//     else if(side_menu_gender_flag == 1){
+//     side_menu_gender_male.style.backgroundColor = '#FFF';
+//     side_menu_gender_flag = 0;
+//     }
+// })  
+// side_menu_female.addEventListener("click",function(){
+//     if(side_menu_gender_flag2 == 0){
+//         side_menu_gender_female.style.backgroundColor = '#E0E0E0'
+//         side_menu_gender_flag2 = 1;
+//     }
+//     else if(side_menu_gender_flag2 == 0){
+//         side_menu_gender_female.style.backgroundColor = '#FFF';
+//         side_menu_gender_flag2 = 1;
+//     }
+// })    <<< 이거 지워주셈
+
+//0727 18:58 하트 토글 기능 구현 수정자 : 김형준
+const heart_icon = document.querySelectorAll('.xi-heart-o');//하트 아이콘
+let heart_flag = []; //하트 토글에 사용할 배열
+for(let i=0; i<heart_icon.length; i++){
+    heart_flag.push(0);
+}
+
+for(let i=0; i<heart_icon.length; i++){
+    heart_icon[i].addEventListener('click',function(){
+        if(heart_flag[i]==0){
+            this.classList = 'xi-heart';
+            this.style.color = 'red';
+            heart_flag[i]=1;
+        } else if(heart_flag[i]==1){
+            this.classList = 'xi-heart-o';
+            this.style.color = 'black';
+            heart_flag[i]=0;
+        }
+    })
+}
