@@ -46,14 +46,13 @@ let caption = document.getElementById('caption'); // 모달창 밑에 카테고�
 let side_menu_add = document.querySelectorAll('.side_menu_label')
 let side_menu_flag = true;
 
-
 for(let i=0; i<shopping_icon_woman.length; i++){
     shopping_icon_woman[i].addEventListener('click',function(){
         section_modal_woman.style.display = 'block';
         section_modal_img_woman.children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[1].src;
         section_modal_img_woman.children[1].children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].src;
-        section_modal_font_woman.children[0].children[1].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[0].childNodes[0].textContent;
-        section_modal_font_woman.children[2].children[0].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[1].childNodes[0].textContent;
+        section_modal_font_woman.children[0].children[1].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[0].childNodes[0].textContent;//0727 경로 수정 수정자 김형준
+        section_modal_font_woman.children[1].children[0].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[2].textContent;//0727 경로 수정 수정자 김형준
     })
 }
 
@@ -62,8 +61,8 @@ for(let i=0; i<shopping_icon_man.length; i++){
         section_modal_man.style.display = 'block';
         section_modal_img_man.children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[1].src;
         section_modal_img_man.children[1].children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].src;
-        section_modal_font_man.children[0].children[1].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[0].childNodes[0].textContent;
-        section_modal_font_man.children[2].children[0].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[1].childNodes[0].textContent;
+        section_modal_font_man.children[0].children[1].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[0].childNodes[0].textContent;//0727 경로 수정 수정자 김형준
+        section_modal_font_woman.children[1].children[0].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[2].textContent;//0727 경로 수정 수정자 김형준
     })
 }
 for(let i=0; i<modal_confirm.length; i++){
