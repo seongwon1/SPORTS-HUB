@@ -24,6 +24,7 @@ body{
 /* 07.25 menu1 -> navbar_menu_ul 수정 수정자 박효근 */
 /* 07.26 popup 추가 수정자 박효근 */
 /* 07.27 popup 경로 변경 및 그림자 효과 추가 글자색상 변경 로고 링크연결  수정자 박효근 */
+/* 07.27 .popup_text>p 폰트사이즈 수정  수정자 박효근 */
 .header{
     width: 100%;
     height: auto;
@@ -234,7 +235,7 @@ body{
 }
 .popup_text>p{
     margin: 10px;
-    font-size: small;
+    font-size: 0.7rem;
 }
 /* header 작업 */
 
