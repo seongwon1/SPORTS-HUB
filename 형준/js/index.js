@@ -256,4 +256,4 @@ s2_btn2.addEventListener('click',function(){
         section_imgBox_m[i].children[1].children[0].children[1].textContent = w_page1_info[i].price;
     }
 })
-
+// 섹션 페이지 전환
