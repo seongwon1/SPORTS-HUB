@@ -175,13 +175,15 @@ body{
 /* side menu 작업 7월 24일 김현구*/
 /* height auto로 수정*/
 /* 7월 26일 border blur */
+/* 7월 27일 2:40 김현구 side_menu에 position,top 속성 추가*/
 .side_menu{
     width: 90%;
     height: auto;
     background-color: #fff;
     box-shadow: 0 0 5px;
     border-radius: 20px;
-    /* position: fixed; */
+    position: sticky;
+    top : 10%;
     padding: 20px;
     margin-left: 20px;
     color: #333333;
@@ -234,6 +236,7 @@ body{
 
     /* 7월 25일 추가 김현구*/
     /* dropdown 메뉴 구현 */
+    /* 7월 26일 김현구 classlist 작성 */
 }
 .side_menu_bottom div:not(.side_menu_dropdown){
 border-top: 1px solid #E0E0E0;
@@ -259,7 +262,9 @@ border-top: 1px solid #E0E0E0;
     margin-right: 8.5%;
     
 }
-
+.side_menu_dropdown_classList{
+    display: block;
+}
 /* 7월 20일 23:38 정인경 */
 
 .main{

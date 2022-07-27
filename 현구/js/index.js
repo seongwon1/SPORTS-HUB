@@ -99,19 +99,26 @@ function changeimg(image){
 
 // <!-- 7월 23일 오후 15:12 content_area3_img 모달 기능 여기까지 최성원-->
 
-
+// 7월 27일 02:30 김현구 dropdown 코드 수정
 let side_menu_add = document.querySelectorAll('.side_menu_label')
-let side_menu_flag = true;
+
 for(i=0;i<side_menu_add.length;i++){
     side_menu_add[i].addEventListener('click',function(){
-    if(side_menu_flag == true){
-        this.parentNode.children[1].children[0].style.display="block";
-        side_menu_flag = false;
+    if(this.parentNode.children[1].children[0].getAttribute('class')=='side_menu_Add'){
+        this.parentNode.children[1].children[0].classList.add("side_menu_dropdown_classList") 
+       
     }
-    else{
-        this.parentNode.children[1].children[0].style.display="none";
-        side_menu_flag = true;
-        
+    else if(this.parentNode.children[1].children[0].getAttribute('class')=='side_menu_Add side_menu_dropdown_classList')
+    {
+        this.parentNode.children[1].children[0].classList.remove("side_menu_dropdown_classList")
+      
     }
 })
 }
+
+// 7월 27일 02:30 김현구 side menu scroll 이벤트 구현
+let side_menu = document.querySelector('.side_menu');
+
+side_menu.addEventListener('scroll',function(){
+    side_menu.style.display='none';
+})
