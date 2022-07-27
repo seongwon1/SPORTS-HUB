@@ -284,7 +284,7 @@ body{
 #male , #female{
     display: none;
 }
-.side_menu_gender{
+.side_menu_gender_male , .side_menu_gender_female{
     display: inline-block;
     font-size: 1.3rem;
     margin-top: 20px;

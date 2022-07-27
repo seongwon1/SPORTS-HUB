@@ -273,3 +273,33 @@ for(i=0;i<side_menu_add.length;i++){
     }
 })
 }
+
+/* 7월 27일 17:30 김현구 side_menu gender 클릭시 효과*/
+let side_menu_male = document.querySelector('.side_menu_male');
+let side_menu_female = document.querySelector('.side_menu_female');
+let side_menu_gender_male = document.querySelector('.side_menu_gender_male')
+let side_menu_gender_female = document.querySelector('.side_menu_gender_female')
+let side_menu_gender_flag = 0;
+let side_menu_gender_flag2 = 0;
+
+
+side_menu_male.addEventListener("click",function(){
+    if(side_menu_gender_flag == 0){
+    side_menu_gender_male.style.backgroundColor = '#E0E0E0';
+    side_menu_gender_flag = 1;
+    }
+    else if(side_menu_gender_flag == 1){
+    side_menu_gender_male.style.backgroundColor = '#FFF';
+    side_menu_gender_flag = 0;
+    }
+})  
+side_menu_female.addEventListener("click",function(){
+    if(side_menu_gender_flag2 == 0){
+        side_menu_gender_female.style.backgroundColor = '#E0E0E0'
+        side_menu_gender_flag2 = 1;
+    }
+    else if(side_menu_gender_flag2 == 0){
+        side_menu_gender_female.style.backgroundColor = '#FFF';
+        side_menu_gender_flag2 = 1;
+    }
+})
