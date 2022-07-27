@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="//cdn.jsdelivr.net/xeicon/2/xeicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form class="container">
+<!-- header로고 ,navbar dropdown  구성 및 디자인 수정자 박효근 -->
+<!-- 07.22 header HOME 링크연결 , header 이미지 크기 및 이미지 수정  수정자 박효근  -->
+<!-- 07.22 header 반응형 관련 크기 조절 수정자:김형준 -->
+<!-- 25 menu1 -> navbar_menu_ul 수정   수정자 박효근  -->
+<div class="header">
+    <div class="navbar">
+        <div class="navbar_logo">
+            <h1>SPORTS <span>HUB</span></h1>
+        </div>
+        <div class="navbar_menu">
+            <ul class="navbar_menu_ul">
+                <li class="menu_li">
+                    NEW
+                </li>
+                <li class="menu_li">
+                    MEN
+                </li>
+                <li class="menu_li">
+                    WOMAN 
+                </li>
+                <li class="menu_li">
+                    SUPPLIES
+                </li>
+                
+                <div class="navbar_menu_drop">
+                    <ul class="drop_menu">
+                        <li>의류</li>
+                        <li>신발</li>
+                        <li>용품</li>
+                        <li>전체보기</li>
+                    </ul>
+                    <ul class="drop_menu">
+                        <li>아우터</li>
+                        <li>티셔츠</li>
+                        <li>후드</li>
+                        <li>바지</li>
+                        <li>반바지</li>
+                        <li>타이즈</li>
+                        <li>신발</li>
+                        <li>양말</li>
+                    </ul>
+                    <ul class="drop_menu">
+                        <li>아우터</li>
+                        <li>티셔츠</li>
+                        <li>후드</li>
+                        <li>바지</li>
+                        <li>반바지</li>
+                        <li>타이즈</li>
+                        <li>신발</li>
+                        <li>양말</li>
+                    </ul>
+                    <ul class="drop_menu">
+                        <li>축구</li>
+                        <li>러닝</li>
+                        <li>농구</li>
+                        <li>테니스</li>
+                        <li>트레이닝&짐</li>
+                        <li>가방</li>
+                        <li>모자</li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <div class="navbar_Icons">
+            <a href="login.html" class="navbar_Icons_a">
+                <i class="uil uil-user-check"></i>
+                <p>LOGIN</p>
+            </a>
+            
+            <a href="Signup.html" class="navbar_Icons_a">
+                <i class="uil uil-user-plus"></i>
+                <p>SIGN UP</p>
+            </a>
+            
+            <a href="#" class="navbar_Icons_a">
+                <i class="uil uil-shopping-bag"></i>
+                <p>SHOPPING BASKET</p>
+            </a>
+        </div>
+    </div>
+    <div class="header_img">
+        <div class="header_img_box">
+                <img src="img/headerImg/1.jpg" class="img1">
+                <img src="img/headerImg/2.jpg" class="img1">
+                <img src="img/headerImg/3.jpg" class="img1">
+                <img src="img/headerImg/4.jpg" class="img1">
+                <img src="img/headerImg/5.jpg" class="img1">
+                <img src="img/headerImg/6.jpg" class="img1">
+                <img src="img/headerImg/7.jpg" class="img1">
+                <img src="img/headerImg/8.jpg" class="img1">
+                <img src="img/headerImg/9.jpg" class="img1">
+                <img src="img/headerImg/10.jpg" class="img1">  
+        </div>
+    </div>
+</div>
+<!-- header 영역 종료 -->
+
+<!-- 7월 24일 side menu 작업 김현구-->
+<!-- 7월 25일 label id 수정 김현구-->
+<div class="main">
+    <div class="side">
+        <div class="side_menu">
+            <div class="side_menu_top">
+                <h1>SPORTS <span>HUB</span></h1>
+                <h1>Store</h1>
+            </div>
+            <div class="side_menu_middle">
+                <h1>Categories</h1>
+                <h2>성별</h2>
+                <label for="male">
+                <input type="radio" name="gender" id="male"><h1 class="side_menu_gender">남성</h1>
+                </label>
+                <label for="female">
+                <input type="radio" name="gender" id="female"><h1 class="side_menu_gender">여성</h1>
+            </label>
+            </div>
+            <div class="side_menu_bottom">
+            <div class="side_menu_clothes">
+                <label for="clothes" class="side_menu_label">
+                <h2 id="clothes">의류</h2>
+                <i class="uil uil-plus"></i>
+                </label>
+                <div class="side_menu_dropdown">
+                    <ul class="side_menu_Add">
+                        <label for="Tshirts">
+                        <li>상의<input type="checkbox" id="Tshirts"></li> 
+                        </label>
+                        <label for="outer">
+                        <li>아우터<input type="checkbox" id="outer"></li>
+                        </label>
+                        <label for="hoode">
+                        <li>후드 <input type="checkbox" id="hoode"></li>
+                        </label>
+                        <label for="pants">
+                        <li>하의 <input type="checkbox" id="pants"></li>
+                        </label>
+                    </ul>
+                </div>
+            </div>
+            <div class="side_menu_shoes">
+                <label for="shoes" class="side_menu_label">
+                <h2 id="shoes">신발</h2>
+                <i class="uil uil-plus"></i>
+                </label>
+                <div class="side_menu_dropdown">
+                    <ul class="side_menu_Add">
+                        <label for="runningShoes">
+                        <li>러닝화<input type="checkbox" id="runningShoes"></li> 
+                        </label>
+                        <label for="lifeStyle">
+                        <li>라이프스타일<input type="checkbox" id="lifeStyle"></li>
+                        </label>
+                        <label for="sandel">
+                        <li>샌들 & 슬리퍼 <input type="checkbox" id="sandel"></li>
+                        </label>
+                    </ul>
+                </div>
+            </div>
+            <div class="side_menu_brands">
+                <label for="brands" class="side_menu_label">
+                    <h2 id="brands">브랜드</h2>
+                    <i class="uil uil-plus"></i>
+                    </label>
+                    <div class="side_menu_dropdown">
+                        <ul class="side_menu_Add">
+                            <label for="nike">
+                            <li>나이키<input type="checkbox" id="nike"></li> 
+                            </label>
+                            <label for="adidas">
+                            <li>아디다스<input type="checkbox" id="adidas"></li>
+                            </label>
+                            <label for="newbalance">
+                            <li>뉴발란스 <input type="checkbox" id="newbalance"></li>
+                            </label>
+                            <label for="descente">
+                            <li>데상트 <input type="checkbox" id="descente"></li>
+                            </label>
+                            <label for="puma">
+                            <li>퓨마 <input type="checkbox" id="puma"></li>
+                            </label>
+                            <label for="reebok">
+                            <li>리복 <input type="checkbox" id="reebok"></li>
+                            </label>
+                        </ul>
+                    </div>
+            </div>
+            <div class="side_menu_sports">
+                <label for="brands" class="side_menu_label">
+                    <h2 id="brands">스포츠</h2>
+                    <i class="uil uil-plus"></i>
+                    </label>
+                    <div class="side_menu_dropdown">
+                        <ul class="side_menu_Add">
+                            <label for="soccer">
+                            <li>축구<input type="checkbox" id="soccer"></li> 
+                            </label>
+                            <label for="golf">
+                            <li>골프<input type="checkbox" id="golf"></li>
+                            </label>
+                            <label for="tenis">
+                            <li>테니스 <input type="checkbox" id="tenis"></li>
+                            </label>
+                            <label for="basketball">
+                            <li>농구 <input type="checkbox" id="basketball"></li>
+                            </label>
+                            <label for="badminton">
+                            <li>배드민턴 <input type="checkbox" id="badminton"></li>
+                            </label>
+                            <label for="swim">
+                            <li>수영 <input type="checkbox" id="swim"></li>
+                            </label>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <!--section 시작 정인경 7월 24일-->
+         <!--수정사항 
+        1. 각 사진 첨부 및 아이콘 위치 변경
+        2. 모달형식을 만듬 ( js를 구현했지만 첫번쨰 이미지만 먹고 다른 이미지는 안먹는 상황..)
+        3. 이미지 폴더에 이미지 새로 추가 이미지 복사 필요
+        4. js를 새롭게 구성 
+        -->
+        <div class="section">
+            <div class="section1">
+                <h1>Women</h1>
+                <div class="section1-top">
+                    <div class="section1-top-imgbox">
+
+                        <div class="section1-top-imgbox-box">
+                            <img src="img/여자/나이키 브라탑/나이키 브라탑  검정.png" alt="">
+                            <img src="img/여자/나이키 브라탑/나이키 브라탑 보라색.png" alt="" class="section1-top-imgbox-img">
+
+                        </div>
+
+
+                        <div class="section1-top-imgbox_font">
+
+                            <div class="section1-top-imgbox_font_box">
+
+                                <span>스우시 스포츠 브라</span> <br>
+                                <span class="section1-top-imgbox_font_money">39,000 원</span> <br>
+                            </div>
+                            <!--section1-top-imgbox_font_box-->
+
+_
+                            <div class="section1-top-imgbox-hover">
+                                <div class="section1-top-imgbox-hover_icon">
+                                    <div class="section1-top-imgbox_icon_heart">
+                                        <i class="xi-heart-o"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_woman"></i>
+                                        <i class="xi-zoom-in"></i>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!--section1-top-imgbox-hover-->
+
+                        </div>
+                        <!--section1-top-imgbox_font -->
+                       
+
+                    </div>
+                    <!--section1-bottom-imgbox -->
+                    
+                            <!-- 모달 섹션 -->
+                            <div class="modal-wrap modal-woman">
+                                <div class="modal">
+                                    <div class="modal-body">
+
+                                        <div class="modal-body_photo photo_woman">
+                                            <img src="img/여자/나이키 브라탑/나이키 브라탑  검정.png" alt="">
+                                            <div class="modal-body_photo_bottom">
+                                                <img src="img/여자/나이키 브라탑/나이키 보라 브라탑 뒷면.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-body_font font_woman">
+                                            <div class="modal-body_font_h1">
+                                                <h5>SPORTS HUB</h5>
+                                                <h1>스우시 스포츠 브라</h1>
+                                            </div>
+                                        
+                                            <div class="modal-body-font_bottom h1">
+                                                <h1> 49,000 원</h1>
+                                            </div>
+                                            <div class="modal-body-font_size">
+                                                <span>사이즈</span>
+                                                <div>XS</div>
+                                                <div>S</div>
+                                                <div>M</div>
+                                                <div>L</div>
+                                                <div>XL</div>
+                                            </div>
+                                        </div>
+                                        </div>
+
+                                    <div class="modal-foot">
+                                        <span class="pop-btn confirm" id="confirm">확인</span>
+                                        <span class="pop-btn close" id="close">창 닫기</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- 모달 -->
+
+                    <div class="section1-top-imgbox">
+                        
+                        
+                        <div class="section1-top-imgbox-box">
+                            <img src="img/여자/나이키 스포츠 웨어/나이키 스포츠 웨어 블화.png" alt="">
+                            <img src="img/여자/나이키 스포츠 웨어/나이키 스포츠웨어 그레이.png" alt="" class="section1-top-imgbox-img">
+
+                        </div>
+                        <div class="section1-top-imgbox_font">
+
+                            <div class="section1-top-imgbox_font_box">
+
+                                <span>아이콘 클래쉬 </span> <br>
+                                <span class="section1-top-imgbox_font_money">139,000 원</span> <br>
+                            </div>
+                            <!--section1-top-imgbox_font_box-->
+
+
+                            <div class="section1-top-imgbox-hover">
+                                <div class="section1-top-imgbox-hover_icon">
+                                    <div class="section1-top-imgbox_icon_heart">
+                                        <i class="xi-heart-o"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_woman"></i>
+                                        <i class="xi-zoom-in"></i>
+                                    </div>
+                                    <div class="section1-top-imgbox_icon_bascket">
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!--section1-top-imgbox-hover-->
+
+                        </div>
+                        <!--section1-top-imgbox_font -->
+
+
+                    </div>
+                    <!--section1-bottom-imgbox -->
+                    <div class="section1-top-imgbox">
+                        <div class="section1-top-imgbox-box">
+                            <img src="img/여자/아디다스 립 바이커 쇼츠/아디다스 립 바이커 쇼츠 블랙.png" alt="">
+                            <img src="img/여자/아디다스 립 바이커 쇼츠/아디다스 립 바이커 쇼츠 핑크.png" alt="" class="section1-top-imgbox-img">
+
+                        </div>
+
+
+                        <div class="section1-top-imgbox_font">
+
+                            <div class="section1-top-imgbox_font_box">
+
+                                <span>립 바이커 쇼츠</span> <br>
+                                <span class="section1-top-imgbox_font_money">55,000 원</span> <br>
+                            </div>
+                            <!--section1-top-imgbox_font_box-->
+
+
+                            <div class="section1-top-imgbox-hover">
+                                <div class="section1-top-imgbox-hover_icon">
+                                    <div class="section1-top-imgbox_icon_heart">
+                                        <i class="xi-heart-o"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_woman"></i>
+                                        <i class="xi-zoom-in"></i>
+                                    </div>
+                                    <div class="section1-top-imgbox_icon_bascket">
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!--section1-top-imgbox-hover-->
+
+                        </div>
+                        <!--section1-top-imgbox_font -->
+
+
+                    </div>
+                    <!--section1-bottom-imgbox -->
+                </div>
+                <!--"section1-top -->
+
+                <!-- section1-bottom 시작 -->
+                <div class="section1-bottom">
+                    <div class="section1-bottom-imgbox">
+                        <div class="section1-bottom-imgbox-box">
+                            <img src="img/여자/신발/신발3.png" alt="">
+                            <img src="img/여자/신발/신발4.png" alt="" class="section1-bottom-imgbox-img">
+
+                        </div>
+
+
+                        <div class="section1-bottom-imgbox_font">
+
+                            <div class="section1-bottom-imgbox_font_box">
+
+                                <span>울트라 부스트 22</span> <br>
+                                <span class="section1-bottom-imgbox_font_money">229,000원</span> <br>
+                            </div>
+                            <!--section1-bottom-imgbox_font_box-->
+
+
+                            <div class="section1-bottom-imgbox-hover">
+                                <div class="section1-bottom-imgbox-hover_icon">
+                                    <div class="section1-bottom-imgbox_icon_heart">
+                                        <i class="xi-heart-o"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_woman"></i>
+                                        <i class="xi-zoom-in"></i>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <!--section1-bottom-imgbox-hover-->
+
+                        </div>
+                        <!--section1-bottom-imgbox_font -->
+
+
+                    </div>
+                    <!--section1-bottom-imgbox -->
+
+
+                    <div class="section1-bottom-imgbox">
+                        <div class="section1-bottom-imgbox-box">
+                            <img src="img/여자/골프스커트/검정색.jpg" alt="">
+                            <img src="img/여자/골프스커트/흰색.jpg" alt="" class="section1-bottom-imgbox-img">
+
+                        </div>
+
+
+                        <div class="section1-bottom-imgbox_font">
+
+                            <div class="section1-bottom-imgbox_font_box">
+
+                                <span>배색 플레이어 스커트</span> <br>
+                                <span class="section1-bottom-imgbox_font_money">100,000 원</span> <br>
+                            </div>
+                            <!--section1-bottom-imgbox_font_box-->
+
+
+                            <div class="section1-bottom-imgbox-hover">
+                                <div class="section1-bottom-imgbox-hover_icon">
+                                    <div class="section1-bottom-imgbox_icon_heart">
+                                        <i class="xi-heart-o"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_woman"></i>
+                                        <i class="xi-zoom-in"></i>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <!--section1-bottom-imgbox-hover-->
+
+                        </div>
+                        <!--section1-bottom-imgbox_font -->
+
+
+                    </div>
+                    <!--section1-bottom-imgbox -->
+
+                    <div class="section1-bottom-imgbox">
+                        <div class="section1-bottom-imgbox-box">
+                            <img src="img/여자/가방/사람.png" alt="">
+                            <img src="img/여자/가방/가방.png" alt="" class="section1-bottom-imgbox-img">
+
+                        </div>
+
+
+                        <div class="section1-bottom-imgbox_font">
+
+                            <div class="section1-bottom-imgbox_font_box">
+
+                                <span>짐 클럽백 AOP</span> <br>
+                                <span class="section1-bottom-imgbox_font_money">59,000 원</span> <br>
+                            </div>
+                            <!--section1-bottom-imgbox_font_box-->
+
+
+                            <div class="section1-bottom-imgbox-hover">
+                                <div class="section1-bottom-imgbox-hover_icon">
+                                    <div class="section1-bottom-imgbox_icon_heart">
+                                        <i class="xi-heart-o"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_woman"></i>
+                                        <i class="xi-zoom-in"></i>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <!--section1-bottom-imgbox-hover-->
+
+                        </div>
+                        <!--section1-bottom-imgbox_font -->
+
+
+                    </div>
+                    <!--section1-bottom-imgbox -->
+
+                </div>
+                <!--section1-bottom- -->
+
+            </div>
+            <!--section1 div -->
+
+            <!--section2 시작-->
+            <div class="section2">
+                <h1>Men</h1>
+                <div class="section2-top">
+                    <div class="section2-top-imgbox">
+                        <div class="section2-top-imgbox-box">
+                            <img src="img/남자/헤지스골프/흰색.png" alt="">
+                            <img src="img/남자/헤지스골프/파란색.png" alt="" class="section2-top-imgbox-img">
+
+                        </div>
+
+
+                        <div class="section2-top-imgbox_font">
+
+                            <div class="section2-top-imgbox_font_box">
+
+                                <span>블랙 인앤아웃 카라 티셔츠</span> <br>
+                                <span class="section2-top-imgbox_font_money">96,000 원</span> <br>
+                            </div>
+                            <!--section2-top-imgbox_font_box-->
+
+
+                            <div class="section2-top-imgbox-hover">
+                                <div class="section2-top-imgbox-hover_icon">
+                                    <div class="section2-top-imgbox_icon_heart">
+                                        <i class="xi-heart-o"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_man"></i>
+                                        <i class="xi-zoom-in"></i>
+                                    </div>
+                                    <div class="section2-top-imgbox_icon_bascket">
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!--section2-top-imgbox-hover-->
+
+                        </div>
+                        <!--section2-top-imgbox_font -->
+
+
+                    </div>
+                    <!--section2-bottom-imgbox -->
+                    <div class="section2-top-imgbox">
+                        <div class="section2-top-imgbox-box">
+                            <img src="img/남자/베이직 레쉬가드/검정.png" alt="">
+                            <img src="img/남자/베이직 레쉬가드/파랑.png" alt="" class="section2-top-imgbox-img">
+
+                        </div>
+
+
+                        <div class="section2-top-imgbox_font">
+
+                            <div class="section2-top-imgbox_font_box">
+
+                                <span>UNI 베이직 래쉬가드</span> <br>
+                                <span class="section2-top-imgbox_font_money">79,900 원</span> <br>
+                            </div>
+                            <!--section2-top-imgbox_font_box-->
+
+
+                            <div class="section2-top-imgbox-hover">
+                                <div class="section2-top-imgbox-hover_icon">
+                                    <div class="section2-top-imgbox_icon_heart">
+                                        <i class="xi-heart-o"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_man"></i>
+                                        <i class="xi-zoom-in"></i>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!--section2-top-imgbox-hover-->
+
+                        </div>
+                        <!--section2-top-imgbox_font -->
+
+
+                    </div>
+                    <!--section2-bottom-imgbox -->
+
+                    <div class="section2-top-imgbox">
+                        <div class="section2-top-imgbox-box">
+                            <img src="img/남자/오운더런 컬러블록 재킷/흰색.png" alt="">
+                            <img src="img/남자/오운더런 컬러블록 재킷/검정.png" alt="" class="section2-top-imgbox-img">
+
+                        </div>
+
+
+                        <div class="section2-top-imgbox_font">
+
+                            <div class="section2-top-imgbox_font_box">
+
+                                <span>오운더런 컬러블록 재킷</span> <br>
+                                <span class="section2-top-imgbox_font_money">109,000 원</span> <br>
+                            </div>
+                            <!--section2-top-imgbox_font_box-->
+
+
+                            <div class="section2-top-imgbox-hover">
+                                <div class="section2-top-imgbox-hover_icon">
+                                    <div class="section2-top-imgbox_icon_heart">
+                                        <i class="xi-heart-o"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_man"></i>
+                                        <i class="xi-zoom-in"></i>
+                                    </div>
+                                    <div class="section2-top-imgbox_icon_bascket">
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!--section2-top-imgbox-hover-->
+
+                        </div>
+                        <!--section2-top-imgbox_font -->
+                         
+                        <!-- 모달 섹션 -->
+                         <div class="modal-wrap modal-man">
+                            <div class="modal">
+                                <div class="modal-body">
+
+                                    <div class="modal-body_photo photo_man">
+                                        <img src="img/여자/나이키 브라탑/나이키 브라탑  검정.png" alt="">
+                                        <div class="modal-body_photo_bottom">
+                                            <img src="img/여자/나이키 브라탑/나이키 보라 브라탑 뒷면.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-body_font font_man">
+                                        <div class="modal-body_font_h1">
+                                            <h5>SPORTS HUB</h5>
+                                            <h1>스우시 스포츠 브라</h1>
+                                        </div>
+                                    
+                                        <div class="modal-body-font_bottom h1">
+                                            <h1> 49,000 원</h1>
+                                        </div>
+                                        <div class="modal-body-font_size">
+                                            <span>사이즈</span>
+                                            <div>XS</div>
+                                            <div>S</div>
+                                            <div>M</div>
+                                            <div>L</div>
+                                            <div>XL</div>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                <div class="modal-foot">
+                                    <span class="pop-btn confirm" id="confirm">확인</span>
+                                    <span class="pop-btn close" id="close">창 닫기</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- 모달 -->
+
+                    </div>
+                    <!--section2-bottom-imgbox -->
+                </div>
+                <!--"section2-top"-->
+
+                <!-- section2 bottom 시작 -->
+                <div class="section2-bottom">
+                    <div class="section2-bottom-imgbox">
+                        <div class="section2-bottom-imgbox-box">
+                            <img src="img/남자/에센셜 트리코트 조거 펜츠/남색.png" alt="">
+                            <img src="img/남자/에센셜 트리코트 조거 펜츠/보라색.png" alt="" class="section2-bottom-imgbox-img">
+
+                        </div>
+
+
+                        <div class="section2-bottom-imgbox_font">
+
+                            <div class="section2-bottom-imgbox_font_box">
+
+                                <span>에센셜 트리코트 조거 펜츠</span> <br>
+                                <span class="section2-bottom-imgbox_font_money">99,900 원</span> <br>
+                            </div>
+                            <!--section2-bottom-imgbox_font_box-->
+
+
+                            <div class="section2-bottom-imgbox-hover">
+                                <div class="section2-bottom-imgbox-hover_icon">
+                                    <div class="section2-bottom-imgbox_icon_heart">
+                                        <i class="xi-heart-o"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_man"></i>
+                                        <i class="xi-zoom-in"></i>
+                                    </div>
+                                    <div class="section2-bottom-imgbox_icon_bascket">
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!--section2-bottom-imgbox-hover-->
+
+                        </div>
+                        <!--section2-bottom-imgbox_font -->
+
+
+                    </div>
+                    <!--section2-bottom-imgbox-->
+
+
+
+                    <div class="section2-bottom-imgbox">
+                        <div class="section2-bottom-imgbox-box">
+                            <img src="img/남자/아웃도어 리사이클 피싱 캠프캡/노랑.png" alt="">
+                            <img src="img/남자/아웃도어 리사이클 피싱 캠프캡/회색.png" alt="" class="section2-bottom-imgbox-img">
+
+                        </div>
+
+
+                        <div class="section2-bottom-imgbox_font">
+
+                            <div class="section2-bottom-imgbox_font_box">
+
+                                <span>리사이클 피싱 캠프캡</span> <br>
+                                <span class="section2-bottom-imgbox_font_money">49,900 원</span> <br>
+                            </div>
+                            <!--section2-bottom-imgbox_font_box-->
+
+
+                            <div class="section2-bottom-imgbox-hover">
+                                <div class="section2-bottom-imgbox-hover_icon">
+                                    <div class="section2-bottom-imgbox_icon_heart">
+                                        <i class="xi-heart-o"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_man"></i>
+                                        <i class="xi-zoom-in"></i>
+                                    </div>
+                                    <div class="section2-bottom-imgbox_icon_bascket">
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!--section2-bottom-imgbox-hover-->
+
+                        </div>
+                        <!--section2-bottom-imgbox_font -->
+
+
+                    </div>
+                    <!--section2-bottom-imgbox-->
+
+
+                    <div class="section2-bottom-imgbox">
+                        <div class="section2-bottom-imgbox-box">
+                            <img src="img/남자/나이키 헤리티지 HBR 코어/사람.png" alt="">
+                            <img src="img/남자/나이키 헤리티지 HBR 코어/각도.png" alt="" class="section2-bottom-imgbox-img">
+
+                        </div>
+
+
+                        <div class="section2-bottom-imgbox_font">
+
+                            <div class="section2-bottom-imgbox_font_box">
+
+                                <span>헤리티지 HBR 코어</span> <br>
+                                <span class="section2-bottom-imgbox_font_money">45,000원</span> <br>
+                            </div>
+                            <!--section2-bottom-imgbox_font_box-->
+
+
+                            <div class="section2-bottom-imgbox-hover">
+                                <div class="section2-bottom-imgbox-hover_icon">
+                                    <div class="section2-bottom-imgbox_icon_heart">
+                                        <i class="xi-heart-o"></i>
+                                        <i class="uil uil-shopping-bag shopping_icon_man"></i>
+                                        <i class="xi-zoom-in"></i>
+                                    </div>
+                                    <div class="section2-bottom-imgbox_icon_bascket">
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!--section2-bottom-imgbox-hover-->
+
+                        </div>
+                        <!--section2-bottom-imgbox_font -->
+
+
+                    </div>
+                    <!--section2-bottom-imgbox-->
+
+
+                </div>
+                <!--section2-bottom-->
+
+            </div>
+            <!--section2 div -->
+        </div>
+        <!-- section div -->
+    </div>
+    <!--ㅡmain div -->
+
+        <!-- content_area 0720 17:00 수정자:김형준 -->
+        <!-- contetn_area 항목 추가 및 내용 추가 -->
+        <div class="content_area1">
+            <div class="content_area1_header">
+                <h1>S / H &nbsp; S T Y L E</h1>
+            </div>
+            
+            <div class="content_area1_hashtag">
+                <p>#Sports Hub</p>
+                <p>#Hyungu's Style</p>
+                <p>#Athletic</p>
+                <p>#Running</p>
+            </div>
+
+            <!-- 0721 11:44 img 8개 추가 및 구성 수정 수정자:김형준 -->
+            <div class="content_area1_imgBox">
+                <div class="content_area1_imgBox_img">
+                    <img src="img/SH_img/i1.jpg" alt="">
+                    <h1>S/H Style</h1>
+                </div>
+                <div class="content_area1_imgBox_img">
+                    <img src="img/SH_img/i2.PNG" alt="">
+                    <h1>Running</h1>
+                </div>
+                <div class="content_area1_imgBox_img">
+                    <img src="img/SH_img/i3.jpg" alt="">
+                    <h1>Athletic</h1>
+                </div>
+                <div class="content_area1_imgBox_img">
+                    <img src="img/SH_img/i4.jpg" alt="">
+                    <h1>Hobby</h1>
+                </div>
+            </div>
+            
+            <div class="content_area1_imgBox">
+                <div class="content_area1_imgBox_img">
+                    <img src="img/SH_img/i5.jfif" alt="">
+                    <h1>Daily Life</h1>
+                </div>
+                <div class="content_area1_imgBox_img">
+                    <img src="img/SH_img/i6.jfif" alt="">
+                    <h1>Street</h1>
+                </div>
+                <div class="content_area1_imgBox_img">
+                    <img src="img/SH_img/i7.jfif" alt="">
+                    <h1>With Us</h1>
+                </div>
+                <div class="content_area1_imgBox_img">
+                    <img src="img/SH_img/i8.jfif" alt="">
+                    <h1>Relaxation</h1>
+                </div>
+            </div>
+        </div>
+        <!-- content_area1 -->
+
+        
+            <!-- 7월 20일 김현구 작업 이미지 추가 18:20시작 -->
+            <!-- content_area2_header 클래스 div 삭제 h1태그 삭제-->
+            <!-- content_area2_video 클래스 추가 비디오 삽입-->
+            <!-- content_area3 클래스 추가-->
+            <!-- img 위 글자 div 추가-->
+            <!-- 7월 21일 이미지 삽입 텍스트 추가 텍스트 효과 부여-->
+            <!-- img hover 효과 부여-->
+            <div class="content_area2">
+                <div class="content_area2_video">
+                    <video muted autoplay loop controls>
+                    <source src="videos/홈트영상.mp4" type="video/mp4">
+                </div>
+            </div>
+            
+            <div class="content_area3">
+                <div class="content_area3_header">
+                    <h1>HOME &nbsp; TRAINING</h1>
+                </div>
+                <div class="content_area3_caption">
+                    <div>
+                    <h3>YOGA MAT</h3>
+                    </div>
+                    <div>
+                        <h3>GYM BALL</h3>
+                    </div>
+                    <div>
+                    <h3>SOFT WEIGHT BAR</h3>
+                    </div>
+                </div>
+                <div class="content_area3_imgBox">
+                    <div class="content_area3_img" id="area3_img1">
+                        <img src="img/여자/요가매트 호버이미지.png">
+                        <img src="img/여자/요가매트.png" class="content_area3_imgHover">
+                        <p>텍스트</p>
+                    </div>
+                    <div class="content_area3_img" id="area3_img2">
+                        <img src="img/여자/짐볼 호버이미지.png">
+                        <img src="img/여자/짐볼.png" class="content_area3_imgHover">
+                        <p>텍스트</p>
+                    </div>
+                    <div class="content_area3_img" id="area3_img3">
+                        <img src="img/여자/소프트웨이트바 호버이미지.png">
+                        <img src="img/여자/소프트웨이트바.png" class="content_area3_imgHover">
+                        <p>텍스트</p>
+                    </div>
+                    <!-- 7월 23일 오후 15:12 content_area3_img 모달 넣기  최성원-->
+                    <div class="area3_modal" id="area3_modal">
+                        <span class="area3_close">&times;</span>
+                        <img class="modal-content" id="modal_main_img">
+                        <div class="modal-bottom-preview">
+                            <img src="" class="modal-bottom-preview-img" onclick="changeimg(this)">
+                            <img src="" class="modal-bottom-preview-img" onclick="changeimg(this)">
+                            <img src="" class="modal-bottom-preview-img" onclick="changeimg(this)">
+                            <img src="" class="modal-bottom-preview-img" onclick="changeimg(this)">
+                            <img src="" class="modal-bottom-preview-img" onclick="changeimg(this)">
+                            <img src="" class="modal-bottom-preview-img" onclick="changeimg(this)">
+                            <img src="" class="modal-bottom-preview-img" onclick="changeimg(this)">
+                            <img src="" class="modal-bottom-preview-img" onclick="changeimg(this)">
+                        </div>
+                        
+                        <div id="caption" style="font-size: 30px"></div>
+                    </div>
+                    <!-- 7월 23일 오후 15:12 content_area3_img 모달 넣기 여기까지 최성원-->
+                </div>
+            </div>
+            
+
+        <!-- footer 0719 19:57 수정자:김형준 -->
+        <!-- footer 항목 추가 및 내용 추가 -->
+        <div class="footer">
+            <div class="footer_info">
+                <div class="footer_info_nav">
+                    <div class="footer_info_nav_list">
+                        <li>About Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Use</li>
+                    </div>
+                    <div class="footer_info_nav_list">
+                        <li>Q&A</li>
+                        <li>1:1 Inquiries</li>
+                        <li>Returns & Refunds</li>
+                    </div>
+                </div>
+                <div class="footer_info_intro">
+                    <div class="footer_info_intro_detail">
+                        <p>상호 : SPORTS HUB &nbsp; 대표자 : 김현구 &nbsp; 사업자등록번호 : 111-11-1111</p>
+                        <p>소재지 : 서울특별시 구로구 시흥대로163길 33 주호타워 2층,3층</p>
+                        <p>CS고객센터 : 00)000-0000 &nbsp; 이메일 : goott@gmail.com</p>
+                        <p>상담시간 10:00-17:30 &nbsp; 점심시간 12:00-13:00 &nbsp; 주말 및 공휴일 휴무</p>
+                    </div>
+                    <div class="footer_info_intro_sns">
+                        <i class="xi-facebook-official"></i>
+                        <i class="xi-instagram"></i>
+                        <i class="xi-youtube-play"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_copy">
+                <p>Copyright © SPORTS HUB. All Rights Reserved.</p>
+            </div>
+        </div><!--footer-->
+    </form>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
