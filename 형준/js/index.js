@@ -62,7 +62,7 @@ let side_menu_add = document.querySelectorAll('.side_menu_label')
 // 사이드바
 for(let i=0; i<shopping_icon_woman.length; i++){
     shopping_icon_woman[i].addEventListener('click',function(){
-        section_modal_woman.style.display = 'block';
+        section_modal_woman.style.display = 'inline-block';
         section_modal_img_woman.children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[1].src;
         section_modal_img_woman.children[1].children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].src;
         section_modal_font_woman.children[0].children[1].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[0].childNodes[0].textContent;//0727 경로 수정 수정자 김형준
@@ -72,7 +72,7 @@ for(let i=0; i<shopping_icon_woman.length; i++){
 
 for(let i=0; i<shopping_icon_man.length; i++){
     shopping_icon_man[i].addEventListener('click',function(){
-        section_modal_man.style.display = 'block';
+        section_modal_man.style.display = 'inline-block';
         section_modal_img_man.children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[1].src;
         section_modal_img_man.children[1].children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].src;
         section_modal_font_man.children[0].children[1].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[0].childNodes[0].textContent;//0727 경로 수정 수정자 김형준
@@ -243,6 +243,11 @@ s1_btn1.addEventListener('click',function(){
         section_imgBox_w[i].children[1].children[0].children[0].textContent = w_page1_info[i].name;
         section_imgBox_w[i].children[1].children[0].children[1].textContent = w_page1_info[i].price;
     }
+    for(let j=0; j<6; j++){ //0728 13:01 하트가 페이지 전환시에도 그대로 유지되던 현상수정 수정자 : 김형준
+        heart_flag[j]=0;
+        heart_icon[j].classList = 'xi-heart-o';
+        heart_icon[j].style.color = 'black';
+    }
 })
 s1_btn2.addEventListener('click',function(){
     let w_page1_info = JSON.parse(JSON.stringify(Page2_w));
@@ -251,6 +256,11 @@ s1_btn2.addEventListener('click',function(){
         section_imgBox_w[i].children[0].children[1].src = w_page1_info[i].img_hover;
         section_imgBox_w[i].children[1].children[0].children[0].textContent = w_page1_info[i].name;
         section_imgBox_w[i].children[1].children[0].children[1].textContent = w_page1_info[i].price;
+    }
+    for(let j=0; j<6; j++){//0728 13:01 하트가 페이지 전환시에도 그대로 유지되던 현상수정 수정자 : 김형준
+        heart_flag[j]=0;
+        heart_icon[j].classList = 'xi-heart-o';
+        heart_icon[j].style.color = 'black';
     }
 })
 s2_btn1.addEventListener('click',function(){
@@ -261,6 +271,11 @@ s2_btn1.addEventListener('click',function(){
         section_imgBox_m[i].children[1].children[0].children[0].textContent = w_page1_info[i].name;
         section_imgBox_m[i].children[1].children[0].children[1].textContent = w_page1_info[i].price;
     }
+    for(let j=6; j<13; j++){//0728 13:01 하트가 페이지 전환시에도 그대로 유지되던 현상수정 수정자 : 김형준
+        heart_flag[j]=0;
+        heart_icon[j].classList = 'xi-heart-o';
+        heart_icon[j].style.color = 'black';
+    }
 })
 s2_btn2.addEventListener('click',function(){
     let w_page1_info = JSON.parse(JSON.stringify(Page2_m));
@@ -269,6 +284,11 @@ s2_btn2.addEventListener('click',function(){
         section_imgBox_m[i].children[0].children[1].src = w_page1_info[i].img_hover;
         section_imgBox_m[i].children[1].children[0].children[0].textContent = w_page1_info[i].name;
         section_imgBox_m[i].children[1].children[0].children[1].textContent = w_page1_info[i].price;
+    }
+    for(let j=6; j<13; j++){//0728 13:01 하트가 페이지 전환시에도 그대로 유지되던 현상수정 수정자 : 김형준
+        heart_flag[j]=0;
+        heart_icon[j].classList = 'xi-heart-o';
+        heart_icon[j].style.color = 'black';
     }
 })
 // 섹션 페이지 전환
