@@ -45,6 +45,9 @@ const s2_btn2 = document.querySelector(".section2_pageBtn_2");
 let section_imgBox_w = document.querySelectorAll(".section_imgBox_w");
 let section_imgBox_m = document.querySelectorAll(".section_imgBox_m");
 
+//하트아이콘
+const heart_icon = document.querySelectorAll('.xi-heart-o');//하트 아이콘
+let heart_flag = []; //하트 토글에 사용할 배열
 // area3 modal
 let area3_modal = document.getElementById('area3_modal');
 let area3_img1 = document.getElementById('area3_img1'); // area3 요가매트이미지
@@ -54,10 +57,9 @@ let modal_main_img = document.getElementById('modal_main_img'); //모달창 띄�
 let modal_bottom_preview_img = document.getElementsByClassName('modal-bottom-preview-img'); // 모달창 8가지 이미지를 나타내는 변수
 let span = document.getElementsByClassName("area3_close")[0]; // 모달창 close버튼
 let caption = document.getElementById('caption'); // 모달창 밑에 카테고리 이름 
-
-// 사이드바
 let side_menu_add = document.querySelectorAll('.side_menu_label')
 
+// 사이드바
 for(let i=0; i<shopping_icon_woman.length; i++){
     shopping_icon_woman[i].addEventListener('click',function(){
         section_modal_woman.style.display = 'block';
@@ -120,7 +122,6 @@ man_plus[0].addEventListener('click',function(){
 })
 
 // <!-- 7월 23일 오후 15:12 content_area3_img 모달 기능  최성원-->
-
 area3_img1.addEventListener('click',function(){
     area3_modal.style.display = "block";
     document.body.style.overflow = "hidden"; // 모달 시 스크롤 방지
@@ -130,7 +131,6 @@ area3_img1.addEventListener('click',function(){
     }
     caption.innerText = "요가매트";
 })
-
 area3_img2.addEventListener('click',function(){
     area3_modal.style.display = 'block';
     document.body.style.overflow = "hidden";
@@ -141,7 +141,6 @@ area3_img2.addEventListener('click',function(){
     }
     caption.innerText = "짐볼";
 })
-
 area3_img3.addEventListener('click',function(){
     area3_modal.style.display = 'block';
     document.body.style.overflow = "hidden";
@@ -152,18 +151,16 @@ area3_img3.addEventListener('click',function(){
     }
     caption.innerText = "소프트웨이트바";
 })
-
 span.addEventListener('click',function(){
     area3_modal.style.display = 'none';
     document.body.style.overflow = "unset";
 })
-
 function changeimg(image){
     modal_main_img.src = image.src;
 } 
-
 // <!-- 7월 23일 오후 15:12 content_area3_img 모달 기능 여기까지 최성원-->
 
+// 이부분 주석 추가 필요!
 for(i=0;i<side_menu_add.length;i++){
     side_menu_add[i].addEventListener('click',function(){
     if(side_menu_flag == true){
@@ -179,7 +176,6 @@ for(i=0;i<side_menu_add.length;i++){
 }
 
 // 0726 popup 기능 추가 수정자 박효근
-
 setTimeout(function(){
     popup1.style.transform = 'translateX(10%)'
     popup5.style.transform = 'translateX(10%)'
@@ -239,7 +235,6 @@ hidden8.addEventListener('click',function(){
 // popup 끝
 
 //0726 19:33 섹션 페이지 전환 작업 수정자:김형준
-
 s1_btn1.addEventListener('click',function(){
     let w_page1_info = JSON.parse(JSON.stringify(Page1_w));
     for(let i=0; i<section_imgBox_w.length; i++){
@@ -279,7 +274,6 @@ s2_btn2.addEventListener('click',function(){
 // 섹션 페이지 전환
 
 // 7월 27일 02:30 김현구 dropdown 코드 수정
-
 for(i=0;i<side_menu_add.length;i++){
     side_menu_add[i].addEventListener('click',function(){
     if(this.parentNode.children[1].children[0].getAttribute('class')=='side_menu_Add'){
@@ -292,8 +286,6 @@ for(i=0;i<side_menu_add.length;i++){
 })
 }
 //0727 18:58 하트 토글 기능 구현 수정자 : 김형준
-const heart_icon = document.querySelectorAll('.xi-heart-o');//하트 아이콘
-let heart_flag = []; //하트 토글에 사용할 배열
 for(let i=0; i<heart_icon.length; i++){
     heart_flag.push(0);
 }
