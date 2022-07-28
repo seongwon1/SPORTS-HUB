@@ -485,7 +485,7 @@ border-top: 1px solid #E0E0E0;
     display:none; 
     padding:15px; 
     z-index: 20;
-    width: 100%;
+    width: 1050px; /*0728 10:54 요소 길이가 길어서 버튼이 안눌리던 현상 수정 수정자 : 김형준*/
 }
 .modal{
     width: 1000px;

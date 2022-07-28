@@ -62,7 +62,7 @@ let side_menu_add = document.querySelectorAll('.side_menu_label')
 // 사이드바
 for(let i=0; i<shopping_icon_woman.length; i++){
     shopping_icon_woman[i].addEventListener('click',function(){
-        section_modal_woman.style.display = 'inline-block';
+        section_modal_woman.style.display = 'block';
         section_modal_img_woman.children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[1].src;
         section_modal_img_woman.children[1].children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].src;
         section_modal_font_woman.children[0].children[1].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[0].childNodes[0].textContent;//0727 경로 수정 수정자 김형준
@@ -72,7 +72,7 @@ for(let i=0; i<shopping_icon_woman.length; i++){
 
 for(let i=0; i<shopping_icon_man.length; i++){
     shopping_icon_man[i].addEventListener('click',function(){
-        section_modal_man.style.display = 'inline-block';
+        section_modal_man.style.display = 'block';
         section_modal_img_man.children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[1].src;
         section_modal_img_man.children[1].children[0].src = this.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].src;
         section_modal_font_man.children[0].children[1].innerHTML = this.parentNode.parentNode.parentNode.parentNode.children[0].children[0].childNodes[0].textContent;//0727 경로 수정 수정자 김형준
