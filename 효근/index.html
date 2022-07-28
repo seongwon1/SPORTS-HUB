@@ -309,12 +309,12 @@
                         </ul>
                     </div>
             </div>
+            </div>
         </div>
-    </div>
     </div>
     
     <!--section 시작 정인경 7월 24일-->
-         <!--수정사항 
+        <!--수정사항 
         1. 각 사진 첨부 및 아이콘 위치 변경
         2. 모달형식을 만듬 ( js를 구현했지만 첫번쨰 이미지만 먹고 다른 이미지는 안먹는 상황..)
         3. 이미지 폴더에 이미지 새로 추가 이미지 복사 필요
@@ -616,9 +616,9 @@
                             <!--section2-top-imgbox-hover-->
                         </div>
                         <!--section2-top-imgbox_font -->
-                         
+
                         <!-- 모달 섹션 -->
-                         <div class="modal-wrap modal-man">
+                        <div class="modal-wrap modal-man">
                             <div class="modal">
                                 <div class="modal-body">
 
@@ -820,7 +820,6 @@
             </div>
         </div>
         <!-- content_area1 -->
-
         
             <!-- 7월 20일 김현구 작업 이미지 추가 18:20시작 -->
             <!-- content_area2_header 클래스 div 삭제 h1태그 삭제-->
@@ -829,6 +828,7 @@
             <!-- img 위 글자 div 추가-->
             <!-- 7월 21일 이미지 삽입 텍스트 추가 텍스트 효과 부여-->
             <!-- img hover 효과 부여-->
+            <!-- 0727 19:33 기존의 content_area3_caption 삭제, content_area3_imgBox_cap 생성 후 텍스트 위치 조정 수정자 : 김형준 -->
             <div class="content_area2">
                 <div class="content_area2_video">
                     <video muted autoplay loop controls>
@@ -840,32 +840,28 @@
                 <div class="content_area3_header">
                     <h1>HOME &nbsp; TRAINING</h1>
                 </div>
-                <div class="content_area3_caption">
-                    <div>
-                    <h3>YOGA MAT</h3>
-                    </div>
-                    <div>
-                        <h3>GYM BALL</h3>
-                    </div>
-                    <div>
-                    <h3>SOFT WEIGHT BAR</h3>
-                    </div>
-                </div>
+                
                 <div class="content_area3_imgBox">
-                    <div class="content_area3_img" id="area3_img1">
-                        <img src="img/여자/요가매트 호버이미지.png">
-                        <img src="img/여자/요가매트.png" class="content_area3_imgHover">
-                        <p>텍스트</p>
+                    <div class="content_area3_imgBox_cap">
+                        <h3>YOGA MAT</h3>
+                        <div class="content_area3_img" id="area3_img1">
+                            <img src="img/여자/요가매트 호버이미지.png">
+                            <img src="img/여자/요가매트.png" class="content_area3_imgHover">
+                        </div>
                     </div>
-                    <div class="content_area3_img" id="area3_img2">
-                        <img src="img/여자/짐볼 호버이미지.png">
-                        <img src="img/여자/짐볼.png" class="content_area3_imgHover">
-                        <p>텍스트</p>
+                    <div class="content_area3_imgBox_cap">
+                        <h3>GYM BALL</h3>
+                        <div class="content_area3_img" id="area3_img2">
+                            <img src="img/여자/짐볼 호버이미지.png">
+                            <img src="img/여자/짐볼.png" class="content_area3_imgHover">
+                        </div>
                     </div>
-                    <div class="content_area3_img" id="area3_img3">
-                        <img src="img/여자/소프트웨이트바 호버이미지.png">
-                        <img src="img/여자/소프트웨이트바.png" class="content_area3_imgHover">
-                        <p>텍스트</p>
+                    <div class="content_area3_imgBox_cap">
+                        <h3>SOFT WEIGHT BAR</h3>
+                        <div class="content_area3_img" id="area3_img3">
+                            <img src="img/여자/소프트웨이트바 호버이미지.png">
+                            <img src="img/여자/소프트웨이트바.png" class="content_area3_imgHover">
+                        </div>
                     </div>
                     <!-- 7월 23일 오후 15:12 content_area3_img 모달 넣기  최성원-->
                     <div class="area3_modal" id="area3_modal">
@@ -888,7 +884,6 @@
                 </div>
             </div>
             
-
         <!-- footer 0719 19:57 수정자:김형준 -->
         <!-- footer 항목 추가 및 내용 추가 -->
         <div class="footer">
@@ -929,5 +924,4 @@
     <script src="json/index.json" type="text/javascript"></script>
     <script src="js/index.js"></script>
 </body>
-
 </html>

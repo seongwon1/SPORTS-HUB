@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -24,6 +23,7 @@ body{
 /* 07.25 menu1 -> navbar_menu_ul 수정 수정자 박효근 */
 /* 07.26 popup 추가 수정자 박효근 */
 /* 07.27 popup 경로 변경 및 그림자 효과 추가 글자색상 변경 로고 링크연결  수정자 박효근 */
+/* 07.27 .popup_text>p 폰트사이즈 수정  수정자 박효근 */
 .header{
     width: 100%;
     height: auto;
@@ -234,7 +234,7 @@ body{
 }
 .popup_text>p{
     margin: 10px;
-    font-size: small;
+    font-size: 0.7rem;
 }
 /* header 작업 */
 
@@ -287,6 +287,14 @@ body{
 #male , #female{
     display: none;
 }
+/* 0727 18:41 성별 버튼 클릭시 배경 효과 추가 수정자 : 김형준 */
+#male:checked ~ .side_menu_gender_male{
+    background-color: #bbb;
+}
+#female:checked ~ .side_menu_gender_female{
+    background-color: #bbb;
+}
+/* 성별 벼튼 클릭시 배경 효과 */
 .side_menu_gender_male , .side_menu_gender_female{
     display: inline-block;
     font-size: 1.3rem;
@@ -386,11 +394,11 @@ border-top: 1px solid #E0E0E0;
     width: 400px;
     height: 450px;
     display: flex;
-   flex-direction: column;  
-   box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
-  border-radius: 10px;
-   justify-content: center;
-   margin-top: 20px; 
+    flex-direction: column;  
+    box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 20px; 
 }
 .section1-top-imgbox-box{
     width: 400px;
@@ -413,9 +421,9 @@ border-top: 1px solid #E0E0E0;
 .section1-top-imgbox_font{
     display: flex;
     flex-direction: column;
-   font-size: 1.0rem;
-   margin-top: 5px;
-   position: relative;
+    font-size: 1.0rem;
+    margin-top: 5px;
+    position: relative;
    /* margin-left: 5px; */
 }
 .section1-top-imgbox_font_box{
@@ -459,7 +467,7 @@ border-top: 1px solid #E0E0E0;
     align-items: center;
 }
 .section1-top-imgbox_icon_heart{
-   color: black;
+    color: black;
     font-size: 2.5rem;
 }
 .shopping-bag{
@@ -478,8 +486,8 @@ border-top: 1px solid #E0E0E0;
     padding:15px; 
     z-index: 20;
     width: 100%;
-  }
-  .modal{
+}
+.modal{
     width: 1000px;
     max-width:1000px;
     height: 600px;
@@ -493,71 +501,71 @@ border-top: 1px solid #E0E0E0;
     align-items: center;
     flex-direction: column;
     color: #333333;
-  }
-  .modal-body{
+}
+.modal-body{
     width:100%;
     background-color:#ffffff;
     height: 560px;
     display: flex;
     flex-direction: row;
-  }
-  .modal-body_photo{
+}
+.modal-body_photo{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-  .modal-body_photo>img:nth-child(1){
+}
+.modal-body_photo>img:nth-child(1){
     width: 400px;
     height: 400px;
     margin: 20px;
-  }
-  .modal-body_photo_bottom{
+}
+.modal-body_photo_bottom{
     display: flex;
     flex-direction: row;
-  }
-  .modal-body_photo_bottom>img:nth-child(1){
+}
+.modal-body_photo_bottom>img:nth-child(1){
     width: 150px;
     height: 100px;
     margin-right: 10px;
     margin-left: 10px;
-  }
-  .modal-body_font{
+}
+.modal-body_font{
     display: flex;
     flex-direction: column;
     border: 1px solid #E0E0E0;
     width: 900px;
     /* align-items: center; */
     font-size: 1.3rem;
-  }
-  .modal-body_font_h1{
+}
+.modal-body_font_h1{
     display: flex;
     flex-direction: column;
     margin-top: 120px;
     align-items: center;
     font-weight: lighter;
-  }
-  .modal-body_font_h1>h5{
+}
+.modal-body_font_h1>h5{
     color: #B388FF;
-  }
-  .modal-body-font_bottom h1{
+}
+.modal-body-font_bottom h1{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
     font-size: 2.0rem;
-  }
-  .modal-body-font_size{
+}
+.modal-body-font_size{
     display: flex;
     flex-direction: row;
     margin-top: 90px;
     margin-bottom: 40px;
-  }
-  .modal-body-font_size>span{
+}
+.modal-body-font_size>span{
     margin-top: 10px;
     margin-left: 20px;
-  }
-  .modal-body-font_size>div:nth-child(n){
+}
+.modal-body-font_size>div:nth-child(n){
     margin-right: 10px;
     margin-left: 15px;
     border: 1px solid #dad6d6;
@@ -567,80 +575,80 @@ border-top: 1px solid #E0E0E0;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .modal-body-font_size>div:nth-child(n):hover{
+}
+.modal-body-font_size>div:nth-child(n):hover{
     border: 1px solid #333333;
-  }
-  .modal-body-font_total{
+}
+.modal-body-font_total{
     display: flex;
     flex-direction: row;
-  }
-  .total_span{
-   padding-bottom: 50px;
+}
+.total_span{
+    padding-bottom: 50px;
     margin-left: 20px;
-  }
-  .total_button{
+}
+.total_button{
     margin-left: 20px;
     position: relative;
     
-  }
-  .count{
+}
+.count{
     width: 50px;
     height: 50px;
     font-size: 20px;
     margin-bottom: 10px;
     position: absolute;
-  text-align: center;
+    text-align: center;
     top: 2px;
     left: 60px;
-  }
-  .minus,.plus{
+}
+.minus,.plus{
     width: 50px;
     height: 50px;
     font-size: 2.5rem;
     border-radius: 10px;
     border: none;
     margin-right: 70px;
-  }
-  /* 7월 27일 수량 남자 추가 -정인경*/
+}
+/* 7월 27일 수량 남자 추가 -정인경*/
 /* 카운트 남자 */
 .modal-body-font_total_m{
     display: flex;
     flex-direction: row;
-  }
-  .total_span_m{
-   padding-bottom: 50px;
+}
+.total_span_m{
+    padding-bottom: 50px;
     margin-left: 20px;
-  }
-  .total_button_m{
+}
+.total_button_m{
     margin-left: 20px;
     position: relative;
-  }
+}
 .count_m{
     width: 50px;
     height: 50px;
     font-size: 20px;
     margin-bottom: 10px;
     position: absolute;
-  text-align: center;
+    text-align: center;
     top: 2px;
     left: 60px;
-  }
-  .minus_m,.plus_m{
+}
+.minus_m,.plus_m{
     width: 50px;
     height: 50px;
     font-size: 2.5rem;
     border-radius: 10px;
     border: none;
     margin-right: 70px;
-  }
-  /* 수정 끝 - 정인경*/
-  .modal-foot{
+}
+/* 수정 끝 - 정인경*/
+.modal-foot{
     width:100%;
     height:40px;
     border-radius: 10px;
-  }
-  .pop-btn{
+}
+.pop-btn{
     display:inline-flex;
     width:50%;
     height:100%;
@@ -649,10 +657,10 @@ border-top: 1px solid #E0E0E0;
     align-items:center;
     color:#ffffff;
     cursor:pointer;
-  }
-  .pop-btn.confirm{
+}
+.pop-btn.confirm{
     border-right:1px solid #E0E0E0;
-  }
+}
 /* 정인경 : section1 bottom 시작 */
 .section1-bottom{
     display: flex;
@@ -666,11 +674,11 @@ border-top: 1px solid #E0E0E0;
     width: 400px;
     height: 450px;
     display: flex;
-   flex-direction: column;  
-   box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
-  border-radius: 10px;
-   justify-content: center;
-   margin-top: 20px;
+    flex-direction: column;  
+    box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 20px;
    /* background-color:whitesmoke; */
 }
 .section1-bottom-imgbox-box{
@@ -694,9 +702,9 @@ border-top: 1px solid #E0E0E0;
 .section1-bottom-imgbox_font{
     display: flex;
     flex-direction: column;
-   font-size: 1.0rem;
-   margin-top: 5px;
-   position: relative;
+    font-size: 1.0rem;
+    margin-top: 5px;
+    position: relative;
    /* margin-left: 5px; */
 }
 .section1-bottom-imgbox_font_box{
@@ -737,7 +745,7 @@ border-top: 1px solid #E0E0E0;
     align-items: center;
 }
 .section1-bottom-imgbox_icon_heart{
-   color: black;
+    color: black;
     font-size: 2.5rem;
 }
 
@@ -788,11 +796,11 @@ border-top: 1px solid #E0E0E0;
     width: 400px;
     height: 450px;
     display: flex;
-   flex-direction: column;  
-   box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
-  border-radius: 10px;
-   justify-content: center;
-   margin-top: 20px;
+    flex-direction: column;  
+    box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 20px;
 }
 .section2-top-imgbox-box{
     width: 400px;
@@ -815,9 +823,9 @@ border-top: 1px solid #E0E0E0;
 .section2-top-imgbox_font{
     display: flex;
     flex-direction: column;
-   font-size: 1.0rem;
-   margin-top: 5px;
-   position: relative;
+    font-size: 1.0rem;
+    margin-top: 5px;
+    position: relative;
    /* margin-left: 5px; */
 }
 .section2-top-imgbox_font_box{
@@ -859,7 +867,7 @@ border-top: 1px solid #E0E0E0;
     align-items: center;
 }
 .section2-top-imgbox_icon_heart{
-   color: black;
+    color: black;
     font-size: 2.5rem;
 }
 .shopping-bag{
@@ -881,11 +889,11 @@ border-top: 1px solid #E0E0E0;
     width: 400px;
     height: 450px;
     display: flex;
-   flex-direction: column;  
-   box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
-  border-radius: 10px;
-   justify-content: center;
-   margin-top: 20px;
+    flex-direction: column;  
+    box-shadow: 1px 1px 1px 1px rgb(185, 184, 184);
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 20px;
 }
 .section2-bottom-imgbox-box{
     width: 400px;
@@ -908,9 +916,9 @@ border-top: 1px solid #E0E0E0;
 .section2-bottom-imgbox_font{
     display: flex;
     flex-direction: column;
-   font-size: 1.0rem;
-   margin-top: 5px;
-   position: relative;
+    font-size: 1.0rem;
+    margin-top: 5px;
+    position: relative;
    /* margin-left: 5px; */
 }
 .section2-bottom-imgbox_font_box{
@@ -951,7 +959,7 @@ border-top: 1px solid #E0E0E0;
     align-items: center;
 }
 .section2-bottom-imgbox_icon_heart{
-   color: black;
+    color: black;
     font-size: 2.5rem;
 }
 
@@ -1091,6 +1099,8 @@ border-top: 1px solid #E0E0E0;
 /* content_area3 img hover 효과 부여 김현구*/
 /* content_area3 height:auto 변경*/
 /* img hover 시 opacity 삭제*/
+
+/* 0727 19:02 content_area3_header 텍스트 색 변경 수정자:김형준*/
 .content_area3_header{
     width: 100%;
     height: 150px;
@@ -1098,13 +1108,10 @@ border-top: 1px solid #E0E0E0;
     align-items: center;
     justify-content: center;
     font-size: 1.7rem;
-    color: #E0E0E0;
-    font-weight: bolder;
+    color: #333333;
 }
-.content_area3_header>h1{
-    text-shadow: #E0E0E0 0px 0px 6px;
-}
-
+/* 0727 19:02 content_area3_header 텍스트 색 변경 수정자:김형준*/
+/* 0727 19:33 content_area3_imgBox_cap 생성 후 텍스트 위치 조정 수정자 : 김형준 */
 .content_area3_imgBox{
     width: 100%;
     height: auto;
@@ -1125,18 +1132,14 @@ border-top: 1px solid #E0E0E0;
     position: relative;
     cursor: pointer;
 }
-.content_area3_caption{
+.content_area3_imgBox_cap{
     color: #E0E0E0;
-    display: inline-block;
     display: flex;
+    flex-direction: column;
     font-size: 1.6rem;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
-.content_area3_caption > div{
-    width: 33.3%;
-    text-align: center;
-}
-    
 
 .content_area3_img>img{
     width: 500px;
