@@ -170,8 +170,6 @@ body{
 .header_img>.header_img_box> img {
     width: 100%;
     height: 100%;
-    /* margin-left: 100px; */
-    
 }
 .popup1,.popup2,.popup3,.popup4 {
     position: fixed;       
@@ -351,7 +349,6 @@ border-top: 1px solid #E0E0E0;
     width: 15%;
     height: auto;
     background-color: white;
-    /* border-right: #E0E0E0 2px solid; */
 }
 
 /* 정인경 : sectin1 -top */
@@ -415,7 +412,7 @@ border-top: 1px solid #E0E0E0;
     position: absolute;
     left: 0px;
 }
-.section1-top-imgbox-box:hover .section1-top-imgbox-img{
+.section1-top-imgbox-box:hover .section1-top-imgbox-img{ /*호버를 이미지에 주어서 넘어가도록 설정 앞에 있는 이미지는 호버 효과시 없어짐*/
     display: none;
 }
 .section1-top-imgbox_font{
@@ -424,7 +421,6 @@ border-top: 1px solid #E0E0E0;
     font-size: 1.0rem;
     margin-top: 5px;
     position: relative;
-   /* margin-left: 5px; */
 }
 .section1-top-imgbox_font_box{
     position: absolute;
@@ -437,13 +433,10 @@ border-top: 1px solid #E0E0E0;
     visibility: hidden;
     color: black;
 }
-.section1-top-imgbox:hover .section1-top-imgbox_font_box{
+.section1-top-imgbox:hover .section1-top-imgbox_font_box{ /*호버를 주어 마우스를 올리면 상품명이 올라오도록 설정*/
     visibility: visible;
     height: 60px;  
 }
-/* .section1-top-imgbox_font_box>span:nth-child(n){
-    margin-left: 5px;
-} */
 .section1-top-imgbox_font_box>span:nth-child(1){
     font-size: 1.3rem;
     color: black;
@@ -535,7 +528,6 @@ border-top: 1px solid #E0E0E0;
     flex-direction: column;
     border: 1px solid #E0E0E0;
     width: 900px;
-    /* align-items: center; */
     font-size: 1.3rem;
 }
 .modal-body_font_h1{
@@ -576,7 +568,7 @@ border-top: 1px solid #E0E0E0;
     justify-content: center;
     align-items: center;
 }
-.modal-body-font_size>div:nth-child(n):hover{
+.modal-body-font_size>div:nth-child(n):hover{ /*사이즈에 마우스를 올렸을때 테두리가 나오도록 호버효과를 적용*/
     border: 1px solid #333333;
 }
 .modal-body-font_total{
@@ -679,7 +671,6 @@ border-top: 1px solid #E0E0E0;
     border-radius: 10px;
     justify-content: center;
     margin-top: 20px;
-   /* background-color:whitesmoke; */
 }
 .section1-bottom-imgbox-box{
     width: 400px;
@@ -696,7 +687,7 @@ border-top: 1px solid #E0E0E0;
     position: absolute;
     left: 0px;
 }
-.section1-bottom-imgbox-box:hover .section1-bottom-imgbox-img{
+.section1-bottom-imgbox-box:hover .section1-bottom-imgbox-img{ /*호버를 이미지에 주어서 넘어가도록 설정 앞에 있는 이미지는 호버 효과시 없어짐*/
     display: none;
 }
 .section1-bottom-imgbox_font{
@@ -705,7 +696,6 @@ border-top: 1px solid #E0E0E0;
     font-size: 1.0rem;
     margin-top: 5px;
     position: relative;
-   /* margin-left: 5px; */
 }
 .section1-bottom-imgbox_font_box{
     position: absolute;
@@ -718,7 +708,7 @@ border-top: 1px solid #E0E0E0;
     visibility: hidden;
     color: black;
 }
-.section1-bottom-imgbox:hover .section1-bottom-imgbox_font_box{
+.section1-bottom-imgbox:hover .section1-bottom-imgbox_font_box{ /*호버를 주어 마우스를 올리면 상품명이 올라오도록 설정*/
     visibility: visible;
     height: 60px;
 }
@@ -817,7 +807,7 @@ border-top: 1px solid #E0E0E0;
     position: absolute;
     left: 0px;
 }
-.section2-top-imgbox-box:hover .section2-top-imgbox-img{
+.section2-top-imgbox-box:hover .section2-top-imgbox-img{ /*호버를 이미지에 주어서 넘어가도록 설정 앞에 있는 이미지는 호버 효과시 없어짐*/
     display: none;
 }
 .section2-top-imgbox_font{
@@ -826,7 +816,6 @@ border-top: 1px solid #E0E0E0;
     font-size: 1.0rem;
     margin-top: 5px;
     position: relative;
-   /* margin-left: 5px; */
 }
 .section2-top-imgbox_font_box{
     position: absolute;
@@ -839,7 +828,7 @@ border-top: 1px solid #E0E0E0;
     visibility: hidden;
     color: black;
 }
-.section2-top-imgbox:hover .section2-top-imgbox_font_box{
+.section2-top-imgbox:hover .section2-top-imgbox_font_box{ /*호버를 주어 마우스를 올리면 상품명이 올라오도록 설정*/
     visibility: visible;
     height: 60px;
 }
@@ -910,8 +899,8 @@ border-top: 1px solid #E0E0E0;
     position: absolute;
     left: 0px;
 }
-.section2-bottom-imgbox-box:hover .section2-bottom-imgbox-img{
-    display: none;
+.section2-bottom-imgbox-box:hover .section2-bottom-imgbox-img{ /*호버를 이미지에 주어서 넘어가도록 설정 앞에 있는 이미지는 호버 효과시 없어짐*/
+    display: none; 
 }
 .section2-bottom-imgbox_font{
     display: flex;
@@ -919,7 +908,6 @@ border-top: 1px solid #E0E0E0;
     font-size: 1.0rem;
     margin-top: 5px;
     position: relative;
-   /* margin-left: 5px; */
 }
 .section2-bottom-imgbox_font_box{
     position: absolute;
@@ -932,7 +920,7 @@ border-top: 1px solid #E0E0E0;
     visibility: hidden;
     color: black;
 }
-.section2-bottom-imgbox:hover .section2-bottom-imgbox_font_box{
+.section2-bottom-imgbox:hover .section2-bottom-imgbox_font_box{ /*호버를 주어 마우스를 올리면 상품명이 올라오도록 설정*/
     visibility: visible;
     height: 60px; 
 }

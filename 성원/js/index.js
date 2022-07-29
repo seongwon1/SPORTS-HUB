@@ -85,6 +85,7 @@ for(let i=0; i<modal_confirm.length; i++){
         section_modal_man.style.display = 'none';
         inboundNum = 0;              //
         count[0].value = inboundNum; // 0726 19:09 모달이 닫히면 수량 리셋되게 수정자 : 김형준
+        
     })
 }
 for(let i=0; i<modal_close.length; i++){
@@ -94,31 +95,31 @@ for(let i=0; i<modal_close.length; i++){
         inboundNum = 0; 
         inptNum = 0;              //
         count[0].value = inboundNum; // 0726 19:09 모달이 닫히면 수량 리셋되게 수정자 : 김형준
-        man_count[0].value = inptNum;
+        man_count[0].value = inptNum; // 0727 모달이 닫히면 수량 리셋 :정인경
     })
 }
-// modal 수량 버튼
+// modal 여자 수량 버튼 7월 25일 추가 : 정인경
 minusBtn[0].addEventListener('click',function(){ //입고
     if(inboundNum >0){ // 0 밑으로는 안 내려감
         inboundNum--;
-        count[0].value = inboundNum;
+        count[0].value = inboundNum; // 여자 마이너스 버튼
     }
 })
-plusBtn[0].addEventListener('click',function(){
+plusBtn[0].addEventListener('click',function(){ // 여자 플러스 버튼
     inboundNum++;
     count[0].value = inboundNum;
 })
-//7월 27일 남자 수량버튼 추가
+//7월 27일 남자 수량버튼 추가 :정인경
 // modal 수량 버튼 남자
 man_minus[0].addEventListener('click',function(){ //입고
     if(inptNum >0){ // 0 밑으로는 안 내려감
         inptNum--;
-        man_count[0].value =inptNum;
+        man_count[0].value =inptNum; //남자 마이너스 버튼
     }
 })
 man_plus[0].addEventListener('click',function(){
     inptNum++;
-    man_count[0].value =inptNum;
+    man_count[0].value =inptNum; // 남자 플러스 버튼
 })
 
 // <!-- 7월 23일 오후 15:12 content_area3_img 모달 기능  최성원-->
