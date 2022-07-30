@@ -1,20 +1,20 @@
 //popup
-let popup1 = document.querySelector('.popup1');
+let popup1 = document.querySelector('.popup1'); // popup1 ~ popup4 :HOT ITEM 
 let popup2 = document.querySelector('.popup2');
 let popup3 = document.querySelector('.popup3');
 let popup4 = document.querySelector('.popup4'); 
-let popup5 = document.querySelector('.popup5');
+let popup5 = document.querySelector('.popup5'); // popup5 ~ popup8 :SALE ITEM 
 let popup6 = document.querySelector('.popup6');
 let popup7 = document.querySelector('.popup7');
 let popup8 = document.querySelector('.popup8'); 
-let hidden1 = document.querySelector('.hidden1');
-let hidden2 = document.querySelector('.hidden2');
-let hidden3 = document.querySelector('.hidden3');
-let hidden4 = document.querySelector('.hidden4');
-let hidden5 = document.querySelector('.hidden5');
-let hidden6 = document.querySelector('.hidden6');
-let hidden7 = document.querySelector('.hidden7');
-let hidden8 = document.querySelector('.hidden8');
+let hidden1 = document.querySelector('.hidden1'); // popup1 x 아이콘 클릭시 사라지게 할 때 쓸 변수
+let hidden2 = document.querySelector('.hidden2'); // popup2 x 아이콘 클릭시 사라지게 할 때 쓸 변수
+let hidden3 = document.querySelector('.hidden3'); // popup3 x 아이콘 클릭시 사라지게 할 때 쓸 변수
+let hidden4 = document.querySelector('.hidden4'); // popup4 x 아이콘 클릭시 사라지게 할 때 쓸 변수
+let hidden5 = document.querySelector('.hidden5'); // popup5 x 아이콘 클릭시 사라지게 할 때 쓸 변수
+let hidden6 = document.querySelector('.hidden6'); // popup6 x 아이콘 클릭시 사라지게 할 때 쓸 변수
+let hidden7 = document.querySelector('.hidden7'); // popup7 x 아이콘 클릭시 사라지게 할 때 쓸 변수
+let hidden8 = document.querySelector('.hidden8'); // popup8 x 아이콘 클릭시 사라지게 할 때 쓸 변수
 
 //섹션 모달 0725 19:07 김형준
 const section_modal = document.querySelector(".modal-wrap");
@@ -152,9 +152,9 @@ area3_img3.addEventListener('click',function(){
     }
     caption.innerText = "소프트웨이트바";
 })
-span.addEventListener('click',function(){
+span.addEventListener('click',function(){ // close 버튼 누를 때
     area3_modal.style.display = 'none';
-    document.body.style.overflow = "unset";
+    document.body.style.overflow = "unset"; // 스크롤 활성화
 })
 function changeimg(image){
     modal_main_img.src = image.src;
@@ -165,59 +165,59 @@ function changeimg(image){
 setTimeout(function(){
     popup1.style.transform = 'translateX(10%)'
     popup5.style.transform = 'translateX(10%)'
-}, 2000);
+}, 2000); // 페이지 실행 후 팝업창 2초후 등장
 setTimeout(function(){
     popup1.style.transform = 'translateX(-200%)'
     popup5.style.transform = 'translateX(-200%)'
-}, 12000);
+}, 12000); // 페이지 실행 후 팝업창 12초후 사라짐
 setTimeout(function(){
     popup2.style.transform = 'translateX(10%)'
     popup6.style.transform = 'translateX(10%)'
-}, 20000);
+}, 20000); // 페이지 실행 후 팝업창 20초후 등장
 setTimeout(function(){
     popup2.style.transform = 'translateX(-200%)'
     popup6.style.transform = 'translateX(-200%)'
-}, 30000);
+}, 30000); // 페이지 실행 후 팝업창 30초후 사라짐
 setTimeout(function(){
     popup3.style.transform = 'translateX(10%)'
     popup7.style.transform = 'translateX(10%)'
-}, 38000);
+}, 38000); // 페이지 실행 후 팝업창 38초후 등장
 setTimeout(function(){
     popup3.style.transform = 'translateX(-200%)'
     popup7.style.transform = 'translateX(-200%)'
-}, 48000);
+}, 48000); // 페이지 실행 후 팝업창 48초후 사라짐
 setTimeout(function(){
     popup4.style.transform = 'translateX(10%)'
     popup8.style.transform = 'translateX(10%)'
-}, 56000);
+}, 56000); // 페이지 실행 후 팝업창 56초후 등장
 setTimeout(function(){
     popup4.style.transform = 'translateX(-200%)'
     popup8.style.transform = 'translateX(-200%)'
-}, 66000);
+}, 66000); // 페이지 실행 후 팝업창 66초후 사라짐
 hidden1.addEventListener('click',function(){
     popup1.style.transform = 'translateX(-200%)'
-});
+}); // popup1 x 아이콘 클릭시 사라짐
 hidden2.addEventListener('click',function(){
     popup2.style.transform = 'translateX(-200%)'
-});
+}); // popup2 x 아이콘 클릭시 사라짐
 hidden3.addEventListener('click',function(){
     popup3.style.transform = 'translateX(-200%)'
-});
+}); // popup3 x 아이콘 클릭시 사라짐
 hidden4.addEventListener('click',function(){
     popup4.style.transform = 'translateX(-200%)'
-});
+}); // popup4 x 아이콘 클릭시 사라짐
 hidden5.addEventListener('click',function(){
     popup5.style.transform = 'translateX(-200%)'
-});
+}); // popup5 x 아이콘 클릭시 사라짐
 hidden6.addEventListener('click',function(){
     popup6.style.transform = 'translateX(-200%)'
-});
+}); // popup6 x 아이콘 클릭시 사라짐
 hidden7.addEventListener('click',function(){
     popup7.style.transform = 'translateX(-200%)'
-});
+}); // popup7 x 아이콘 클릭시 사라짐
 hidden8.addEventListener('click',function(){
     popup8.style.transform = 'translateX(-200%)'
-});
+}); // popup8 x 아이콘 클릭시 사라짐
 // popup 끝
 
 //0726 19:33 섹션 페이지 전환 작업 수정자:김형준
