@@ -152,9 +152,9 @@ area3_img3.addEventListener('click',function(){
     }
     caption.innerText = "소프트웨이트바";
 })
-span.addEventListener('click',function(){
+span.addEventListener('click',function(){ // close 버튼 누를 때
     area3_modal.style.display = 'none';
-    document.body.style.overflow = "unset";
+    document.body.style.overflow = "unset"; // 스크롤 활성화
 })
 function changeimg(image){
     modal_main_img.src = image.src;
