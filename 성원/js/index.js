@@ -161,21 +161,6 @@ function changeimg(image){
 } 
 // <!-- 7월 23일 오후 15:12 content_area3_img 모달 기능 여기까지 최성원-->
 
-// 이부분 주석 추가 필요!
-for(i=0;i<side_menu_add.length;i++){
-    side_menu_add[i].addEventListener('click',function(){
-    if(side_menu_flag == true){
-        this.parentNode.children[1].children[0].style.display="block";
-        side_menu_flag = false;
-    }
-    else{
-        this.parentNode.children[1].children[0].style.display="none";
-        side_menu_flag = true;
-        
-    }
-})
-}
-
 // 0726 popup 기능 추가 수정자 박효근
 setTimeout(function(){
     popup1.style.transform = 'translateX(10%)'
@@ -295,6 +280,9 @@ s2_btn2.addEventListener('click',function(){
 // 섹션 페이지 전환
 
 // 7월 27일 02:30 김현구 dropdown 코드 수정
+// 사이드 메뉴의 + 아이콘을 클릭하면 드롭다운 메뉴가 활성화 되는 코드
+// 클릭 이벤트가 적용된 해당 아이콘의 부모노드의 1번 자식의 0번째 자식을 찾아서 class명을 가져온 후 값을 비교
+// classList로 css에 미리 작성해놓은 클래스 추가와 삭제.
 for(i=0;i<side_menu_add.length;i++){
     side_menu_add[i].addEventListener('click',function(){
     if(this.parentNode.children[1].children[0].getAttribute('class')=='side_menu_Add'){

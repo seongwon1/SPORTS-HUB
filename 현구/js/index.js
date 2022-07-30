@@ -161,22 +161,6 @@ function changeimg(image){
 } 
 // <!-- 7월 23일 오후 15:12 content_area3_img 모달 기능 여기까지 최성원-->
 
-// 이부분 주석 추가 필요! 
-// 7월 30일 10:00 해당 코드 삭제 요청 잘못된 코드임. classList로 수정한 코드 298번 라인에서 시작함 - 김현구
-// for(i=0;i<side_menu_add.length;i++){
-//     side_menu_add[i].addEventListener('click',function(){
-//     if(side_menu_flag == true){
-//         this.parentNode.children[1].children[0].style.display="block";
-//         side_menu_flag = false;
-//     }
-//     else{
-//         this.parentNode.children[1].children[0].style.display="none";
-//         side_menu_flag = true;
-        
-//     }
-// })
-// }
-
 // 0726 popup 기능 추가 수정자 박효근
 setTimeout(function(){
     popup1.style.transform = 'translateX(10%)'
